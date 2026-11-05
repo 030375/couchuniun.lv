@@ -128,6 +128,40 @@
 .icu-learning-extra>span{font-size:.84rem;font-weight:750;color:#243d51;line-height:1.38}
 .icu-learning-extra small{color:#5e7385;font-size:.73rem;line-height:1.4}
 @media(max-width:767px){.icu-learning-extras{padding:.9rem}.icu-learning-extras-grid{grid-template-columns:1fr;gap:.55rem}.icu-learning-extra{flex-direction:row;justify-content:flex-start;align-items:center;text-align:left;flex-wrap:wrap;column-gap:.75rem;padding:.7rem .85rem}.icu-learning-extra strong{min-width:64px;font-size:1.4rem}.icu-learning-extra>span{flex:1}.icu-learning-extra small{flex-basis:100%;padding-left:calc(64px + .75rem)}}
+
+/* Compact fallback if an old cached external stylesheet is used. */
+.icu-course-map{max-width:880px;margin:0 auto 1.4rem;padding:1rem;border:1px solid #dce8f6;border-radius:18px;background:#fff}
+.icu-course-map-head{display:flex;align-items:center;justify-content:space-between;gap:.65rem;flex-wrap:wrap}
+.icu-course-map-title{color:#17466d;font-weight:800;font-size:.87rem}
+.icu-course-map-status,.icu-course-map-note{color:#63768b;font-size:.73rem}
+.icu-course-map-steps{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:.4rem;margin:.7rem 0}
+.icu-course-map-step{min-width:0;padding:.5rem .15rem;border:1px solid #d2e0ef;border-radius:10px;background:#eef4fb;color:#31597e;font-weight:800;cursor:pointer}
+.icu-course-map-step.is-before{background:#d2e7f7}
+.icu-course-map-step.is-active{background:#086cad;color:#fff}
+.icu-program-modules>li.icu-step-item{display:block;min-width:0}
+.icu-step-detail{border:1px solid #e3edf7;border-radius:12px;overflow:hidden;background:#fff;scroll-margin-top:140px}
+.icu-program-expand .icu-step-toggle{display:flex;align-items:center;gap:.66rem;padding:.72rem;cursor:pointer;list-style:none;min-height:60px}
+.icu-step-toggle::-webkit-details-marker{display:none}
+.icu-step-toggle .icu-program-module-info{flex:1;min-width:0;border:0;padding:0}
+.icu-step-toggle .icu-program-module-num{flex:0 0 36px;height:36px}
+.icu-step-chevron{color:#075b9a}
+.icu-program-expand[open] .icu-step-detail:not([open]) .icu-step-chevron{transform:none}
+.icu-program-expand[open] .icu-step-detail[open] .icu-step-chevron{transform:rotate(180deg)}
+.icu-step-panel{display:grid;gap:.55rem;padding:0 .7rem .7rem}
+.icu-step-detail-row{display:flex;gap:.7rem;padding:.7rem;border-radius:10px;background:#eef5fc}
+.icu-step-detail-icon{color:#075b9a}
+.icu-step-detail-row h4{font-size:.78rem;color:#143a5d;font-weight:850;margin:0 0 .28rem}
+.icu-step-detail-row p{font-size:.79rem;color:#496178;line-height:1.55;margin:0}
+.icu-step-result{background:#e6f5ed}
+.icu-course-documents{max-width:1100px;margin:1.6rem auto 0;padding:1.2rem;border:1px solid #dbe8f2;border-radius:19px;background:#fff}
+.icu-course-documents h3{font-size:1.3rem;font-weight:850;color:#17344c}
+.icu-course-documents-intro,.icu-course-document-note{font-size:.82rem;color:#607285}
+.icu-course-document-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.icu-course-document{display:flex;gap:.7rem;padding:.9rem;border:1px solid #dce6f1;border-radius:13px;background:#f6faff;text-decoration:none!important}
+.icu-course-document-icon{color:#095c9d}
+.icu-course-document strong{display:block;color:#173e68;font-size:.82rem;font-weight:800}
+.icu-course-document small{display:block;color:#5c7084;font-size:.73rem;line-height:1.4;margin-top:.3rem}
+@media(max-width:767px){.icu-course-document-grid{grid-template-columns:1fr}.icu-course-map-steps{gap:.25rem}}
 </style>
 <link rel="stylesheet" href="/enrollment.css?v=20261105-learning-path-1">
     <!-- Custom Styles -->
