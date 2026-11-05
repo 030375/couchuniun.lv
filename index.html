@@ -620,12 +620,30 @@
     </div>
   </div>
 </section>
-<!-- Compact four-card roadmap; each expands to the verified eight-module timetable. -->
+<!-- Four compact cards with accessible per-module details and an eight-step selector. -->
 <section id="program" class="icu-program-section py-12 sm:py-16 bg-light" aria-labelledby="icu-program-title">
   <div class="container mx-auto px-4">
     <p class="icu-section-kicker">Ваш путь к профессии</p>
     <h2 id="icu-program-title" class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3">Программа обучения ICU</h2>
-    <p class="icu-program-lead">От первых индивидуальных сессий до командной практики и профессиональной сертификации.</p>
+    <p class="icu-program-lead">Восемь модулей — от первых коуч-сессий до командной практики и сертификации. Выберите шаг, чтобы узнать, что изучают, практикуют и к каким навыкам стремятся.</p>
+    <nav class="icu-course-map" aria-label="Выберите модуль программы">
+      <div class="icu-course-map-head">
+        <span class="icu-course-map-title"><i class="fas fa-route" aria-hidden="true"></i> Путь обучения: 8 шагов</span>
+        <span class="icu-course-map-status" id="icu-course-map-status" aria-live="polite">Выберите модуль, чтобы увидеть подробности</span>
+      </div>
+      <div class="icu-course-map-steps">
+        <button type="button" class="icu-course-map-step" data-course-jump="1" aria-label="Посмотреть модуль 1: Коуч-консультант" aria-pressed="false" title="Коуч-консультант">1</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="2" aria-label="Посмотреть модуль 2: Супервизия индивидуального коучинга" aria-pressed="false" title="Супервизия индивидуального коучинга">2</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="3" aria-label="Посмотреть модуль 3: Командный коучинг и коуч-тренинг" aria-pressed="false" title="Командный коучинг и коуч-тренинг">3</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="4" aria-label="Посмотреть модуль 4: Супервизия командного коучинга" aria-pressed="false" title="Супервизия командного коучинга">4</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="5" aria-label="Посмотреть модуль 5: Трансформационный коучинг: основы" aria-pressed="false" title="Трансформационный коучинг: основы">5</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="6" aria-label="Посмотреть модуль 6: Ценности и убеждения" aria-pressed="false" title="Ценности и убеждения">6</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="7" aria-label="Посмотреть модуль 7: Метафоры и трансформация" aria-pressed="false" title="Метафоры и трансформация">7</button>
+        <button type="button" class="icu-course-map-step" data-course-jump="8" aria-label="Посмотреть модуль 8: Маркетинг, интеграция и сертификация" aria-pressed="false" title="Маркетинг, интеграция и сертификация">8</button>
+      </div>
+      <p class="icu-course-map-note">Это навигация по содержанию программы, а не отметка о прохождении обучения.</p>
+    </nav>
+
     <div class="icu-program-cards">
       <article class="icu-program-card icu-program-card--one" aria-labelledby="icu-path-title-1">
         <div class="icu-program-card-head">
@@ -634,29 +652,65 @@
             <span class="icu-program-card-icon" aria-hidden="true"><i class="fas fa-comments"></i></span>
           </div>
           <h3 id="icu-path-title-1">Индивидуальный коучинг</h3>
-          <p class="icu-program-card-desc">Освойте структуру личной коуч-сессии и разберите её на практике с супервизором.</p>
+          <p class="icu-program-card-desc">От структуры первой сессии до профессионального разбора практики.</p>
           <div class="icu-program-card-bottom"><span class="icu-program-mini-track" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>Ноябрь–декабрь 2026</span></div>
         </div>
         <div class="icu-program-card-body">
           <div class="icu-program-tags"><span>Модель GROW</span><span>Работа с целями</span><span>Супервизия</span></div>
-          <details class="icu-program-expand">
-            <summary><span>Темы и даты модулей</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <details class="icu-program-expand" data-module-group="1">
+            <summary><span>Чему научитесь на модулях</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
             <ol class="icu-program-modules">
-              <li>
-                <span class="icu-program-module-num">01</span>
-                <div class="icu-program-module-info">
-                  <strong>Коуч-консультант</strong>
-                  <time>14–15 ноября 2026</time>
-                  <p>Основы индивидуального коучинга, модель GROW, работа с вопросами и целями.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-1" class="icu-step-detail" data-icu-step="1">
+                  <summary class="icu-step-toggle" aria-label="Модуль 1: Коуч-консультант — подробнее">
+                    <span class="icu-program-module-num">01</span>
+                    <span class="icu-program-module-info">
+                      <strong>Коуч-консультант</strong>
+                      <time>14–15 ноября 2026</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Принципы и этику коучинга, модель GROW, постановку целей, виды вопросов и обратную связь.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Разбираем структуру индивидуальной беседы, формулирование целей и применение коучинговых вопросов.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Понимание последовательности коуч-сессии и базовых инструментов работы с запросом клиента.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
-              <li>
-                <span class="icu-program-module-num">02</span>
-                <div class="icu-program-module-info">
-                  <strong>Супервизия индивидуального коучинга</strong>
-                  <time>12–13 декабря 2026</time>
-                  <p>Практика и разбор сессий, стратегический коучинг, работа с привычками.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-2" class="icu-step-detail" data-icu-step="2">
+                  <summary class="icu-step-toggle" aria-label="Модуль 2: Супервизия индивидуального коучинга — подробнее">
+                    <span class="icu-program-module-num">02</span>
+                    <span class="icu-program-module-info">
+                      <strong>Супервизия индивидуального коучинга</strong>
+                      <time>12–13 декабря 2026</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Классический и стратегический коучинг, «Колесо жизни», подходы к работе с привычками.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Разбираем индивидуальные коуч-сессии и получаем обратную связь в формате супервизии.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Умение анализировать индивидуальную сессию и выбирать подходящий инструмент для учебного запроса.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
             </ol>
           </details>
@@ -669,29 +723,65 @@
             <span class="icu-program-card-icon" aria-hidden="true"><i class="fas fa-users"></i></span>
           </div>
           <h3 id="icu-path-title-2">Командный коучинг</h3>
-          <p class="icu-program-card-desc">Изучите взаимодействие с командами и научитесь разбирать групповые сессии.</p>
+          <p class="icu-program-card-desc">Как работать с группами, командами и процессами изменений.</p>
           <div class="icu-program-card-bottom"><span class="icu-program-mini-track" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>Январь–февраль 2027</span></div>
         </div>
         <div class="icu-program-card-body">
-          <div class="icu-program-tags"><span>Групповая динамика</span><span>SOAR и Kotter</span><span>Медиация</span></div>
-          <details class="icu-program-expand">
-            <summary><span>Темы и даты модулей</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <div class="icu-program-tags"><span>Групповая динамика</span><span>Модели SOAR и Коттера</span><span>Медиация</span></div>
+          <details class="icu-program-expand" data-module-group="2">
+            <summary><span>Чему научитесь на модулях</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
             <ol class="icu-program-modules">
-              <li>
-                <span class="icu-program-module-num">03</span>
-                <div class="icu-program-module-info">
-                  <strong>Командный коучинг и коуч-тренинг</strong>
-                  <time>23–24 января 2027</time>
-                  <p>Групповая динамика, системный подход, технологии работы с командами.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-3" class="icu-step-detail" data-icu-step="3">
+                  <summary class="icu-step-toggle" aria-label="Модуль 3: Командный коучинг и коуч-тренинг — подробнее">
+                    <span class="icu-program-module-num">03</span>
+                    <span class="icu-program-module-info">
+                      <strong>Командный коучинг и коуч-тренинг</strong>
+                      <time>23–24 января 2027</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Групповую динамику, контакт с аудиторией, фасилитацию, модерацию и методы коучинг-тренинга.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Отрабатываем структуру коучинг-тренинга, представление материала и приёмы взаимодействия с группой.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Навыки подготовки коучинг-тренинга и организации обсуждения в команде.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
-              <li>
-                <span class="icu-program-module-num">04</span>
-                <div class="icu-program-module-info">
-                  <strong>Супервизия командного коучинга</strong>
-                  <time>13–14 февраля 2027</time>
-                  <p>Разбор командных сессий, модели SOAR и Коттера, работа с конфликтами.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-4" class="icu-step-detail" data-icu-step="4">
+                  <summary class="icu-step-toggle" aria-label="Модуль 4: Супервизия командного коучинга — подробнее">
+                    <span class="icu-program-module-num">04</span>
+                    <span class="icu-program-module-info">
+                      <strong>Супервизия командного коучинга</strong>
+                      <time>13–14 февраля 2027</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Системный коучинг, модели SOAR, Коттера и Сенге, способы работы с групповыми конфликтами.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Разбираем командные сессии, системные ситуации и способы фасилитации в формате супервизии.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Умение анализировать командную динамику и подбирать инструменты для групповых задач.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
             </ol>
           </details>
@@ -704,37 +794,91 @@
             <span class="icu-program-card-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></span>
           </div>
           <h3 id="icu-path-title-3">Трансформационный коучинг</h3>
-          <p class="icu-program-card-desc">Углубитесь в работу с убеждениями, ценностями и метафорами.</p>
+          <p class="icu-program-card-desc">Убеждения, ценности и метафорические инструменты в практике коуча.</p>
           <div class="icu-program-card-bottom"><span class="icu-program-mini-track" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>Март–май 2027</span></div>
         </div>
         <div class="icu-program-card-body">
           <div class="icu-program-tags"><span>Линия времени</span><span>Ценности</span><span>Метафоры</span></div>
-          <details class="icu-program-expand">
-            <summary><span>Темы и даты модулей</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <details class="icu-program-expand" data-module-group="3">
+            <summary><span>Чему научитесь на модулях</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
             <ol class="icu-program-modules">
-              <li>
-                <span class="icu-program-module-num">05</span>
-                <div class="icu-program-module-info">
-                  <strong>Трансформационный коучинг: основы</strong>
-                  <time>6–7 марта 2027</time>
-                  <p>Линия времени, LAB-profile, работа с частями личности.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-5" class="icu-step-detail" data-icu-step="5">
+                  <summary class="icu-step-toggle" aria-label="Модуль 5: Трансформационный коучинг: основы — подробнее">
+                    <span class="icu-program-module-num">05</span>
+                    <span class="icu-program-module-info">
+                      <strong>Трансформационный коучинг: основы</strong>
+                      <time>6–7 марта 2027</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Линию времени, LAB-profile, работу с частями личности и сущностную трансформацию.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Знакомимся с последовательностью применения трансформационных моделей на учебных примерах.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Понимание возможностей и границ основных инструментов трансформационного коучинга.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
-              <li>
-                <span class="icu-program-module-num">06</span>
-                <div class="icu-program-module-info">
-                  <strong>Ценности и убеждения</strong>
-                  <time>10–11 апреля 2027</time>
-                  <p>Коучинг убеждений и ценностей, спиральная динамика.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-6" class="icu-step-detail" data-icu-step="6">
+                  <summary class="icu-step-toggle" aria-label="Модуль 6: Ценности и убеждения — подробнее">
+                    <span class="icu-program-module-num">06</span>
+                    <span class="icu-program-module-info">
+                      <strong>Ценности и убеждения</strong>
+                      <time>10–11 апреля 2027</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Коучинг ценностей и убеждений, спиральную динамику и ресурсные метафоры.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Разбираем учебные запросы, связанные с ценностями, убеждениями и поиском ресурсов.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Навыки исследования ценностей и убеждений в рамках коучингового диалога.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
-              <li>
-                <span class="icu-program-module-num">07</span>
-                <div class="icu-program-module-info">
-                  <strong>Метафоры и трансформация</strong>
-                  <time>8–9 мая 2027</time>
-                  <p>Сторителлинг, метафорическая работа и разбор сессий.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-7" class="icu-step-detail" data-icu-step="7">
+                  <summary class="icu-step-toggle" aria-label="Модуль 7: Метафоры и трансформация — подробнее">
+                    <span class="icu-program-module-num">07</span>
+                    <span class="icu-program-module-info">
+                      <strong>Метафоры и трансформация</strong>
+                      <time>8–9 мая 2027</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Директивные и недирективные метафоры, символ-драму, сторителлинг и метафоры идентичности.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Разбираем применение метафор в коуч-сессиях и получаем обратную связь в супервизии.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>Понимание того, как выбирать метафорические инструменты и обсуждать их использование с клиентом.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
             </ol>
           </details>
@@ -747,21 +891,39 @@
             <span class="icu-program-card-icon" aria-hidden="true"><i class="fas fa-award"></i></span>
           </div>
           <h3 id="icu-path-title-4">Интеграция и сертификация</h3>
-          <p class="icu-program-card-desc">Соедините изученные навыки, рассмотрите продвижение услуг и пройдите итоговую оценку.</p>
+          <p class="icu-program-card-desc">Соединить изученные подходы и подготовить следующий профессиональный шаг.</p>
           <div class="icu-program-card-bottom"><span class="icu-program-mini-track" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>Июнь 2027</span></div>
         </div>
         <div class="icu-program-card-body">
-          <div class="icu-program-tags"><span>Маркетинг</span><span>Интеграция</span><span>Сертификация</span></div>
-          <details class="icu-program-expand">
-            <summary><span>Темы и даты модулей</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+          <div class="icu-program-tags"><span>Маркетинг</span><span>Итоговая оценка</span><span>План развития</span></div>
+          <details class="icu-program-expand" data-module-group="4">
+            <summary><span>Чему научитесь на модулях</span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
             <ol class="icu-program-modules">
-              <li>
-                <span class="icu-program-module-num">08</span>
-                <div class="icu-program-module-info">
-                  <strong>Маркетинг, интеграция и сертификация</strong>
-                  <time>5–6 июня 2027</time>
-                  <p>Продвижение коучинговых услуг, планирование практики и итоговая сертификация.</p>
-                </div>
+              <li class="icu-step-item">
+                <details id="icu-step-8" class="icu-step-detail" data-icu-step="8">
+                  <summary class="icu-step-toggle" aria-label="Модуль 8: Маркетинг, интеграция и сертификация — подробнее">
+                    <span class="icu-program-module-num">08</span>
+                    <span class="icu-program-module-info">
+                      <strong>Маркетинг, интеграция и сертификация</strong>
+                      <time>5–6 июня 2027</time>
+                    </span>
+                    <i class="fas fa-chevron-down icu-step-chevron" aria-hidden="true"></i>
+                  </summary>
+                  <div class="icu-step-panel">
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-book-open" aria-hidden="true"></i></span>
+                      <div><h4>Изучаем</h4><p>Продвижение услуг коуча, профессиональное планирование, стресс-менеджмент и интеграцию навыков.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row">
+                      <span class="icu-step-detail-icon"><i class="fas fa-comments" aria-hidden="true"></i></span>
+                      <div><h4>Практикуем</h4><p>Систематизируем изученные подходы и готовимся к предусмотренной программой итоговой оценке.</p></div>
+                    </div>
+                    <div class="icu-step-detail-row icu-step-result">
+                      <span class="icu-step-detail-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></span>
+                      <div><h4>Результат модуля</h4><p>План дальнейшей коучинговой практики и готовность представить освоенные навыки на сертификации.</p></div>
+                    </div>
+                  </div>
+                </details>
               </li>
             </ol>
           </details>
