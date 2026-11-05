@@ -11,6 +11,12 @@ const images = [
     quality: 82
   },
   {
+    source: 'img/proz_logo.png',
+    dest: 'img/web_img/icu-logo-transparent-small.webp',
+    width: 240,
+    quality: 76
+  },
+  {
     source: 'img/kubok.png',
     dest: 'img/web_img/icu-trophy.webp',
     width: 560,
