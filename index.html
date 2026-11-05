@@ -129,7 +129,7 @@
 .icu-learning-extra small{color:#5e7385;font-size:.73rem;line-height:1.4}
 @media(max-width:767px){.icu-learning-extras{padding:.9rem}.icu-learning-extras-grid{grid-template-columns:1fr;gap:.55rem}.icu-learning-extra{flex-direction:row;justify-content:flex-start;align-items:center;text-align:left;flex-wrap:wrap;column-gap:.75rem;padding:.7rem .85rem}.icu-learning-extra strong{min-width:64px;font-size:1.4rem}.icu-learning-extra>span{flex:1}.icu-learning-extra small{flex-basis:100%;padding-left:calc(64px + .75rem)}}
 </style>
-<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r4">
+<link rel="stylesheet" href="/enrollment.css?v=20261105-learning-path-1">
     <!-- Custom Styles -->
 
 <style id="hero-icu-emblem-scale-fix">
@@ -642,6 +642,7 @@
         <button type="button" class="icu-course-map-step" data-course-jump="8" aria-label="Посмотреть модуль 8: Маркетинг, интеграция и сертификация" aria-pressed="false" title="Маркетинг, интеграция и сертификация">8</button>
       </div>
       <p class="icu-course-map-note">Это навигация по содержанию программы, а не отметка о прохождении обучения.</p>
+      <p class="icu-course-map-note">Содержание модулей адаптировано из учебной программы ICU; практические результаты описывают учебные цели и не заменяют требований к сертификации.</p>
     </nav>
 
     <div class="icu-program-cards">
@@ -1016,10 +1017,25 @@
       </div>
     </section>
 
-    <div class="icu-program-links">
-      <a class="icu-program-primary-link" href="raspisanie.html"><i class="far fa-calendar-alt" aria-hidden="true"></i> Полное расписание</a>
-      <a class="icu-program-secondary-link" href="/coachprogram.pdf" target="_blank" rel="noopener"><i class="far fa-file-pdf" aria-hidden="true"></i> Скачать программу PDF</a>
-    </div>
+    <section id="course-documents" class="icu-course-documents" aria-labelledby="icu-course-documents-title">
+      <h3 id="icu-course-documents-title"><i class="far fa-file-alt" aria-hidden="true"></i> Документы и приложения к программе</h3>
+      <p class="icu-course-documents-intro">Для подробного изучения доступны документы с темами всех восьми модулей и актуальное расписание потока 2026–2027 года.</p>
+      <div class="icu-course-document-grid">
+        <a class="icu-course-document" href="https://coachunionlv.com/assets/img/coachprogram.pdf" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную восьмистраничную программу ICU в PDF на coachunionlv.com">
+          <span class="icu-course-document-icon" aria-hidden="true"><i class="far fa-file-pdf"></i></span>
+          <span><strong>Подробная программа ICU · 8 страниц</strong><small>Содержание и задачи каждого модуля. Оригинальный PDF с coachunionlv.com.</small></span>
+        </a>
+        <a class="icu-course-document" href="/coachprogram.pdf" target="_blank" rel="noopener" aria-label="Открыть структурированную четырёхстраничную программу ICU в PDF">
+          <span class="icu-course-document-icon" aria-hidden="true"><i class="far fa-file-pdf"></i></span>
+          <span><strong>Программа и методики · 4 страницы</strong><small>Восемь модулей, темы и инструменты. PDF на нашем сайте.</small></span>
+        </a>
+        <a class="icu-course-document" href="raspisanie.html" aria-label="Открыть расписание восьми модулей на 2026–2027 год">
+          <span class="icu-course-document-icon" aria-hidden="true"><i class="far fa-calendar-alt"></i></span>
+          <span><strong>Расписание 2026–2027</strong><small>Даты занятий, стоимость и требования к межмодульной практике.</small></span>
+        </a>
+      </div>
+      <p class="icu-course-document-note">Подробный восьмистраничный PDF открывается на прежнем сайте ICU. Даты занятий указаны в обновлённом расписании.</p>
+    </section>
   </div>
 </section>
 
@@ -2183,5 +2199,6 @@
   <a href="https://wa.me/37126037277?text=Хочу записаться на курс коучинга ICU"><i class="fab fa-whatsapp" aria-hidden="true"></i>Записаться</a>
 </div>
     <script src="app.js" defer></script>
+    <script src="program-path.js?v=20261105-learning-path-1" defer></script>
 </body>
 </html>
