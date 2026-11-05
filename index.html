@@ -36,8 +36,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Scripts -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Compiled CSS: no browser-time Tailwind runtime. -->
+    <link rel="stylesheet" href="/tailwind.min.css">
+    <link rel="preload" as="image" href="/img/web_img/icu-logo-transparent.webp" type="image/webp" fetchpriority="high">
     
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/enrollment.css">
@@ -247,7 +248,7 @@
 
       <!-- Правый блок: адаптивное изображение -->
       <div class="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
-        <img src="https://i.imgur.com/v366lvT.png" alt="Обучение профессиональному коучингу ICU в Риге" class="icu-hero-logo rounded-lg shadow-lg object-contain w-32 sm:w-40 md:w-56 lg:w-full transition-transform duration-300 hover:scale-90 hero-icu-emblem">
+        <img src="/img/web_img/icu-logo-transparent.webp" width="490" height="490" fetchpriority="high" decoding="async" alt="Обучение профессиональному коучингу ICU в Риге" class="icu-hero-logo rounded-lg shadow-lg object-contain w-32 sm:w-40 md:w-56 lg:w-full transition-transform duration-300 hover:scale-90 hero-icu-emblem">
       </div>
     </div>
 
@@ -438,7 +439,7 @@
       <div class="w-full lg:w-1/2 flex justify-center">
         <div class="relative max-w-xs">
           <img
-            src="https://i.imgur.com/HRSWBjG.png"
+            src="/img/web_img/icu-trophy.webp" width="560" height="430" loading="lazy" decoding="async"
             alt="Кубок победителя конкурса 'Выбор Года'"
             class="w-full object-contain transition-transform duration-500 hover:scale-105 drop-shadow-lg"
           />
@@ -520,14 +521,7 @@
 
         <!-- Видео -->
         <div class="relative pb-[56.25%] overflow-hidden rounded-xl shadow-2xl group">
-          <iframe
-            class="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/K5JTkpRrdzk"
-            title="Коучинг Центр. Выбор Года. Церемония награждения."
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <button type="button" class="icu-video-preview" data-video-id="K5JTkpRrdzk" data-video-title="Коучинг Центр. Выбор Года. Церемония награждения." aria-label="Воспроизвести видео: Коучинг Центр. Выбор Года. Церемония награждения."><img src="https://i.ytimg.com/vi/K5JTkpRrdzk/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span><span class="icu-video-label" aria-hidden="true">Смотреть видео</span></button>
           <!-- Подпись к видео -->
           <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm py-2 px-4 text-center">
             Церемония награждения, Берлин 2024
@@ -1202,7 +1196,7 @@
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-                                <img src="https://i.imgur.com/OliQjrc.jpeg" alt="Дернаковский Михаил" class="w-full h-full object-cover">
+                                <img src="/img/web_img/742-mixail.webp" alt="Дернаковский Михаил" class="w-full h-full object-cover" loading="lazy" decoding="async">
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold">Дернаковский Михаил Викторович</h3>
@@ -1222,7 +1216,7 @@
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-                                <img src="https://i.imgur.com/rsCtrOo.jpeg" alt="Александр Шталь" class="w-full h-full object-cover">
+                                <img src="/img/web_img/aleksandr-shtal.webp" alt="Александр Шталь" class="w-full h-full object-cover" loading="lazy" decoding="async">
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold">Александр Шталь</h3>
@@ -1242,7 +1236,7 @@
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-                                <img src="https://i.imgur.com/yfPG8CT.jpeg" alt="Шмелев Илья" class="w-full h-full object-cover">
+                                <img src="/img/web_img/shmel.webp" alt="Шмелев Илья" class="w-full h-full object-cover" loading="lazy" decoding="async">
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold">Шмелев Илья</h3>
@@ -1262,7 +1256,7 @@
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-16 h-16 bg-gray-300 rounded-full mr-4 overflow-hidden">
-                                <img src="https://i.imgur.com/d77OVFz.jpeg" alt="Елена Хованская" class="w-full h-full object-cover">
+                                <img src="https://i.imgur.com/d77OVFz.jpeg" alt="Елена Хованская" class="w-full h-full object-cover" loading="lazy" decoding="async">
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold">Елена Хованская</h3>
@@ -1355,7 +1349,7 @@
                 src="https://i.imgur.com/BZ0tEg8.jpeg"
                 alt="Professional Coach ICU"
                 class="w-16 h-16 rounded-lg shadow"
-              >
+               loading="lazy" decoding="async">
               <!-- Лупа -->
               <button type="button"
                 class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -1419,14 +1413,7 @@
       <!-- Карточка видео -->
       <div class="testimonial-card bg-light p-4 rounded-xl shadow-md">
         <div class="relative pb-[56.25%] overflow-hidden rounded-lg">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/BGKFLuzWKxU"
-            title="Отзыв Натальи Королевой"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <button type="button" class="icu-video-preview" data-video-id="BGKFLuzWKxU" data-video-title="Отзыв Натальи Королевой" aria-label="Воспроизвести видео: Отзыв Натальи Королевой"><img src="https://i.ytimg.com/vi/BGKFLuzWKxU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span><span class="icu-video-label" aria-hidden="true">Смотреть видео</span></button>
         </div>
         <h4 class="font-semibold mt-3">Наталья Королева</h4>
         <p class="text-sm text-gray-600">Выпускница программы</p>
@@ -1434,14 +1421,7 @@
 
       <div class="testimonial-card bg-light p-4 rounded-xl shadow-md">
         <div class="relative pb-[56.25%] overflow-hidden rounded-lg">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/wQPNXiy0yGM"
-            title="Отзыв Татьяны"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <button type="button" class="icu-video-preview" data-video-id="wQPNXiy0yGM" data-video-title="Отзыв Татьяны" aria-label="Воспроизвести видео: Отзыв Татьяны"><img src="https://i.ytimg.com/vi/wQPNXiy0yGM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span><span class="icu-video-label" aria-hidden="true">Смотреть видео</span></button>
         </div>
         <h4 class="font-semibold mt-3">Татьяна Иванова</h4>
         <p class="text-sm text-gray-600">Студентка программы</p>
@@ -1449,14 +1429,7 @@
 
       <div class="testimonial-card bg-light p-4 rounded-xl shadow-md">
         <div class="relative pb-[56.25%] overflow-hidden rounded-lg">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/5LjhfAlgD2I"
-            title="Отзыв Андрея Зубенко"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <button type="button" class="icu-video-preview" data-video-id="5LjhfAlgD2I" data-video-title="Отзыв Андрея Зубенко" aria-label="Воспроизвести видео: Отзыв Андрея Зубенко"><img src="https://i.ytimg.com/vi/5LjhfAlgD2I/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span><span class="icu-video-label" aria-hidden="true">Смотреть видео</span></button>
         </div>
         <h4 class="font-semibold mt-3">Андрей Зубенко</h4>
         <p class="text-sm text-gray-600">Кандидат экономических наук</p>
@@ -1464,14 +1437,7 @@
 
       <div class="testimonial-card bg-light p-4 rounded-xl shadow-md">
         <div class="relative pb-[56.25%] overflow-hidden rounded-lg">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/YVBYDoPOnBs"
-            title="Отзыв Зарины Коневой"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <button type="button" class="icu-video-preview" data-video-id="YVBYDoPOnBs" data-video-title="Отзыв Зарины Коневой" aria-label="Воспроизвести видео: Отзыв Зарины Коневой"><img src="https://i.ytimg.com/vi/YVBYDoPOnBs/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span><span class="icu-video-label" aria-hidden="true">Смотреть видео</span></button>
         </div>
         <h4 class="font-semibold mt-3">Зарина Конева</h4>
         <p class="text-sm text-gray-600">Выпускница программы</p>
@@ -1667,7 +1633,7 @@
           src="https://i.imgur.com/BZ0tEg8.jpeg"
           alt="Пример сертификата ICU"
           class="w-full rounded-lg shadow-lg"
-        >
+         loading="lazy" decoding="async">
         <!-- Лупа -->
         <button type="button"
           class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -1693,7 +1659,7 @@
               src="https://i.imgur.com/sh8jjn5.jpeg"
               alt="Первая сторона диплома"
               class="w-full rounded-lg shadow-lg"
-            >
+             loading="lazy" decoding="async">
             <button type="button"
               class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
               data-full="https://i.imgur.com/sh8jjn5.jpeg"
@@ -1709,7 +1675,7 @@
               src="https://i.imgur.com/Hd3pJh2.jpeg"
               alt="Вторая сторона диплома"
               class="w-full rounded-lg shadow-lg"
-            >
+             loading="lazy" decoding="async">
             <button type="button"
               class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
               data-full="https://i.imgur.com/Hd3pJh2.jpeg"
