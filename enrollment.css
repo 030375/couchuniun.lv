@@ -329,3 +329,32 @@
   .icu-new-price { font-size: 2.2rem; }
   .icu-save-price { width: auto; }
 }
+
+
+/* A quiet, useful path from the discount offer to existing video testimonials. */
+.icu-review-shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .48rem;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1rem auto 0;
+  padding: .45rem .4rem;
+  color: #0756b0 !important;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: .22rem;
+  text-shadow: none !important;
+}
+.icu-review-shortcut:hover,
+.icu-review-shortcut:focus-visible { color: #a44613 !important; }
+.icu-review-shortcut:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: .3rem; }
+#video-reviews { scroll-margin-top: calc(var(--site-header-height, 104px) + 20px); }
+@media (max-width: 480px) {
+  .icu-review-shortcut { font-size: .82rem; gap: .3rem; }
+}
