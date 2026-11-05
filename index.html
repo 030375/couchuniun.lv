@@ -117,8 +117,19 @@
 .icu-learning-practice .icu-learning-certification-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .icu-learning-practice .icu-learning-requirement{min-width:0}
 @media(max-width:767px){.icu-learning-practice{grid-template-columns:1fr}.icu-learning-practice .icu-learning-certification-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:.35rem}.icu-learning-practice .icu-learning-requirement{padding:.7rem .25rem}.icu-learning-practice .icu-learning-requirement>span{font-size:.7rem}}
+
+/* Additional practical obligations: do not conflate sessions, hours and meetings. */
+.icu-learning-extras{margin:1rem 0 0;padding:1rem 1.1rem;border-radius:18px;background:#f7fbfd;border:1px solid #dce9f2}
+.icu-learning-extras h4{color:#153857;font-size:.96rem;font-weight:800;margin:0 0 .75rem;line-height:1.45}
+.icu-learning-extras-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}
+.icu-learning-extra{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.25rem;padding:.85rem .65rem;text-align:center;border:1px solid #dbe9f0;border-radius:14px;background:#fff}
+.icu-learning-extra strong{font-size:1.7rem;font-weight:850;color:#095a7c;line-height:1.15;font-variant-numeric:tabular-nums}
+.icu-learning-extra strong em{font-size:.48em;font-style:normal;font-weight:750}
+.icu-learning-extra>span{font-size:.84rem;font-weight:750;color:#243d51;line-height:1.38}
+.icu-learning-extra small{color:#5e7385;font-size:.73rem;line-height:1.4}
+@media(max-width:767px){.icu-learning-extras{padding:.9rem}.icu-learning-extras-grid{grid-template-columns:1fr;gap:.55rem}.icu-learning-extra{flex-direction:row;justify-content:flex-start;align-items:center;text-align:left;flex-wrap:wrap;column-gap:.75rem;padding:.7rem .85rem}.icu-learning-extra strong{min-width:64px;font-size:1.4rem}.icu-learning-extra>span{flex:1}.icu-learning-extra small{flex-basis:100%;padding-left:calc(64px + .75rem)}}
 </style>
-<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r3">
+<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r4">
     <!-- Custom Styles -->
 
 <style id="hero-icu-emblem-scale-fix">
@@ -807,6 +818,27 @@
           <div class="icu-learning-requirement">
             <strong>20</strong>
             <span>часов в роли супервизора</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="icu-learning-extras" aria-labelledby="icu-learning-extras-title">
+        <h4 id="icu-learning-extras-title">Дополнительные практические задания и встречи</h4>
+        <div class="icu-learning-extras-grid">
+          <div class="icu-learning-extra">
+            <strong>10</strong>
+            <span>командных коуч-сессий</span>
+            <small>в роли коуча</small>
+          </div>
+          <div class="icu-learning-extra">
+            <strong>4 <em>часа</em></strong>
+            <span>личного коучинга</span>
+            <small>у профессионального коуча</small>
+          </div>
+          <div class="icu-learning-extra">
+            <strong>4</strong>
+            <span>супервизии</span>
+            <small>посещение супервизорских встреч</small>
           </div>
         </div>
       </div>
