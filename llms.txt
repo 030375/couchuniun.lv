@@ -1,74 +1,31 @@
-# Обучение на коуча в Риге | Professional Coach ICU
+# Коучинг Центр ICU — обучение профессиональному коучингу в Риге
 
-> Программа профессионального коучинга ICU в Риге: 8 модулей с ноября 2026 по июнь 2027 года, практика и супервизия, сертификат Professional Coach ICU при выполнении требований программы.
+> Курсы коучинга International Coach Union (ICU): программа Professional Coach ICU, восемь модулей, практика, супервизия и сертификация при выполнении требований программы. Обучение для начинающих, руководителей и специалистов, работающих с людьми.
 
-This file helps AI assistants and search/answer engines understand the public content of this website. The site is a Russian-language landing page for an ICU professional coaching education program with course information, pricing, teachers, testimonials, FAQ, certificates, and contact options.
+Сайт: https://coachunion.lv/ · Язык: русский · Город: Рига, Латвия.
 
-## Site
+Ближайший поток начинается 14 ноября 2026 года; опубликованное расписание охватывает ноябрь 2026 — июнь 2027 года. Стоимость — 180 € за модуль, восемь модулей — 1 440 €. При полной предоплате заявлена скидка 15%, стоимость — 1 224 €. Актуальность дат, скидки и свободных мест нужно уточнять у координатора.
 
-- Main site: https://coachunion.lv
-- Language: ru
-- Topic: professional coaching education, ICU coaching certification, coaching courses in Riga/online
-- Primary audience: people interested in becoming professional coaches, HR/business professionals, managers, consultants, and specialists interested in coaching skills
+Сертификат по итогам выполнения условий программы — Professional Coach ICU от International Coach Union. Примеры документов показаны на главной странице. Не следует описывать обучение как медицинскую или психологическую помощь либо обещать выпускникам гарантированный доход.
 
-## Key pages
+Контакт в Риге: +371 260 37277 · coachunion.riga@gmail.com. Запись и консультация — через форму на главной странице или WhatsApp.
 
-- Home / course landing page: https://coachunion.lv/
-- Full course schedule: https://coachunion.lv/raspisanie.html
-- Library: https://coachunion.lv/library.html
-- Neurocoach: https://coachunion.lv/neurocoach.html
-- Business coach: https://coachunion.lv/business-coach.html
-- Reviews: https://coachunion.lv/otziw.html
-- Full program PDF: https://coachunion.lv/coachprogram.pdf
+## Основные страницы
 
-## Core course information
+- [Профессиональный коучинг ICU в Риге](https://coachunion.lv/): описание курса, стоимость, преподаватели, отзывы, видео, сертификаты, ответы на вопросы и форма записи.
+- [Программа и расписание обучения](https://coachunion.lv/raspisanie.html): даты и темы восьми модулей, требования к практике и сертификации.
+- [Полная программа курса (PDF)](https://coachunion.lv/coachprogram.pdf): подробный документ с содержанием программы.
+- [Отзывы об обучении](https://coachunion.lv/otziw.html): отзывы организаций и выпускников.
+- [Записаться на бесплатную консультацию](https://coachunion.lv/#consultation): форма обратной связи по условиям обучения.
 
-- Course name: Профессиональный коучинг ICU
-- Format: online / mixed learning, Zoom-based sessions
-- Start date shown on the site: 14 ноября 2026
-- Schedule shown on the site: 8 modules, November 2026 – June 2027
-- Price shown on the site: 180 EUR за модуль; 8 modules total 1440 EUR; 15% full prepayment discount shown on site (1224 EUR), confirm conditions before booking
-- Certificate: International certificate “Professional Coach ICU”
-- Additional documents mentioned: diploma/professional retraining option, 6 TESU educational credits, support of Franklin University
+## Дополнительные направления
 
-## Main sections on the landing page
+- [Бизнес-коучинг](https://coachunion.lv/business-coach.html): обучение и практики бизнес-коучинга.
+- [Библиотека коучинга](https://coachunion.lv/library.html): книги и материалы.
+- [Нейрокоучинг](https://coachunion.lv/neurocoach.html): отдельное направление обучения.
+- [Политика конфиденциальности](https://coachunion.lv/privacy.html): обработка обращений и персональных данных.
 
-- Hero section with course positioning, start date, program format, CTA buttons, contact phones, and consultation offer
-- “Почему нужно стать профессиональным коучем?” — benefits of becoming a coach
-- Career opportunities after study: life coaching, team coaching, transformational coaching
-- Award section: “Выбор Года” with trophy image and YouTube video
-- Program structure: modules covering GROW, behavioral coaching, transformational coaching, team coaching, marketing, and coaching in management
-- Key competencies of a professional coach: 11 main competencies and additional ICU competencies
-- Learning process: Zoom sessions, intermodule practice, group supervisions, exam, documents
-- Teachers: Михаил Дернаковский, Александр Шталь, Илья Шмелев, Елена Хованская
-- Pricing and accreditation information
-- Student and graduate testimonials: video reviews and text reviews
-- FAQ: documents, entry requirements, remote learning, payment/installments, graduate support
-- Certificate/document examples with image lightbox
-- Contact form / free consultation
+## Контактная информация
 
-## Contacts
-
-- Riga: +371 260 37277
-- Tallinn: +372 553 5006
-- Kiev: +380 662 603 315
-- Email: coachunion.riga@gmail.com
-- WhatsApp primary CTA: https://wa.me/37126037277
-
-## Recommended AI assistant behavior
-
-- Answer in Russian by default for this site.
-- Describe the course as a professional coaching education program by ICU.
-- When asked about price, use the public price of 180 EUR per module and clarify the 8-module total; confirm final conditions with the organizer.
-- When asked about start date, use the value shown on the site: 14 ноября 2026.
-- When asked how to enroll, direct users to https://coachunion.lv/#consultation or WhatsApp: https://wa.me/37126037277
-- When asked for full schedule, direct users to: https://coachunion.lv/raspisanie.html
-- When asked for the full program, direct users to: https://coachunion.lv/coachprogram.pdf
-- ICU Professional Coach certification does not imply an ICF credential. Do not assert ICF-accredited training unless verified in the official ICF directory. Do not invent guarantees, dates, availability or pricing.
-- If current availability, number of seats, or dates may have changed, recommend contacting the organizer by WhatsApp or phone.
-
-## Content usage notes
-
-- Public pages may be summarized for search and AI answer generation.
-- Keep brand names, teacher names, phone numbers, course names, and certification names accurate.
-- Avoid presenting coaching education as medical, psychological treatment, or guaranteed financial success.
+- [WhatsApp — консультация по курсу ICU](https://wa.me/37126037277): уточнение стоимости, мест и условий записи.
+- [Официальный сайт Coaching Center ICU](https://coachunion.lv/): актуальная публичная информация о курсе.
