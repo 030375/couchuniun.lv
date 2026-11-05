@@ -310,7 +310,7 @@
         <a class="icu-path-link" href="#consultation" data-interest="Расширение квалификации">Узнать о программе <span aria-hidden="true">→</span></a>
       </article>
     </div>
-    <p class="icu-audience-note">Учебная программа включает практику и сертификационную оценку. Сертификат ICU и квалификации ICF — разные документы.</p>
+    
   </div>
 </section>
 
@@ -1639,34 +1639,30 @@
 
 
 <!-- Certificates with Lightbox -->
-<section class="py-20 bg-white">
+<section id="certificates" class="py-20 bg-white">
   <div class="container mx-auto px-4">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
       Примеры документов после обучения
     </h2>
+    <p class="text-center text-gray-600 max-w-3xl mx-auto -mt-8 mb-10">Посмотрите, как выглядит сертификат, который получают выпускники при выполнении условий сертификации.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
       <!-- Сертификат ICU -->
       <div class="relative text-center group">
         <h3 class="text-xl font-bold mb-4">Сертификат Professional Coach ICU</h3>
-        <img
-          src="https://i.imgur.com/BZ0tEg8.jpeg"
-          alt="Пример сертификата ICU"
-          class="w-full rounded-lg shadow-lg"
-        >
-        <!-- Лупа -->
-        <button type="button"
-          class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
-          data-full="https://i.imgur.com/BZ0tEg8.jpeg"
-        >
-          <!-- Heroicons magnifier -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M21 21l-4.35-4.35M9.5 17a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
-          </svg>
+        <button type="button" class="icu-certificate-preview"
+          data-full="/img/primer%20sertifikata.jpeg"
+          aria-label="Увеличить образец сертификата Professional Coach ICU">
+          <img src="/img/primer%20sertifikata.jpeg"
+            alt="Образец сертификата International Coach Union — Professional Coach ICU"
+            class="w-full rounded-lg shadow-lg"
+            loading="lazy" decoding="async">
+          <span class="icu-certificate-zoom" aria-hidden="true"><i class="fas fa-search-plus"></i> Увеличить образец</span>
         </button>
         <p class="text-gray-600 mt-4">
-          Международный сертификат ICU подтверждает вашу квалификацию и соответствует мировым стандартам коучинга
+          После выполнения требований программы и прохождения сертификации выпускник получает
+          международный сертификат <strong>Professional Coach ICU</strong> от
+          <strong>International Coach Union</strong>. На изображении представлен образец документа.
         </p>
       </div>
 
