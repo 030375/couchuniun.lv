@@ -3,10 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./tailwind-input.css -o ./tailwind.min.css --minify",
-    "build:css": "npm run build"
+    "build": "npm run build:images && npm run build:css",
+    "build:css": "tailwindcss -i ./tailwind-input.css -o ./tailwind.min.css --minify",
+    "build:images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {
-    "tailwindcss": "3.4.17"
+    "tailwindcss": "3.4.17",
+    "sharp": "0.34.4"
   }
 }
