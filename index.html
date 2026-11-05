@@ -111,8 +111,14 @@
 .icu-learning-metrics-sources a{color:#0b568e!important;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:767px){.icu-learning-metrics{padding:1rem;border-radius:20px}.icu-learning-metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}.icu-learning-metric{padding:.85rem .45rem}.icu-learning-metric strong{font-size:2.05rem}.icu-learning-certification{grid-template-columns:1fr;gap:.85rem;padding:.9rem}.icu-learning-metrics-note{font-size:.77rem}.icu-learning-metrics-sources{font-size:.71rem}}
 @media(max-width:370px){.icu-learning-metric>span:not(.icu-learning-metric-icon){font-size:.8rem}}
+
+/* Peer practice: three equal roles, distinct from the association's certification requirements. */
+.icu-learning-practice{grid-template-columns:1fr 1.55fr}
+.icu-learning-practice .icu-learning-certification-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.icu-learning-practice .icu-learning-requirement{min-width:0}
+@media(max-width:767px){.icu-learning-practice{grid-template-columns:1fr}.icu-learning-practice .icu-learning-certification-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:.35rem}.icu-learning-practice .icu-learning-requirement{padding:.7rem .25rem}.icu-learning-practice .icu-learning-requirement>span{font-size:.7rem}}
 </style>
-<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r2">
+<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r3">
     <!-- Custom Styles -->
 
 <style id="hero-icu-emblem-scale-fix">
@@ -754,12 +760,12 @@
     <!-- Verified training figures. Course provision and professional certification requirements are deliberately separated. -->
     <section class="icu-learning-metrics" aria-labelledby="icu-learning-metrics-title">
       <div class="icu-learning-metrics-heading">
-        <span class="icu-learning-metrics-kicker">Факты вместо обещаний</span>
+        <span class="icu-learning-metrics-kicker">Практика входит в программу</span>
         <h3 id="icu-learning-metrics-title">Обучение в цифрах</h3>
-        <p>Структура курса и требования к профессиональной сертификации — без смешения этих понятий.</p>
+        <p>Учебные занятия и межмодульная практика с чередованием трёх ролей.</p>
       </div>
 
-      <div class="icu-learning-metrics-grid" aria-label="Объём и содержание программы">
+      <div class="icu-learning-metrics-grid" aria-label="Объём программы">
         <div class="icu-learning-metric">
           <span class="icu-learning-metric-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
           <strong>8</strong>
@@ -774,45 +780,45 @@
           <span class="icu-learning-metric-icon" aria-hidden="true"><i class="far fa-clock"></i></span>
           <strong>160<span class="icu-learning-plus">+</span></strong>
           <span>академических часов обучения</span>
-          <small>Минимум 20 на модуль</small>
+          <small>Минимум 20 часов на модуль</small>
         </div>
         <div class="icu-learning-metric">
-          <span class="icu-learning-metric-icon" aria-hidden="true"><i class="far fa-comment-dots"></i></span>
-          <strong>12</strong>
-          <span>базовых типов коуч-сессий</span>
-          <small>В учебной программе, не число проведённых сессий</small>
+          <span class="icu-learning-metric-icon" aria-hidden="true"><i class="fas fa-people-arrows"></i></span>
+          <strong>60</strong>
+          <span>часов межмодульной практики</span>
+          <small>Входит в программу обучения</small>
         </div>
       </div>
 
-      <div class="icu-learning-certification">
+      <div class="icu-learning-certification icu-learning-practice">
         <div class="icu-learning-certification-heading">
-          <span class="icu-learning-certification-kicker"><i class="fas fa-certificate" aria-hidden="true"></i> Для сертификата Professional Coach ICU</span>
-          <p>Дополнительно ассоциация требует подтвердить практическую работу:</p>
+          <span class="icu-learning-certification-kicker"><i class="fas fa-users" aria-hidden="true"></i> Практика в трёх ролях</span>
+          <p>В течение межмодульной работы участники получают опыт каждой стороны коуч-сессии.</p>
         </div>
         <div class="icu-learning-certification-grid">
           <div class="icu-learning-requirement">
-            <strong>30<span>+</span></strong>
-            <span>часов проведённых коуч-сессий</span>
+            <strong>20</strong>
+            <span>часов в роли клиента</span>
           </div>
           <div class="icu-learning-requirement">
-            <strong>20<span>+</span></strong>
-            <span>часов полученной супервизии</span>
+            <strong>20</strong>
+            <span>часов в роли коуча</span>
+          </div>
+          <div class="icu-learning-requirement">
+            <strong>20</strong>
+            <span>часов в роли супервизора</span>
           </div>
         </div>
       </div>
 
       <p class="icu-learning-metrics-note">
         <i class="fas fa-circle-info" aria-hidden="true"></i>
-        <span><b>Важно:</b> 30+ и 20+ часов — требования ассоциации к документируемой практике, а не обещание предоставить эти часы в стоимости курса. Между модулями предусмотрены практика в мини-группах и супервизии; точное количество включённых часов уточняйте у координатора.
-        <a href="https://wa.me/37126037277?text=Подскажите%2C%20сколько%20часов%20практики%20и%20супервизии%20включено%20в%20программу%20Professional%20Coach%20ICU">Уточнить условия обучения</a>.</span>
+        <span><b>Как проходит практика:</b> между модулями участники поочерёдно работают клиентом, коучем и супервизором. Все три роли входят в 60 часов межмодульной практики. Практика в учебной роли супервизора не означает автоматического выполнения всех формальных требований ассоциации к сертификации Professional Coach ICU.</span>
       </p>
       <div class="icu-learning-metrics-sources">
-        Основание:
-        <a href="/coachprogram.pdf" target="_blank" rel="noopener">программа PDF</a>
+        <a href="/coachprogram.pdf" target="_blank" rel="noopener">Подробная программа PDF</a>
         <span aria-hidden="true">·</span>
-        <a href="https://coachunionlv.com/coaching/" target="_blank" rel="noopener noreferrer">программа ICU в Риге</a>
-        <span aria-hidden="true">·</span>
-        <a href="https://coachunion.com/become-a-coach-coaching/" target="_blank" rel="noopener noreferrer">требования ассоциации ICU</a>
+        <a href="raspisanie.html">Расписание и межмодульная практика</a>
       </div>
     </section>
 
