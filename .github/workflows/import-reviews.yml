@@ -71,6 +71,27 @@ jobs:
               raise SystemExit('Missing '+str(len(failures))+' of '+str(len(urls))+' referenced images; do not commit partial archive.')
           print('All',len(urls),'review scans and thumbnails verified')
           PY
+      - name: Import conference photo used on the review archive page
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from urllib.request import Request, urlopen
+          from pathlib import Path
+          pathname='/wp-content/uploads/2017/07/conf.png'
+          for host in ['https://coachunionlv.com','https://coachunion.lv']:
+              try:
+                  req=Request(host+pathname,headers={'User-Agent':'Mozilla/5.0 ICU public archive'})
+                  with urlopen(req,timeout=20) as r:
+                      data=r.read(7000001)
+                  if data.startswith(b'\x89PNG\r\n\x1a\n') and 1000<=len(data)<=7000000:
+                      Path('img/reviews/conference-2017.png').write_bytes(data)
+                      print('Imported conference archive photo from',host,len(data),'bytes')
+                      break
+              except Exception as exc:
+                  print('Conference photo unavailable from',host,str(exc))
+          else:
+              print('The conference image could not be recovered; the HTML will use a fallback graphic.')
+          PY
       - name: Commit locally hosted review archive
         shell: bash
         run: |
