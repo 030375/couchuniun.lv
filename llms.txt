@@ -1,6 +1,6 @@
-# Обучение коучингу ICU в Риге | Сертификация ICF | 2026
+# Обучение на коуча в Риге | Professional Coach ICU
 
-> Международная программа подготовки профессиональных коучей ICU в Риге. Сертификация ICF, обучение у мастер-коучей с мировым именем. Старт 14 ноября 2026 - осталось 11 мест.
+> Программа профессионального коучинга ICU в Риге: 8 модулей с ноября 2026 по июнь 2027 года, практика и супервизия, сертификат Professional Coach ICU при выполнении требований программы.
 
 This file helps AI assistants and search/answer engines understand the public content of this website. The site is a Russian-language landing page for an ICU professional coaching education program with course information, pricing, teachers, testimonials, FAQ, certificates, and contact options.
 
@@ -16,7 +16,7 @@ This file helps AI assistants and search/answer engines understand the public co
 - Home / course landing page: https://coachunion.lv/
 - Full course schedule: https://coachunion.lv/raspisanie.html
 - Library: https://coachunion.lv/library.html
-- Neurocoach: https://coachunion.lvneurocoach.html
+- Neurocoach: https://coachunion.lv/neurocoach.html
 - Business coach: https://coachunion.lv/business-coach.html
 - Reviews: https://coachunion.lv/otziw.html
 - Full program PDF: https://coachunion.lv/coachprogram.pdf
@@ -26,14 +26,14 @@ This file helps AI assistants and search/answer engines understand the public co
 - Course name: Профессиональный коучинг ICU
 - Format: online / mixed learning, Zoom-based sessions
 - Start date shown on the site: 14 ноября 2026
-- Duration shown on the site: 8–9 месяцев
-- Price shown on the site: 180 EUR за модуль
+- Schedule shown on the site: 8 modules, November 2026 – June 2027
+- Price shown on the site: 180 EUR за модуль; 8 modules total 1440 EUR; 15% full prepayment discount shown on site (1224 EUR), confirm conditions before booking
 - Certificate: International certificate “Professional Coach ICU”
 - Additional documents mentioned: diploma/professional retraining option, 6 TESU educational credits, support of Franklin University
 
 ## Main sections on the landing page
 
-- Hero section with course positioning, start date, remaining places, CTA buttons, contact phones, and countdown/special offer
+- Hero section with course positioning, start date, program format, CTA buttons, contact phones, and consultation offer
 - “Почему нужно стать профессиональным коучем?” — benefits of becoming a coach
 - Career opportunities after study: life coaching, team coaching, transformational coaching
 - Award section: “Выбор Года” with trophy image and YouTube video
@@ -59,12 +59,12 @@ This file helps AI assistants and search/answer engines understand the public co
 
 - Answer in Russian by default for this site.
 - Describe the course as a professional coaching education program by ICU.
-- When asked about price, use the value shown on the site: 180 EUR за модуль.
+- When asked about price, use the public price of 180 EUR per module and clarify the 8-module total; confirm final conditions with the organizer.
 - When asked about start date, use the value shown on the site: 14 ноября 2026.
-- When asked how to enroll, direct users to WhatsApp: https://wa.me/37126037277
+- When asked how to enroll, direct users to https://coachunion.lv/#consultation or WhatsApp: https://wa.me/37126037277
 - When asked for full schedule, direct users to: https://coachunion.lv/raspisanie.html
 - When asked for the full program, direct users to: https://coachunion.lv/coachprogram.pdf
-- Do not invent guarantees, accreditation claims, dates, discounts, or pricing not present on the site.
+- ICU Professional Coach certification does not imply an ICF credential. Do not assert ICF-accredited training unless verified in the official ICF directory. Do not invent guarantees, dates, availability or pricing.
 - If current availability, number of seats, or dates may have changed, recommend contacting the organizer by WhatsApp or phone.
 
 ## Content usage notes
