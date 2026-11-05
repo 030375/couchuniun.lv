@@ -81,8 +81,38 @@
 .icu-program-primary-link{background:linear-gradient(135deg,#0756a6,#076b8b);color:#fff!important}
 .icu-program-secondary-link{color:#0756a6!important;border:1px solid #b9cfe8;background:rgba(255,255,255,.86)}
 @media(max-width:767px){.icu-program-cards{grid-template-columns:1fr;gap:.95rem}.icu-program-card-head{min-height:0;padding:1.12rem 1.15rem 1.1rem}.icu-program-card-body{padding:.9rem 1.15rem 1rem}.icu-program-section .icu-program-lead{font-size:.88rem;margin-bottom:1.4rem}.icu-program-links{flex-direction:column}.icu-program-links a{width:100%}}
+
+/* Performance-critical course numbers: present even with a stale external stylesheet. */
+.icu-learning-metrics{max-width:1100px;margin:1.7rem auto .35rem;padding:1.5rem;border:1px solid #dae8f7;border-radius:26px;background:radial-gradient(circle at 90% 0%,rgba(64,158,239,.10),transparent 40%),#fff;box-shadow:0 16px 44px rgba(17,55,103,.08)}
+.icu-learning-metrics-heading{text-align:center;margin-bottom:1.3rem}
+.icu-learning-metrics-kicker{display:block;color:#0756a6;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.35rem}
+.icu-learning-metrics-heading h3{margin:0;color:#142943;font-size:clamp(1.45rem,2.3vw,2rem);line-height:1.2;font-weight:850;letter-spacing:-.035em}
+.icu-learning-metrics-heading p{max-width:620px;margin:.55rem auto 0;font-size:.88rem;line-height:1.55;color:#4b6078}
+.icu-learning-metrics-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+.icu-learning-metric{min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:1rem .65rem;border-radius:18px;border:1px solid #e1eaf5;background:#f5f9ff}
+.icu-learning-metric-icon{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;color:#0b5b9c;border-radius:10px;background:#e4effb;font-size:1rem;margin-bottom:.5rem}
+.icu-learning-metric strong{font-size:clamp(2rem,3.1vw,2.65rem);font-weight:850;color:#084c8e;line-height:1.1;letter-spacing:-.055em;font-variant-numeric:tabular-nums;margin-bottom:.42rem}
+.icu-learning-metric>span:not(.icu-learning-metric-icon){font-size:.88rem;font-weight:750;line-height:1.4;color:#24405e}
+.icu-learning-metric small{color:#61738b;font-size:.71rem;line-height:1.4;margin-top:.3rem}
+.icu-learning-plus{font-size:.6em;vertical-align:top;position:relative;top:.08em}
+.icu-learning-certification{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:1.25rem;margin-top:1rem;padding:1rem 1.25rem;border:1px solid #dfe6f4;border-radius:18px;background:#f5f5fc}
+.icu-learning-certification-kicker{display:block;font-size:.83rem;line-height:1.45;font-weight:800;color:#47317d}
+.icu-learning-certification-heading p{color:#4a5872;font-size:.82rem;line-height:1.5;margin:.38rem 0 0}
+.icu-learning-certification-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}
+.icu-learning-requirement{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.24rem;padding:.65rem .4rem;border-radius:13px;background:#fff;border:1px solid #e2def2}
+.icu-learning-requirement strong{font-size:1.7rem;font-weight:850;color:#513584;line-height:1.1;font-variant-numeric:tabular-nums}
+.icu-learning-requirement strong span{font-size:.7em}
+.icu-learning-requirement>span{font-size:.77rem;line-height:1.35;color:#3e4561;font-weight:650}
+.icu-learning-metrics-note{display:flex;align-items:flex-start;gap:.6rem;color:#3b4d65;background:#f9fbff;border:1px solid #e2eaf3;border-radius:12px;margin:.9rem 0 0;padding:.75rem .9rem;font-size:.8rem;line-height:1.6}
+.icu-learning-metrics-note>i{margin-top:.3rem;color:#0756a6}
+.icu-learning-metrics-note b{font-weight:800}
+.icu-learning-metrics-note a{color:#0756a6!important;text-decoration:underline;text-underline-offset:2px;font-weight:750}
+.icu-learning-metrics-sources{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;color:#60748a;font-size:.74rem;margin-top:.72rem;line-height:1.5}
+.icu-learning-metrics-sources a{color:#0b568e!important;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:767px){.icu-learning-metrics{padding:1rem;border-radius:20px}.icu-learning-metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}.icu-learning-metric{padding:.85rem .45rem}.icu-learning-metric strong{font-size:2.05rem}.icu-learning-certification{grid-template-columns:1fr;gap:.85rem;padding:.9rem}.icu-learning-metrics-note{font-size:.77rem}.icu-learning-metrics-sources{font-size:.71rem}}
+@media(max-width:370px){.icu-learning-metric>span:not(.icu-learning-metric-icon){font-size:.8rem}}
 </style>
-<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r1">
+<link rel="stylesheet" href="/enrollment.css?v=20261105-course-stats-r2">
     <!-- Custom Styles -->
 
 <style id="hero-icu-emblem-scale-fix">
