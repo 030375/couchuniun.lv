@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="description" content="Профессиональное обучение коучингу ICU в Риге. Международная сертификация, аккредитованные программы, обучение у мастер-коучей с мировым именем.">
+    <meta name="keywords" content="коучинг ICU, обучение коучингу, сертификация коучей, профессиональный коучинг, курсы коучинга Рига">
+    <meta name="author" content="Коучинг Центр ICU">
+    <meta property="og:title" content="Профессиональный коучинг ICU в Риге">
+    <meta property="og:description" content="Международная программа подготовки профессиональных коучей ICU">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coaching-center-icu.com">
+    <meta property="og:image" content="https://i.imgur.com/SiBGsfU.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Профессиональный коучинг ICU в Риге | Международная сертификация</title>
+    <link rel="canonical" href="https://coaching-center-icu.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0056b3',
+                        secondary: '#00a8e8',
+                        accent: '#ff6b35',
+                        light: '#f8f9fa',
+                        dark: '#212529'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+        
+        /* Mobile-first responsive styles */
+        @media (max-width: 767px) {
+            .hero-bg {
+                padding-top: 120px;
+                padding-bottom: 60px;
+            }
+            h1 {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+            .countdown-box {
+                margin-bottom: 15px;
+            }
+            .teacher-card, .pricing-card {
+                margin-bottom: 30px;
+            }
+            .flex-col-mobile {
+                flex-direction: column;
+            }
+            .text-center-mobile {
+                text-align: center;
+            }
+            .px-4-mobile {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            /* Hero section fixes */
+            .hero-bg .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .hero-bg .flex {
+                gap: 1.5rem;
+            }
+            .hero-bg .text-xl {
+                font-size: 1.1rem;
+            }
+            .hero-bg .text-2xl {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .hero-bg {
+                padding-top: 150px;
+            }
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0,86,179,0.9) 0%, rgba(0,168,232,0.85) 100%), url('https://images.unsplash.com/photo-1521737711867-e3b97375f7b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .countdown-box {
+            transition: all 0.3s ease;
+        }
+        
+        .countdown-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .program-card {
+            transition: all 0.3s ease;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .teacher-card {
+            transition: all 0.3s ease;
+        }
+        
+        .teacher-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-content.open {
+            max-height: 1000px;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #0056b3, #00a8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stats-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Коучинг Центр ICU",
+      "description": "Международная программа подготовки профессиональных коучей ICU",
+      "url": "https://coaching-center-icu.com",
+      "logo": "https://i.imgur.com/SiBGsfU.jpeg",
+      "telephone": "+37126037277",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Riga",
+        "addressCountry": "LV"
+      },
+      "sameAs": [
+        "https://www.facebook.com/coachingcentericu",
+        "https://www.instagram.com/coachingcentericu"
+      ]
+    }
+    </script>
+    <!-- Header -->
+   <body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">ICU</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium flex items-center">
+                    <i class="fas fa-times mr-1"></i> Закрыть
+                </a>
+                
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobileMenuButton">
+    <i class="fas fa-bars text-xl"></i>
+</button>
+        </div>
+    </nav>
+<!-- Mobile Menu -->
+<div class="md:hidden fixed inset-0 bg-black bg-opacity-75 z-50 hidden transition-opacity duration-300" id="mobileMenu">
+    <div class="absolute top-4 right-4">
+        <button id="closeMenu" class="text-white text-2xl">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="flex flex-col items-center justify-center h-full space-y-8">
+        <a href="index.html" class="text-white text-2xl font-medium py-3 flex items-center">
+            <i class="fas fa-times mr-3"></i> Закрыть
+        </a>
+    </div>
+</div>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- Мобильная шапка с кнопкой назад -->
+    <div class="mobile-sticky-header md:hidden bg-blue-700 py-3 px-4 flex items-center">
+        <a href="index.html" class="back-btn text-white flex items-center">
+            <i class="fas fa-arrow-left mr-2"></i>
+            На главную
+        </a>
+        <div class="ml-auto text-white font-bold">ICU Бизнес Коучинг</div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container mx-auto px-4 py-6">
+        <!-- Шапка для десктопов -->
+        <header class="hidden md:block bg-blue-700 text-white shadow-lg rounded-lg mb-8">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        
+                    
+                </div>
+            </div>
+        
+  <!-- Кнопка назад для десктопов -->
+        <div class="hidden md:flex justify-end mb-6">
+            <a href="index.html" class="back-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Вернуться на главную
+            </a>
+        </div>
+      
+   
+    </header>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-16 bg-white relative">
+            <div class="container mx-auto px-4">
+                <a href="index.html" class="absolute top-4 right-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition duration-300">
+                    <i class="fas fa-times"></i>
+                </a>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Расписание программы</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">1. Модуль-сессия: «Коуч-консультант»</h3>
+                            <p class="text-gray-600 mb-2">Коучинг-методология индивидуальной работы с клиентом: изучаются компетенции коуча, отрабатываются разнообразные практические модели коучинга, коучинг-инструментарий</p>
+                            <p class="font-medium">15-16 ноября 2025 г. (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">2. Модуль-сессия: «Коучинг — супервизия»</h3>
+                            <p class="text-gray-600 mb-2">Супервизия коучинг-методологии, обучение практике коучинга, разбор сессий</p>
+                            <p class="font-medium">13-14 декабря 2025 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">3. Модуль-сессия: «Коуч-тренер»</h3>
+                            <p class="text-gray-600 mb-2">Коучинг-методология работы с группой, системный коучинг: изучаются технологии использования коучинг моделей при взаимодействии с группой с учетом системных процессов и психогеографии, технологии коучинга в менеджменте и в ведении коучинг-тренинга</p>
+                            <p class="font-medium">17-18 января 2026 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">4. Модуль-сессия: «Коучинг команд: супервизия»</h3>
+                            <p class="text-gray-600 mb-2">Супервизия коучинг-методологии работы с группой</p>
+                            <p class="font-medium">31.01 — 1 февраля 2026 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">5. Модуль-сессия: «Трансформационный Коучинг»</h3>
+                            <p class="text-gray-600 mb-2">Технологии трансформационного коучинга; LAB-profile; трансформация на линии времени; работа с «частями» личности; Core transformation</p>
+                            <p class="font-medium">14-15 марта 2026 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">6. Модуль-сессия: «Трансформационный Коучинг»</h3>
+                            <p class="text-gray-600 mb-2">Технологии трансформационного коучинга; коучинг убеждений и ценностей; спиральная динамика</p>
+                            <p class="font-medium">11-12 апреля 2026 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">7. Модуль-сессия: «Трансформационный Коучинг»</h3>
+                            <p class="text-gray-600 mb-2">Технологии трансформационного коучинга, разбор сессий; метафорическая трансформация</p>
+                            <p class="font-medium">16-17 мая 2026 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-primary mb-2">8. Модуль-сессия: «Интеграция и сертификация. Маркетинг в сфере коучинга.»</h3>
+                            <p class="text-gray-600 mb-2">Сертификация соответствует международным стандартам ICU & ICTA и юридическим требованиям стран, принявшим профессиональные стандарты профессии «коуч».</p>
+                            <p class="font-medium">6-7 июня 2026 (субб-воскр) с 10.00 до 19.00</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-blue-50 p-6 rounded-lg border border-blue-100">
+                        <h3 class="text-xl font-bold text-primary mb-4">Дополнительная информация</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li>• После окончания каждой модуль-сессии предусмотрена самостоятельная регламентированная работа участников в мини-группах, супервизорские встречи с обратной связью от опытного специалиста.</li>
+                            <li>• Для сертификации участники проходят личный коучинг у сертифицированного коуча — 4 часа.</li>
+                            <li>• Чтение рекомендованной литературы по коучингу.</li>
+                            <li>• При выполнении всех сертификационных требований программы, практики индивидуального и командного коучинга и супервизии, обучающийся получает международный сертификат: «Professional Coach ICU» на английском языке.</li>
+                            <li>• Программа аккредитована Thomas Edison State University (США), университет присваивает 6 Graduate Credits закончившим данную программу.</li>
+                            <li>• При выполнении определенных условий слушатель, прошедший сертификацию, может дополнительно получить и диплом о переподготовке по программе «Профессиональный коуч».</li>
+                            <li>• Каждая модуль-сессия обучения коучингу представлена 2-мя днями.</li>
+                            <li>• Стоимость одной модуль-сессии (для группы с началом 15 ноября 2025 года): 180 евро</li>
+                            <li>• Цена от модуля к модулю не меняется (мы не используем маркетинговые манипуляции ценами, чтобы не создавать для участников неравные условия).</li>
+                            <li>• Дополнительная скидка 15%: при предоплате за весь курс (8 модуль-сессий)</li>
+                            <li>• Количество участников строго ограничено.</li>
+                            <li>• Промежутки между модуль-сессиями около 1 месяца.</li>
+                            <li>• Начало ближайшей программы подготовки коучей — c 15 ноября 2025 (2 поток 2025).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">ICU</h3>
+                    <p class="mt-4 text-sm text-gray-300">
+                        Международный Союз Коучей - профессиональный коучинговый центр, предлагающий обучение, консалтинг и коучинг по всему миру.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Партнеры</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-sm text-gray-300 hover:text-white">Dernakovskio koučingo institutas</a></li>
+                        <li><a href="#" class="text-sm text-gray-300 hover:text-white">ICU Association</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Контакты</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-sm text-gray-300">Riga: +371 26037277</li>
+                        <li class="text-sm text-gray-300">Tallinn: +372 5535006</li>
+                        <li class="text-sm text-gray-300">Kiev: +380 662603315</li>
+                        <li class="text-sm text-gray-300">coachunion.riga@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Мы в соцсетях</h3>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://www.facebook.com/coachingcentericu" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/coaching-center-icu" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/coachingcentericu" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@coachingcentericu" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-sm text-gray-400">
+                    &copy; 2014-2025 International Coach Union. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-sm text-gray-400 hover:text-white">Privacy Policy</a>
+                    <span class="mx-2 text-gray-500">•</span>
+                    <a href="#" class="text-sm text-gray-400 hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+

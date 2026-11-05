@@ -1,0 +1,998 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональный коучинг ICU в Риге</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0056b3',
+                        secondary: '#00a8e8',
+                        accent: '#ff6b35',
+                        light: '#f8f9fa',
+                        dark: '#212529'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0,86,179,0.9) 0%, rgba(0,168,232,0.85) 100%), url('https://images.unsplash.com/photo-1521737711867-e3b97375f7b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .countdown-box {
+            transition: all 0.3s ease;
+        }
+        
+        .countdown-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .program-card {
+            transition: all 0.3s ease;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .teacher-card {
+            transition: all 0.3s ease;
+        }
+        
+        .teacher-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-content.open {
+            max-height: 1000px;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #0056b3, #00a8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stats-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">ICU</span>
+                </div>
+                <span class="ml-2 font-bold text-xl text-primary">#</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#program" class="text-gray-600 hover:text-primary font-medium">Программа</a>
+                <a href="#teachers" class="text-gray-600 hover:text-primary font-medium">Преподаватели</a>
+                <a href="#pricing" class="text-gray-600 hover:text-primary font-medium">Тарифы</a>
+                <a href="#faq" class="text-gray-600 hover:text-primary font-medium">Вопросы</a>
+            </nav>
+            
+            <button class="bg-accent hover:bg-orange-600 text-white px-6 py-2 rounded-full font-bold transition duration-300">
+                Записаться
+            </button>
+            
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-32 pb-20 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                        Профессиональный коучинг ICU в Риге
+                    </h1>
+                    <p class="text-xl mb-8">
+                        Сертифицированное обучение по международным стандартам ICU
+                    </p>
+                    <p class="text-2xl font-bold mb-8">
+                        Получите статус международного коуча ICU
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-10">
+                        <div class="bg-white bg-opacity-20 rounded-lg px-4 py-2">
+                            <span class="block text-sm">ОСТАЛОСЬ:</span>
+                            <span class="font-bold">11 мест на поток</span>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg px-4 py-2">
+                            <span class="block text-sm">СТАРТ</span>
+                            <span class="font-bold">15 ноября</span>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg px-4 py-2">
+                            <span class="block text-sm">ДЛИТЕЛЬНОСТЬ</span>
+                            <span class="font-bold">8-9 месяцев</span>
+                        </div>
+                    </div>
+                    <button class="w-full sm:w-auto bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 mr-4">
+                        Записаться на курс
+                    </button>
+                    <button class="w-full sm:w-auto bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 mt-4 sm:mt-0">
+                        Подробнее
+                    </button>
+                </div>
+                
+                <div class="lg:w-1/2">
+                   
+                   
+    <div class="bg-white rounded-xl p-8 shadow-2xl">
+        <h3 class="text-2xl font-bold text-primary mb-6 text-center">
+            Получите летнюю скидку на обучение 10% при оплате полного курса
+        </h3>
+        
+        <!-- Блок с таймером -->
+        <div class="grid grid-cols-4 gap-4 mb-8" id="countdown-timer">
+            <div class="countdown-box bg-primary text-white rounded-lg p-4 text-center">
+                <div class="text-3xl font-bold" id="countdown-days">00</div>
+                <div class="text-sm">дней</div>
+            </div>
+            <div class="countdown-box bg-secondary text-white rounded-lg p-4 text-center">
+                <div class="text-3xl font-bold" id="countdown-hours">00</div>
+                <div class="text-sm">часов</div>
+            </div>
+            <div class="countdown-box bg-accent text-white rounded-lg p-4 text-center">
+                <div class="text-3xl font-bold" id="countdown-minutes">00</div>
+                <div class="text-sm">минут</div>
+            </div>
+            <div class="countdown-box bg-dark text-white rounded-lg p-4 text-center">
+                <div class="text-3xl font-bold" id="countdown-seconds">00</div>
+                <div class="text-sm">секунд</div>
+            </div>
+        </div>
+        
+        <button class="w-full bg-accent hover:bg-orange-600 text-white py-3 rounded-lg font-bold transition duration-300">
+            Получить подарки
+        </button>
+    </div>
+</div>
+
+<script>
+// Установите дату начала курса здесь (год, месяц-1, день)
+const courseStartDate = new Date(2025, 10, 15); // 1 сентября 2025
+
+function updateCountdown() {
+    const now = new Date();
+    const diff = courseStartDate - now;
+    
+    // Если дата наступила
+    if (diff <= 0) {
+        document.getElementById('countdown-timer').innerHTML = `
+            <div class="col-span-4 text-center py-4">
+                <div class="text-2xl font-bold text-primary">Курс начался!</div>
+            </div>
+        `;
+        return;
+    }
+    
+    // Рассчет временных единиц
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+    // Обновление элементов
+    document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
+// Первый запуск
+updateCountdown();
+
+// Обновление каждую секунду
+setInterval(updateCountdown, 1000);
+</script>   
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Become a Coach -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Почему нужно стать профессиональным коучем?
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Большие перспективы</h3>
+                    <p class="text-gray-600">
+                        Коучинг — профессия будущего с огромным потенциалом. Спрос на специалистов растет ежегодно во всем мире.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Самореализация</h3>
+                    <p class="text-gray-600">
+                        Реализуйтесь в профессии, от которой будете получать удовольствие, знакомиться с интересными людьми и чувствовать свой вклад в их развитие.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-universal-access text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Пригодится всегда</h3>
+                    <p class="text-gray-600">
+                        Получите навыки, которые нужны в любой сфере жизни, прокачаете мышление, будете видеть возможности, научитесь легко договариваться с людьми.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Why Become a Coach -->
+<section class="py-20 bg-light">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+            Преимущества профессионального коучинга
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Растущий рынок</h3>
+                <p class="text-gray-600">
+                    Присоединяйтесь к одной из самых востребованных профессий будущего с глобальными перспективами роста и развития.
+                </p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-heart text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Личностное развитие</h3>
+                <p class="text-gray-600">
+                    Получайте глубокое удовлетворение, помогая другим достигать целей, расширяя кругозор и создавая значимые изменения в жизни людей.
+                </p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-universal-access text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Универсальные компетенции</h3>
+                <p class="text-gray-600">
+                    Освойте навыки, применимые в любой сфере: стратегическое мышление, эффективная коммуникация и способность находить неочевидные решения.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+   <!-- Career Opportunities -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+            После обучения вы сможете работать в следующих сферах:
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-light p-8 rounded-xl border border-gray-200 text-center">
+                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-user text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Лайф-коучинг</h3>
+                <p class="text-gray-600">
+                    Помощь клиентам в обретении внутреннего баланса, ясности целей и гармонии в личной жизни. Поддержка в переосмыслении и трансформации.
+                </p>
+            </div>
+
+            <div class="bg-light p-8 rounded-xl border border-gray-200 text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-building text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Командный коучинг</h3>
+                <p class="text-gray-600">
+                    Сопровождение команд в решении управленческих задач, улучшении взаимодействия, преодолении кризисов и достижении общих целей.
+                </p>
+            </div>
+
+            <div class="bg-light p-8 rounded-xl border border-gray-200 text-center">
+                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Трансформационный коучинг</h3>
+                <p class="text-gray-600">
+                    Поддержка в глубокой личной и профессиональной трансформации. Построение чёткой стратегии и шагов для достижения значимых целей.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+            <button class="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300">
+                Станьте востребованным коучем и выйдите на новый уровень развития
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Program -->
+<section id="program" class="py-20 bg-light">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+            Структура программы обучения ICU
+        </h2>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Раздел I -->
+                <div class="border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Базовые сессии индивидуального коучинга ICU (на основе модели GROW)</h3>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="space-y-6">
+                        <!-- Поведенческий коучинг -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                                    1
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Поведенческий коучинг (1–2 модули)</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Классическая коуч-сессия</li>
+                                    <li>Стратегическая коуч-сессия</li>
+                                    <li>Работа с привычками и зависимостями</li>
+                                    <li>Индивидуальный коучинг в формате тренинга</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Трансформационный коучинг -->
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold">
+                                    2
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Трансформационный коучинг (5–7 модули)</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Сессия с использованием линии времени</li>
+                                    <li>Недирективные эпистемологические метафоры</li>
+                                    <li>Методы "Символ-Драмы"</li>
+                                    <li>Директивные метафоры</li>
+                                    <li>Работа с убеждениями и ценностями</li>
+                                    <li>Работа с частями личности</li>
+                                    <li>Изоморфные метафоры, сторителлинг, метафоры идентичности</li>
+                                    <li>Сущностная трансформация</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Раздел II -->
+                <div class="border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Базовые компетенции командного коуча ICU</h3>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold">
+                                    3
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Командный коучинг (3–4 модули)</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Классические коучинговые навыки для групп</li>
+                                    <li>Вербальное и невербальное управление группой</li>
+                                    <li>Риторические техники: сигналинг, тропы, маркирование</li>
+                                    <li>Управление фазами групповой динамики</li>
+                                    <li>Проектирование и проведение коучинг-тренингов</li>
+                                    <li>Модерация и фасилитация креативных решений</li>
+                                    <li>Командные сессии по модели SOAR</li>
+                                    <li>Модель Коттера в управлении изменениями</li>
+                                    <li>Модель Сенге</li>
+                                    <li>Коучинг в конфликтологии и медиации</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Раздел III -->
+                <div class="border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Дополнительные навыки</h3>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                                    4
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Специализированные техники</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Коучинг при остром и хроническом стрессе</li>
+                                    <li>Маркетинг и продвижение коучинговых услуг</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Раздел IV -->
+                <div class="border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Применение коучинга в менеджменте</h3>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold">
+                                    5
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Практическое применение</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Командный коучинг на рабочих встречах</li>
+                                    <li>"Коридорный" коучинг в повседневной коммуникации</li>
+                                    <li>Коучинг с подчинёнными для выстраивания рабочих отношений</li>
+                                    <li>Коучинг как инструмент командообразования</li>
+                                    <li>Коучинг как метод обучения сотрудников</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Learning Process -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Как проходит обучение
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Теорические занятия</h3>
+                    <p class="text-gray-600">
+                        Занятия проходят по субботам и воскресеньям в 10:00, на платформе ZOOM
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Практика с преподавателями</h3>
+                    <p class="text-gray-600">
+                        Студенты проводят учебные сессии в парах и тройках с сопровождением преподавателей
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Групповой менторинг</h3>
+                    <p class="text-gray-600">
+                        Живая сессия и ее групповое обсуждение с преподавателем – ментором PCC
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Сдача экзаменов</h3>
+                    <p class="text-gray-600">
+                        Экзаменационные тесты для закрепления пройденного материала
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Получение документов</h3>
+                    <p class="text-gray-600">
+                        Международный сертификат LEVEL 2 ICU 
+                    </p>
+                </div>
+                
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers -->
+    <section id="teachers" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Учитесь у профессиональных коучей с многолетним опытом
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="teacher-card bg-light rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Роман Досов</h3>
+                                <p class="text-accent">Коуч MCC ICF</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Один из ведущих российских коучей, мастер международного класса с многолетним опытом.
+                        </p>
+                        <button class="text-primary font-bold hover:underline">Подробнее</button>
+                    </div>
+                </div>
+                
+                <div class="teacher-card bg-light rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Елена Малахова</h3>
+                                <p class="text-accent">Коуч PCC ICF</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Ex-HRD в Сбербанк, 2GIS. Специализируется на развитии лидеров и команд.
+                        </p>
+                        <button class="text-primary font-bold hover:underline">Подробнее</button>
+                    </div>
+                </div>
+                
+                <div class="teacher-card bg-light rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Светлана Залавина</h3>
+                                <p class="text-accent">Коуч PCC ICF</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Эксперт в области личностного роста и развития эмоционального интеллекта.
+                        </p>
+                        <button class="text-primary font-bold hover:underline">Подробнее</button>
+                    </div>
+                </div>
+                
+                <div class="teacher-card bg-light rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Екатерина Блэк</h3>
+                                <p class="text-accent">Коуч PCC ICF</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Проекты в Сбербанк, Intel, Ростелеком. Специализируется на бизнес-коучинге.
+                        </p>
+                        <button class="text-primary font-bold hover:underline">Подробнее</button>
+                    </div>
+                </div>
+                
+                <div class="teacher-card bg-light rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Кирилл Сиволапов</h3>
+                                <p class="text-accent">Коуч PCC ICF</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Эксперт в области системного коучинга и работы с командами.
+                        </p>
+                        <button class="text-primary font-bold hover:underline">Подробнее</button>
+                    </div>
+                </div>
+                
+                <div class="teacher-card bg-light rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Анна Парьева</h3>
+                                <p class="text-accent">Коуч PCC</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Проекты в ДНС Ритейл, Mars Petcare, Unilever. Специализируется на карьерном коучинге.
+                        </p>
+                        <button class="text-primary font-bold hover:underline">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-full font-bold transition duration-300">
+                    Посмотреть всех преподавателей
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Пакеты обучения
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Package 1 -->
+                <div class="pricing-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-primary text-white p-6">
+                        <h3 class="text-2xl font-bold mb-2">Специалист</h3>
+                        <p class="text-lg">Удостоверение о повышении квалификации</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <div class="text-3xl font-bold text-accent mb-2">180  EUR</div>
+                            
+                        </div>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>3 месяца обучения</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>85 ак. ч.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>2 основных модуля программы</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>9 практических встреч с преподавателем</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>3 групповых менторинга</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="w-full bg-primary hover:bg-blue-800 text-white py-3 rounded-lg font-bold transition duration-300">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+                
+                
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Отзывы студентов и выпускников
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-light p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Марина Ткаченко</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Коучинг по стандартам ICF - это возможность изменить свое отношение к людям, внешнему миру и научиться по-новому выстраивать взаимоотношения с окружающими. Работа куратором в Академии EDPRO дала мне новый виток в карьере."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-light p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Ольга Буданова</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "После декрета я вышла на работу и пыталась совмещать карьерные амбиции и изменившиеся семейные ценности. Обучение в EDPRO помогло мне преодолеть выгорание и начать новую профессию."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-light p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold">Евгений Назаров</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Коучинг позволил изучить себя, а также прийти к идее, как можно использовать свои сильные стороны в карьерном коучинге других людей. Изменил подход в общении и научился выстраивать гармоничные отношения."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Часто задаваемые вопросы
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="border-b border-gray-200 py-4">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Что означают аббревиатуры: ICU</h3>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </div>
+                    <div class="accordion-content mt-4">
+                        <p class="text-gray-600">
+                            ICF (International Coach Federation) - ведущая международная организация коучинга. LEVEL 1 и LEVEL 2 - уровни аккредитации образовательных программ. ACC (Associate Certified Coach), PCC (Professional Certified Coach), MCC (Master Certified Coach) - уровни сертификации коучей.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Сколько я буду зарабатывать на коучинге после курса?</h3>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </div>
+                    <div class="accordion-content mt-4">
+                        <p class="text-gray-600">
+                            В среднем коучи увеличивают свой чек от 30 000 рублей за контракт из 10 сессий после получения сертификата ICF. Опытные коучи могут зарабатывать от 100 000 до 300 000 рублей в месяц.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Я уже практикующий коуч. Зачем мне программа LEVEL 2?</h3>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </div>
+                    <div class="accordion-content mt-4">
+                        <p class="text-gray-600">
+                            Программа LEVEL 2 поможет вам получить международное признание, углубить знания стандартов ICF, получить доступ к менторингу от MCC-коучей и расширить профессиональные компетенции.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Будут ли записи уроков или надо обязательно присутствовать?</h3>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </div>
+                    <div class="accordion-content mt-4">
+                        <p class="text-gray-600">
+                            Все занятия записываются и доступны в личном кабинете. Однако живое участие в практических сессиях обязательно для полноценного освоения материала.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 py-4">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold">Как проходит обучение?</h3>
+                        <i class="fas fa-chevron-down text-gray-500"></i>
+                    </div>
+                    <div class="accordion-content mt-4">
+                        <p class="text-gray-600">
+                            Обучение проходит в онлайн-формате 2 раза в неделю. Включает теоретические занятия, практические сессии, менторинги, супервизии и самостоятельную работу. Занятия проходят по  субботам и воскресеньям с 10:00.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gradient-to-br from-primary to-secondary p-8 text-white">
+                        <h2 class="text-3xl font-bold mb-6">Консультация</h2>
+                        <p class="mb-6">
+                            Остались вопросы по программе? Получите бесплатную консультацию 
+                        </p>
+                        <p>
+                            Вы сможете задать все интересующие вопросы по программе
+                        </p>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-bold mb-2" for="name">
+                                    Имя
+                                </label>
+                                <input class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="name" type="text" placeholder="Ваше имя">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-bold mb-2" for="email">
+                                    Почта
+                                </label>
+                                <input class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="email" type="email" placeholder="Ваш email">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-bold mb-2" for="phone">
+                                    Телефон
+                                </label>
+                                <input class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="phone" type="tel" placeholder="Ваш телефон">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="flex items-start">
+                                    <input type="checkbox" class="mt-1 mr-2">
+                                    <span class="text-gray-700">Даю согласие на обработку своих персональных данных</span>
+                                </label>
+                            </div>
+                            
+                            <button class="w-full bg-accent hover:bg-orange-600 text-white py-3 rounded-lg font-bold transition duration-300" type="button">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">E</span>
+                        </div>
+                        <span class="ml-2 font-bold text-xl">ICU</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Международный Союз Коучей
+                    </p>
+                    <p class="text-gray-400">
+                        <br>
+                        Riga: +371 26037277 ; Tallinn: +372 5535006    ; Kiev: +380 662603315. 
+                    </p>
+                </div>
+                
+                <div>
+                
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Информация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">О компании</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Лицензии и дипломы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Блог</a

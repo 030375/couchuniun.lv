@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренинги | International Coach Union</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .training-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">ICU</div>
+                <h1 class="text-xl font-bold text-gray-800">Международный Союз Коучей</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Главная</a>
+                <a href="#" class="text-blue-600 font-medium">Тренинги</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Коучи</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">О нас</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Контакты</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Бизнес-тренинги с коучинговой методологией</h1>
+                <p class="text-xl mb-8">Каждый тренинг состоит из 20 академических часов и проводится в течение двух выходных дней (суббота-воскресенье) с 10:00 до 19:00.</p>
+                <a href="#trainings" class="bg-white text-blue-600 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300 inline-block">Смотреть тренинги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainings Section -->
+    <section id="trainings" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Наши бизнес-тренинги</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Training 1 -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">1. Технологии делового общения</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Коммуникация, деловая переписка, технологии активных продаж и переговоров. Искусство публичных выступлений и презентаций.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>Подробнее</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Calibration</li>
+                                <li>Metamessage</li>
+                                <li>Pacing and rapport</li>
+                                <li>Reframing</li>
+                                <li>4 perception positions</li>
+                                <li>NLP and values</li>
+                                <li>Principled negotiations and manipulative techniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training 2 -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">2. Manipulation Technologies</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Emotional blackmail and its utilization. The "hot stove" method. Conflict management technologies.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Conflict and its causes</li>
+                                <li>Value scale</li>
+                                <li>Emotional blackmail or value-level manipulations</li>
+                                <li>Role triangle</li>
+                                <li>Conflict management strategies</li>
+                                <li>Suggestion technologies</li>
+                                <li>Techniques for achieving heightened suggestibility</li>
+                                <li>Methods of protection against manipulations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training 3 -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">3. Planning & Time Management</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Result specification. Positioning (self, product, organization). SWOT-analysis. Marketing mix.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>TOTE model</li>
+                                <li>SCORE model</li>
+                                <li>SCORECARD models</li>
+                                <li>Time management technologies</li>
+                                <li>Diagnostics of time expenditures</li>
+                                <li>Management of time expenditures</li>
+                                <li>Reduction of non-productive time expenditures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training 4 -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">4. Creativity & Marketing</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Creativity and innovation in business. Marketing and PR technologies.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Sources and limitations of creativity</li>
+                                <li>Creativity killers</li>
+                                <li>Mandatory conditions for creativity</li>
+                                <li>Creativity technologies</li>
+                                <li>Logical levels</li>
+                                <li>Conceptual fan</li>
+                                <li>Types of brainstorming</li>
+                                <li>Marketing research and information gathering</li>
+                                <li>Target audience positioning and segmentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training 5 -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">5. Team Building & Leadership</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Systemic thinking, team creation, leadership.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Metafilters and metaprogram profile</li>
+                                <li>Team selection strategies</li>
+                                <li>Leadership: origins, leadership models</li>
+                                <li>System processes and systemic analysis of organization</li>
+                                <li>Modern internal and external PR</li>
+                                <li>Technologies of intuitive processes</li>
+                                <li>Irrational goal achievement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training 6 -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">6. Self-Regulation Technologies</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Technologies of self-regulation and self-recovery, management of internal resources.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>View Details</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Causes of professional burnout</li>
+                                <li>Stress management skills under work overload</li>
+                                <li>Self-regulation technologies</li>
+                                <li>Relaxation - forms and types</li>
+                                <li>Anchoring</li>
+                                <li>Self-regulation scales (adrenaline barometer)</li>
+                                <li>Place of peace</li>
+                                <li>Submodalities and swish technique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training 7 - Neurocoaching -->
+                <div class="training-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <h3 class="text-xl font-bold">7. Нейрокоучинг</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Коучинг на основе законов нейрофизиологии. 7-8 декабря 2024, с 10 до 19. Онлайн.</p>
+                        <button class="accordion-btn text-blue-600 font-medium flex items-center justify-between w-full">
+                            <span>Подробнее</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="accordion-content mt-4">
+                            <p class="text-gray-600 mb-4">Viber/Whatsapp/telegram: <a href="https://wa.me/375297501411" class="text-blue-600 hover:underline">+375297501411</a> (нажмите на название мессенджера, ссылки кликабельны)</p>
+                            
+                            <h4 class="font-bold text-gray-800 mt-4">Ведущие:</h4>
+                            <p class="text-gray-600 mb-2">Профессор Хосе Энрике Хименес Солер. Член Правления IСU Association. Президент ICU Испании и Латинской Америки, действительный член Академии нейронауки и образования. Коуч с 30-летним стажем. Исполнительный директор Международного Университета коучинга (ICU).</p>
+                            <p class="text-gray-600 mb-4">Михаил Дернаковский. Врач психиатр. Бизнес-тренер. Ген. директор международной консалтинговой группы «Коучинг Центр ICU». Мастер – Тренер и соучредитель International Coach & Trainer Association (ICTA), Мастер – Тренер International Coach Union (ICU), Член Правления ICU Association. Коуч первых лиц международных компаний. Преподаватель программы МВА. Член консультативного Совета Университета Франклина (США).</p>
+
+                            <h4 class="font-bold text-gray-800 mt-4">О программе:</h4>
+                            <p class="text-gray-600 mb-4">Нейрофизиология (нейронаука) позволяет лучше понять, как работает мозг и как задействованы его элементы и КАКИМ ОБРАЗОМ НА ОСНОВЕ ЗНАНИЯ ЗАКОНОВ НЕЙРОФИЗИОЛОГИИ НАИБОЛЕЕ ЭФФЕКТИВНО ОСУЩЕСТВЛЯТЬ ИЗМЕНЕНИЯ В ЖИЗНИ ЧЕЛОВЕКА.</p>
+                            <p class="text-gray-600 mb-4">Благодаря нейрофизиологии, коучинг вместе с обучением, мотивацией и практикой достижения целей превращается из набора инструментов в эмпирическую реальность, где мы можем лучше понять значение и функционирование нашего мозг в процессе взаимодействия с человеком и в процессе коучинга.</p>
+                            
+                            <h4 class="font-bold text-gray-800 mt-4">На тренинге изучаются:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                                <li>Клетки мозга</li>
+                                <li>Связь между нейронами и информационными процессами</li>
+                                <li>Как образуется мысль</li>
+                                <li>Как возникают эмоции</li>
+                                <li>Как создается избирательное восприятие</li>
+                                <li>Учебные процессы</li>
+                                <li>Интуиция и зеркальные нейроны</li>
+                                <li>Как повысить нашу производительность без наркотиков</li>
+                            </ul>
+
+                            <h4 class="font-bold text-gray-800 mt-4">Место проведения:</h4>
+                            <p class="text-gray-600 mb-4">Онлайн (Для онлайн обучения мы используем платформу zoom.us Вам будет необходимо зайти на сайт zoom.us, закачать программу zoom, а в день тренинга пройти по ссылке, которую Вам вышлет администратор на конференцию).</p>
+                            
+                            <h4 class="font-bold text-gray-800 mt-4">Стоимость:</h4>
+                            <p class="text-gray-600 mb-4">185 евро. экв (для специалистов ICU 150 евро)</p>
+
+                            <h4 class="font-bold text-gray-800 mt-4">Программа:</h4>
+                            <p class="text-gray-600 font-medium">День 1. Нейрофизиология (Нейронаука) в процессе изменения как личной жизни, так и профессиональной (вед. врач-психиатр М. Дернаковский):</p>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                                <li>человеческий мозг передача сигнала</li>
+                                <li>как возникают мысли, эмоции и восприятие</li>
+                                <li>наши чувства нейротрансмиттеры эмоции</li>
+                                <li>области мозга учебные процессы</li>
+                                <li>как мозг визуализирует и использует визуализации</li>
+                                <li>Сначала было слово</li>
+                                <li>Как создается язык?</li>
+                                <li>Изображения и данные</li>
+                                <li>Наш мозг любит истории</li>
+                            </ul>
+
+                            <p class="text-gray-600 font-medium">День 2. Процесс коучинга с точки зрения нейрофизиологии (нейронауки) (вед. Э. Хименес Солер):</p>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                                <li>Компетенции нейрокоуча</li>
+                                <li>Как цели работают в нашем мозгу?</li>
+                                <li>Вопросы: каналы ответа</li>
+                                <li>Принятие решений: наша нейронная связь</li>
+                                <li>Ориентация на результат: как мы работаем с целями</li>
+                                <li>Модель нейрокоучинга DAKAR: теория и практика</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-600 p-8 text-white flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Готовы прокачать свои бизнес-навыки?</h2>
+                        <p class="mb-6">Присоединяйтесь к нашим профессиональным бизнес-тренингам и выведите свою карьеру на новый уровень с коучинговой методологией ICU.</p>
+                        <div class="flex items-center">
+                            <div class="bg-white text-blue-600 rounded-full p-3 mr-4">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Call us to enroll:</p>
+                                <p class="text-xl font-bold">+371 26037277</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Напишите нам</h3>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Ваше имя" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" placeholder="Ваш email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>Выберите программу</option>
+                                    <option>Технологии делового общения</option>
+                                    <option>Технологии манипуляций</option>
+                                    <option>Планирование и тайм-менеджмент</option>
+                                    <option>Креативность и маркетинг</option>
+                                    <option>Командообразование и лидерство</option>
+                                    <option>Технологии саморегуляции</option>
+                                    <option>Нейрокоучинг</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <textarea placeholder="Ваше сообщение" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-3">ICU</div>
+                        <h3 class="text-lg font-bold">International Coach Union</h3>
+                    </div>
+                    <p class="text-gray-400">Professional business trainings with coaching methodology to help you achieve your career goals.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Быстрые ссылки</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Главная</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Тренинги</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Коучи</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">О нас</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Контактная информация</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-500"></i>
+                            +371 26037277
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-500"></i>
+                            coachunion.riga@gmail.com
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-blue-500"></i>
+                            Mon-Fri: 9:00 - 18:00
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Мы в соцсетях</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Международный Союз Коучей. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // Close other accordions when one is opened
+        document.querySelectorAll('.accordion-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.accordion-btn').forEach(otherBtn => {
+                    if (otherBtn !== btn) {
+                        otherBtn.nextElementSibling.style.maxHeight = null;
+                        otherBtn.querySelector('i').classList.remove('fa-chevron-up');
+                        otherBtn.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
