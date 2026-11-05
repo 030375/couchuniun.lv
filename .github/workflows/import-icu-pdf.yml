@@ -1,0 +1,44 @@
+name: Import ICU programme PDF
+on:
+  push:
+    branches:
+      - improve/enrollment-experience-nov-2026
+    paths:
+      - .github/workflows/import-icu-pdf.yml
+permissions:
+  contents: write
+jobs:
+  download-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download and validate original 8-page ICU programme
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 15 --max-time 90 \
+            "https://coachunionlv.com/assets/img/coachprogram.pdf" \
+            -o coachprogram-detailed-icu.pdf
+          python3 - <<'PY'
+          from pathlib import Path
+          pdf = Path("coachprogram-detailed-icu.pdf").read_bytes()
+          assert pdf.startswith(b"%PDF-"), "Downloaded file is not a PDF"
+          assert 10000 <= len(pdf) <= 15000000, "Unexpected document size"
+          print("Downloaded PDF:", len(pdf), "bytes")
+          PY
+          pdfinfo coachprogram-detailed-icu.pdf | grep -E '^Pages: *8$'
+      - name: Commit PDF on the working branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add coachprogram-detailed-icu.pdf
+          if git diff --cached --quiet; then
+            echo "PDF already present and unchanged"
+          else
+            git commit -m "Bundle original eight-page ICU programme PDF locally"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
