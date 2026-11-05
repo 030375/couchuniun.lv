@@ -113,7 +113,15 @@ async function transparentTrophy() {
     .resize({ width: 560, withoutEnlargement: true })
     .webp({ quality: 84, alphaQuality: 100, effort: 5 })
     .toFile(dest);
-  console.log(`Saved transparent trophy → ${dest} (${out.width}×${out.height}, ${out.size} bytes)`);
+  // Fail the build rather than publish the checkerboard again.
+  const verified = await sharp(dest).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const vw = verified.info.width;
+  const vh = verified.info.height;
+  const samples = [0, vw - 1, (vh - 1) * vw, vw * vh - 1];
+  if (samples.some((index) => verified.data[index * verified.info.channels + 3] > 20)) {
+    throw new Error('Transparency validation failed: trophy still has an opaque corner.');
+  }
+  console.log(`Saved verified transparent trophy → ${dest} (${out.width}×${out.height}, ${out.size} bytes)`);
 }
 
 await transparentTrophy();
