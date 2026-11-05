@@ -244,3 +244,88 @@
     width: min(46vw, 155px) !important;
   }
 }
+
+
+/* Offer and capacity — restores the original enrolment information.
+   No artificial countdown for the discount or fabricated seat changes. */
+.icu-limited-seats {
+  display: inline-flex;
+  gap: .42rem;
+  align-items: center;
+  background: rgba(255, 195, 90, .25) !important;
+  border: 1px solid rgba(255, 216, 155, .84) !important;
+  color: #fff;
+  font-weight: 600;
+}
+.icu-limited-seats strong { font-weight: 800; white-space: nowrap; }
+.icu-hero-reassurance {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  margin-top: 1rem;
+  font-size: .94rem;
+  line-height: 1.45;
+  color: #fff;
+  opacity: .95;
+}
+.icu-hero-reassurance i { margin-top: .25rem; color: #a4efcc; flex-shrink: 0; }
+.icu-early-offer { max-width: 520px; }
+.icu-offer-eyebrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  color: #245c8e !important;
+  font-size: .86rem;
+  text-align: center;
+  text-shadow: none !important;
+}
+.icu-offer-prices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem 1rem;
+  margin: .6rem 0 1.2rem;
+}
+.icu-old-price {
+  text-decoration: line-through;
+  color: #747f8c;
+  font-size: 1.18rem;
+  font-weight: 600;
+}
+.icu-new-price {
+  color: #0756b0;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  line-height: 1.15;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.icu-save-price {
+  display: inline-block;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  background: rgba(25, 133, 83, .1);
+  color: #166b47;
+  font-size: .78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.icu-countdown-caption { line-height: 1.45; }
+.icu-offer-note {
+  color: #526477 !important;
+  font-size: .79rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: .85rem 0 0;
+  text-shadow: none !important;
+}
+@media(max-width:639px) {
+  .icu-limited-seats { padding:.32rem .7rem !important; }
+  .icu-hero-reassurance { font-size: .88rem; }
+  .icu-offer-prices { gap: .35rem .7rem; }
+  .icu-new-price { font-size: 2.2rem; }
+  .icu-save-price { width: auto; }
+}
