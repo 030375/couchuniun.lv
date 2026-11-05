@@ -7,21 +7,6 @@
     var buttons=Array.from(area.querySelectorAll('[data-course-jump]'));
     var steps=Array.from(area.querySelectorAll('details[data-icu-step]'));
     var status=document.getElementById('icu-course-map-status');
-    // A local PDF is preferred only when the Netlify build verified and
-    // published it. Otherwise the existing ICU source link remains usable.
-    var detailedLink=area.querySelector('[data-icu-detailed-pdf]');
-    if(detailedLink && typeof window.fetch==='function'){
-      window.fetch('/coachprogram-detailed-icu.pdf',{method:'HEAD'})
-      .then(function(response){
-        var type=response.headers.get('content-type')||'';
-        if(response.ok && /application\/pdf/i.test(type)){
-          detailedLink.setAttribute('href','/coachprogram-detailed-icu.pdf');
-          var caption=detailedLink.querySelector('small');
-          if(caption)caption.textContent='Содержание и задачи всех 8 модулей. Копия PDF на нашем сайте.';
-        }
-      }).catch(function(){/* The original PDF link stays available. */});
-    }
-
     if(buttons.length!==8||steps.length!==8)return;
     var active=0;
     function sync(n){
