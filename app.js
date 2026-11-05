@@ -1,6 +1,6 @@
 /* ICU Coaching — app.js */
 (function(){'use strict';
-window.tailwind=window.tailwind||{};window.tailwind.config=window.tailwind.config||{theme:{extend:{colors:{primary:'#0056b3',secondary:'#00a8e8',accent:'#ff6b35',light:'#f8f9fa',dark:'#212529'}}}};
+
 var COURSE_START_DATE=new Date(2026,10,14);
 function ready(fn){document.readyState!=='loading'?fn():document.addEventListener('DOMContentLoaded',fn)}
 function qs(s,r){return(r||document).querySelector(s)}function qsa(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
@@ -52,7 +52,24 @@ function initForm(){
     });
   });
 }
+function initLiteVideos(){
+  document.addEventListener('click',function(e){
+    var trigger=e.target.closest('.icu-video-preview');
+    if(!trigger)return;
+    var id=trigger.getAttribute('data-video-id');
+    if(!/^[a-zA-Z0-9_-]{11}$/.test(id))return;
+    var iframe=document.createElement('iframe');
+    iframe.className='icu-video-frame';
+    iframe.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0';
+    iframe.title=trigger.getAttribute('data-video-title')||'Видеоотзыв выпускника';
+    iframe.loading='eager';
+    iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy='strict-origin-when-cross-origin';
+    iframe.allowFullscreen=true;
+    trigger.replaceWith(iframe);
+  });
+}
 function initReveal(){/* Keep content visible by default, including on small screens and when scrolling slowly. */qsa('.icu-reveal').forEach(function(el){el.classList.add('is-visible')})}
 function initGlass(){if(!qs('.iphone-aurora')){var a=document.createElement('div');a.className='iphone-aurora';a.setAttribute('aria-hidden','true');a.innerHTML='<span></span><span></span><span></span>';document.body.prepend(a)}var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches,fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches,cards=qsa('section .bg-white.rounded-xl, section .bg-light.rounded-xl, .teacher-card, .testimonial-card, .faq-item');cards.forEach(function(c){c.classList.add('icu-tilt')});if(reduce||!fine)return;cards.forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateX('+(-y*3.5).toFixed(2)+'deg) rotateY('+(x*4.5).toFixed(2)+'deg) translateY(-7px) scale(1.01)'});c.addEventListener('mouseleave',function(){c.style.transform=''})})}
-ready(function(){updateHeaderHeight();initProgress();initMenu();initCountdown();initFaq();initCompetencies();initLightbox();initForm();initReveal();initGlass();window.addEventListener('resize',updateHeaderHeight);window.addEventListener('load',updateHeaderHeight);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(updateHeaderHeight)}})
+ready(function(){updateHeaderHeight();initProgress();initMenu();initCountdown();initFaq();initCompetencies();initLightbox();initForm();initLiteVideos();initReveal();initGlass();window.addEventListener('resize',updateHeaderHeight);window.addEventListener('load',updateHeaderHeight);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(updateHeaderHeight)}})
 })();
