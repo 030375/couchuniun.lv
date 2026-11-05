@@ -1,0 +1,10 @@
+/* TEAM */
+Site: Coach Union Latvia
+URL: https://coachunion.lv/
+Language: Russian
+Contact: coachunion.riga@gmail.com
+
+/* SITE */
+Last update: 2026-06-03
+Standards: HTML5, CSS3, JavaScript
+Purpose: landing page for professional ICU coaching education in Riga/online

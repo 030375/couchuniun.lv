@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейрокоучинг | International Coach Union</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #9333ea 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .neuron-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 5s linear forwards;
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="hero-gradient text-white relative">
+        <a href="index.html" class="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white rounded-full p-3 transition">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="container mx-auto px-4 py-12 md:py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Нейрокоучинг</h1>
+                    <p class="text-xl mb-8">Коучинг на основе законов нейрофизиологии</p>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg p-6 mb-8">
+                        <p class="font-semibold mb-2">7-8 декабря 2024</p>
+                        <p class="mb-2">с 10:00 до 19:00 (онлайн)</p>
+                        <p class="text-sm opacity-90">Для онлайн обучения используется платформа Zoom</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://wa.me/375297501411?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82+%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3+%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BA%D0%BE%D1%83%D1%87%D0%B8%D0%BD%D0%B3" 
+                           class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center gap-2 transition">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://t.me/innakarnei" 
+                           class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full flex items-center gap-2 transition">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <svg viewBox="0 0 200 200" class="absolute inset-0 w-full h-full">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="white" stroke-width="2" stroke-opacity="0.2"/>
+                            <path class="neuron-path" d="M100,20 L100,180 M20,100 L180,100 M40,40 L160,160 M40,160 L160,40" 
+                                  stroke="white" stroke-width="2" fill="none"/>
+                            <circle cx="100" cy="100" r="30" fill="white" fill-opacity="0.1"/>
+                            <path class="neuron-path" d="M70,100 Q100,70 130,100 Q100,130 70,100 Z" 
+                                  stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-5xl font-bold mb-2">ICU</div>
+                                <div class="text-sm uppercase tracking-wider">International Coach Union</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- About Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">О нейрокоучинге</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                <div class="order-2 md:order-1">
+                    <p class="mb-6 text-lg leading-relaxed">
+                        Нейрофизиология (нейронаука) позволяет лучше понять, как работает мозг и как задействованы его элементы.
+                    </p>
+                    <p class="mb-6 text-lg leading-relaxed font-semibold text-purple-700">
+                        КАКИМ ОБРАЗОМ НА ОСНОВЕ ЗНАНИЯ ЗАКОНОВ НЕЙРОФИЗИОЛОГИИ НАИБОЛЕЕ ЭФФЕКТИВНО ОСУЩЕСТВЛЯТЬ ИЗМЕНЕНИЯ В ЖИЗНИ ЧЕЛОВЕКА.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Благодаря нейрофизиологии, коучинг вместе с обучением, мотивацией и практикой достижения целей превращается из набора инструментов в эмпирическую реальность.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="bg-purple-100 rounded-xl p-6 hover-scale">
+                        <h3 class="text-xl font-bold mb-4 text-purple-800">На тренинге изучаются:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-brain text-purple-600 mt-1 mr-3"></i>
+                                <span>Клетки мозга и связь между нейронами</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-purple-600 mt-1 mr-3"></i>
+                                <span>Как образуется мысль и возникают эмоции</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-eye text-purple-600 mt-1 mr-3"></i>
+                                <span>Как создается избирательное восприятие</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap text-purple-600 mt-1 mr-3"></i>
+                                <span>Учебные процессы и интуиция</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-line text-purple-600 mt-1 mr-3"></i>
+                                <span>Как повысить производительность без наркотиков</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trainers Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Ведущие тренинга</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Trainer 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="https://coachunion.co.ua/wp-content/uploads/2020/01/enrike-276x300.jpg" 
+                                 alt="Хосе Энрике Хименес Солер" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 md:w-2/3">
+                            <h3 class="text-xl font-bold mb-2">Хосе Энрике Хименес Солер</h3>
+                            <p class="text-purple-600 font-medium mb-4">Профессор, член Правления ICU Association</p>
+                            <p class="text-sm mb-4">Президент ICU Испании и Латинской Америки, действительный член Академии нейронауки и образования. Коуч с 30-летним стажем.</p>
+                            <button onclick="toggleBio('bio1')" class="text-purple-600 font-medium flex items-center">
+                                Подробнее <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                            </button>
+                            <div id="bio1" class="hidden mt-4 text-sm">
+                                <p class="mb-2">Исполнительный директор Международного Университета коучинга (ICU)</p>
+                                <p class="mb-2">Магистр в области маркетинга и коммерческого менеджмента.</p>
+                                <p class="mb-2">Президент Профессиональной ассоциации коучей Испании (APCE)</p>
+                                <p>Профессор управленческих навыков и нейрофизиологии на программе MBA Школы маркетинга Мадрида.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trainer 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="https://coachunion.co.ua/wp-content/uploads/2011/08/742-mixail-296x300.jpg" 
+                                 alt="Михаил Дернаковский" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 md:w-2/3">
+                            <h3 class="text-xl font-bold mb-2">Михаил Дернаковский</h3>
+                            <p class="text-purple-600 font-medium mb-4">Врач психиатр, бизнес-тренер</p>
+                            <p class="text-sm mb-4">Ген. директор международной консалтинговой группы «Коучинг Центр ICU». Мастер – Тренер и соучредитель International Coach & Trainer Association (ICTA).</p>
+                            <button onclick="toggleBio('bio2')" class="text-purple-600 font-medium flex items-center">
+                                Подробнее <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                            </button>
+                            <div id="bio2" class="hidden mt-4 text-sm">
+                                <p class="mb-2">Член Правления ICU Association. Коуч первых лиц международных компаний.</p>
+                                <p class="mb-2">Преподаватель программы МВА. Член консультативного Совета Университета Франклина (США).</p>
+                                <p>Специалист в области нейрофизиологии и ее применении в коучинге и бизнес-тренингах.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Программа тренинга</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Day 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-700 text-white p-4">
+                        <h3 class="text-xl font-bold">День 1</h3>
+                        <p>Нейрофизиология в процессе изменения жизни (вед. М. Дернаковский)</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">1</span>
+                                </div>
+                                <span>Человеческий мозг и передача сигнала</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">2</span>
+                                </div>
+                                <span>Как возникают мысли, эмоции и восприятие</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">3</span>
+                                </div>
+                                <span>Нейротрансмиттеры и области мозга</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">4</span>
+                                </div>
+                                <span>Учебные процессы и визуализации</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">5</span>
+                                </div>
+                                <span>Как создается язык и наш мозг любит истории</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Day 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-700 text-white p-4">
+                        <h3 class="text-xl font-bold">День 2</h3>
+                        <p>Процесс коучинга с точки зрения нейрофизиологии (вед. Э. Хименес Солер)</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">1</span>
+                                </div>
+                                <span>Компетенции нейрокоуча</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">2</span>
+                                </div>
+                                <span>Как цели работают в нашем мозгу</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">3</span>
+                                </div>
+                                <span>Вопросы: каналы ответа</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">4</span>
+                                </div>
+                                <span>Принятие решений: наша нейронная связь</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                                    <span class="text-xs font-bold">5</span>
+                                </div>
+                                <span>Модель нейрокоучинга DAKAR: теория и практика</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="mb-20">
+            <div class="bg-purple-50 rounded-xl p-8 max-w-3xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-2">Стоимость участия</h2>
+                    <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center hover-scale">
+                        <h3 class="text-xl font-bold mb-4">Стандартная</h3>
+                        <div class="text-4xl font-bold text-purple-600 mb-4">185 €</div>
+                        <ul class="space-y-2 mb-6">
+                            <li>Доступ к онлайн-тренингу</li>
+                            <li>Материалы в электронном виде</li>
+                            <li>Сертификат участия</li>
+                        </ul>
+                        <a href="#registration" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full inline-block transition">
+                            Зарегистрироваться
+                        </a>
+                    </div>
+                    
+                    <div class="bg-purple-600 text-white rounded-lg shadow-md p-6 text-center hover-scale">
+                        <h3 class="text-xl font-bold mb-4">Для специалистов ICU</h3>
+                        <div class="text-4xl font-bold mb-4">150 €</div>
+                        <ul class="space-y-2 mb-6">
+                            <li>Доступ к онлайн-тренингу</li>
+                            <li>Материалы в электронном виде</li>
+                            <li>Сертификат участия</li>
+                            <li>Дополнительные материалы ICU</li>
+                        </ul>
+                        <a href="#registration" class="bg-white hover:bg-gray-100 text-purple-600 px-6 py-3 rounded-full inline-block transition">
+                            Зарегистрироваться
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration" class="mb-20">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl mx-auto">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-purple-700 text-white p-8 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Остались вопросы?</h2>
+                        <p class="mb-6">Свяжитесь с нами любым удобным способом:</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-4"></i>
+                                <span>+375 29 750 14 11</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp mr-4"></i>
+                                <a href="https://wa.me/375297501411" class="hover:underline">WhatsApp</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-telegram mr-4"></i>
+                                <a href="https://t.me/innakarnei" class="hover:underline">Telegram</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-4"></i>
+                                <span>info@coachunion.lv</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-2xl font-bold mb-6">Регистрация на тренинг</h2>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1 font-medium">ФИО</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1 font-medium">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="phone" class="block mb-1 font-medium">Телефон</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="tariff" class="block mb-1 font-medium">Тариф</label>
+                                <select id="tariff" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                                    <option value="standard">Стандартный (185 €)</option>
+                                    <option value="icu">Для специалистов ICU (150 €)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full transition">
+                                Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">International Coach Union</h3>
+                    <p class="mb-4">Профессиональная ассоциация коучей, предоставляющая обучение и сертификацию по международным стандартам.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Контакты</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Латвия, Рига</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>+375 29 750 14 11</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>info@coachunion.lv</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Быстрые ссылки</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-purple-400 transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">О нас</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Программы обучения</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-gray-700 text-center text-gray-400">
+                <p>© 2024 International Coach Union. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle trainer bios
+        function toggleBio(id) {
+            const bio = document.getElementById(id);
+            bio.classList.toggle('hidden');
+            
+            const button = bio.previousElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (bio.classList.contains('hidden')) {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<script>
+  // Обработчик для кнопки "Закрыть"
+  document.querySelector('a[href="./index.html"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Сохраняем состояние для главной страницы
+    sessionStorage.setItem('returnedFromChild', 'true');
+    
+    // Перенаправляем на главную
+    window.location.href = './index.html';
+  });
+
+  // Автоматический возврат при закрытии вкладки/обновлении
+  window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('shouldReturnHome', 'true');
+  });
+
+  // Проверка при загрузке страницы
+  window.addEventListener('load', () => {
+    if (sessionStorage.getItem('shouldReturnHome') === 'true') {
+      sessionStorage.removeItem('shouldReturnHome');
+      sessionStorage.setItem('returnedFromChild', 'true');
+      window.location.href = './index.html';
+    }
+  });
+</script>
+</body>
+</html>

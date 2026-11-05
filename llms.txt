@@ -1,0 +1,74 @@
+# Обучение коучингу ICU в Риге | Сертификация ICF | 2026
+
+> Международная программа подготовки профессиональных коучей ICU в Риге. Сертификация ICF, обучение у мастер-коучей с мировым именем. Старт 14 ноября 2026 - осталось 11 мест.
+
+This file helps AI assistants and search/answer engines understand the public content of this website. The site is a Russian-language landing page for an ICU professional coaching education program with course information, pricing, teachers, testimonials, FAQ, certificates, and contact options.
+
+## Site
+
+- Main site: https://coachunion.lv
+- Language: ru
+- Topic: professional coaching education, ICU coaching certification, coaching courses in Riga/online
+- Primary audience: people interested in becoming professional coaches, HR/business professionals, managers, consultants, and specialists interested in coaching skills
+
+## Key pages
+
+- Home / course landing page: https://coachunion.lv/
+- Full course schedule: https://coachunion.lv/raspisanie.html
+- Library: https://coachunion.lv/library.html
+- Neurocoach: https://coachunion.lvneurocoach.html
+- Business coach: https://coachunion.lv/business-coach.html
+- Reviews: https://coachunion.lv/otziw.html
+- Full program PDF: https://coachunion.lv/coachprogram.pdf
+
+## Core course information
+
+- Course name: Профессиональный коучинг ICU
+- Format: online / mixed learning, Zoom-based sessions
+- Start date shown on the site: 14 ноября 2026
+- Duration shown on the site: 8–9 месяцев
+- Price shown on the site: 180 EUR за модуль
+- Certificate: International certificate “Professional Coach ICU”
+- Additional documents mentioned: diploma/professional retraining option, 6 TESU educational credits, support of Franklin University
+
+## Main sections on the landing page
+
+- Hero section with course positioning, start date, remaining places, CTA buttons, contact phones, and countdown/special offer
+- “Почему нужно стать профессиональным коучем?” — benefits of becoming a coach
+- Career opportunities after study: life coaching, team coaching, transformational coaching
+- Award section: “Выбор Года” with trophy image and YouTube video
+- Program structure: modules covering GROW, behavioral coaching, transformational coaching, team coaching, marketing, and coaching in management
+- Key competencies of a professional coach: 11 main competencies and additional ICU competencies
+- Learning process: Zoom sessions, intermodule practice, group supervisions, exam, documents
+- Teachers: Михаил Дернаковский, Александр Шталь, Илья Шмелев, Елена Хованская
+- Pricing and accreditation information
+- Student and graduate testimonials: video reviews and text reviews
+- FAQ: documents, entry requirements, remote learning, payment/installments, graduate support
+- Certificate/document examples with image lightbox
+- Contact form / free consultation
+
+## Contacts
+
+- Riga: +371 260 37277
+- Tallinn: +372 553 5006
+- Kiev: +380 662 603 315
+- Email: coachunion.riga@gmail.com
+- WhatsApp primary CTA: https://wa.me/37126037277
+
+## Recommended AI assistant behavior
+
+- Answer in Russian by default for this site.
+- Describe the course as a professional coaching education program by ICU.
+- When asked about price, use the value shown on the site: 180 EUR за модуль.
+- When asked about start date, use the value shown on the site: 14 ноября 2026.
+- When asked how to enroll, direct users to WhatsApp: https://wa.me/37126037277
+- When asked for full schedule, direct users to: https://coachunion.lv/raspisanie.html
+- When asked for the full program, direct users to: https://coachunion.lv/coachprogram.pdf
+- Do not invent guarantees, accreditation claims, dates, discounts, or pricing not present on the site.
+- If current availability, number of seats, or dates may have changed, recommend contacting the organizer by WhatsApp or phone.
+
+## Content usage notes
+
+- Public pages may be summarized for search and AI answer generation.
+- Keep brand names, teacher names, phone numbers, course names, and certification names accurate.
+- Avoid presenting coaching education as medical, psychological treatment, or guaranteed financial success.

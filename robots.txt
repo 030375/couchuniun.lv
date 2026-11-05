@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Закрываем только технические/служебные папки, если они появятся на сервере.
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
+Sitemap: https://coachunion.lv/sitemap.xml

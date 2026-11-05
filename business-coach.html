@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экзекьютив и Бизнес Коучинг | Международный Союз Коучей</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .trainer-card:hover {
+            transform: scale(1.02);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">ICU</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium flex items-center">
+                    <i class="fas fa-times mr-1"></i> Закрыть
+                </a>
+                
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Бизнес Коучинг</h1>
+                <p class="text-xl mb-8">Освойте инструменты повышения эффективности менеджеров и трансформации организаций через профессиональный коучинг.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#enroll" class="bg-white text-blue-800 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                        Записаться
+                    </a>
+                    <a href="#program" class="border-2 border-white hover:bg-white hover:text-blue-800 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 fade-in">
+                <img src="https://coachunion.ru/images/executive3.jpg" alt="Executive Coaching" class="rounded-lg shadow-2xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section id="learn" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Чему вы научитесь</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Эффективность менеджмента</h3>
+                    <p class="text-gray-600">Инструменты повышения эффективности менеджеров и руководителей через индивидуальный и командный коучинг.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Недирективное лидерство</h3>
+                    <p class="text-gray-600">Развитие навыков недирективного лидерства, повышающего инициативу сотрудников и эффективность управления.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-building text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Корпоративная культура</h3>
+                    <p class="text-gray-600">Использование коучинга для формирования корпоративной культуры, разработки стратегии и оптимизации бизнес-процессов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Для кого эта программа?</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-600 fade-in">
+                    <h3 class="text-xl font-bold mb-4">Профессиональные коучи</h3>
+                    <p class="text-gray-600">Для коучей, специализирующихся на экзекьютив и бизнес коучинге.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-600 fade-in">
+                    <h3 class="text-xl font-bold mb-4">Бизнес-консультанты</h3>
+                    <p class="text-gray-600">Для консультантов с коучинговой сертификацией, желающих интегрировать бизнес и экзекьютив коучинг в свою практику.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-blue-600 fade-in">
+                    <h3 class="text-xl font-bold mb-4">HR-специалисты</h3>
+                    <p class="text-gray-600">Для бизнес-тренеров и HR-специалистов, применяющих экзекьютив коучинг в работе и имеющих коучинговую сертификацию.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Modules -->
+    <section id="program" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Программные модули</h2>
+                <p class="text-xl text-gray-600">Три интенсивных модуля, охватывающих все аспекты Экзекьютив и Бизнес Коучинга</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Module 1 -->
+                <div class="module-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 fade-in">
+                    <div class="bg-blue-800 text-white p-6">
+                        <h3 class="text-xl font-bold">Модуль I</h3>
+                        <p class="text-blue-200">April 12-13, 2025</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://coachunion.ru/images/trener/000/000027/603-aleksandrova-o.n.-2015.tn-200x1000.30970523b0.jpg" alt="Olga Alexandrova" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Olga Alexandrova, PhD</h4>
+                                <p class="text-sm text-gray-600">Lead Trainer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">Модели управления для устойчивого развития бизнеса в новых экономических условиях.</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Новые направления в менеджменте</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Стратегическое лидерство</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Стратегия Голубого Океана</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-bold">Стоимость: €185</p>
+                            <p class="text-blue-600 text-sm">€170 для специалистов МСК</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Module 2 -->
+                <div class="module-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 fade-in">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h3 class="text-xl font-bold">Модуль II</h3>
+                        <p class="text-blue-200">May 17-18, 2025</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://coachunion.ru/images/2.jpg" alt="Ilya Shmelev" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Ilya Shmelev, PhD</h4>
+                                <p class="text-sm text-gray-600">Lead Trainer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">Особенности и инструменты работы в бизнес и экзекьютив коучинге.</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Специфика бизнес-коучинга</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Инструмент SCORE</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Коучинг по функциям менеджера</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-bold">Стоимость: €185</p>
+                            <p class="text-blue-600 text-sm">€170 для специалистов МСК</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Module 3 -->
+                <div class="module-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 fade-in">
+                    <div class="bg-blue-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Модуль III</h3>
+                        <p class="text-blue-200">June 7-8, 2025</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://coach.by/mixail.jpg" alt="Mikhail Dernakovsky" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Mikhail Dernakovsky</h4>
+                                <p class="text-sm text-gray-600">Lead Trainer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">Коучинг как основная технология повышения эффективности менеджеров.</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Имидж экзекьютив-коуча</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Коучинговую модель LIGHT</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mr-2 mt-1"></i>
+                                <span>Современные модели лидерства</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-800 font-bold">Стоимость: €185</p>
+                            <p class="text-blue-600 text-sm">€170 для специалистов МСК</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center fade-in">
+                <p class="text-gray-600 mb-6">Каждый модуль длится 2 дня (с 10:00 до 19:00) с интервалом примерно в 1 месяц между модулями.</p>
+                <p class="text-gray-600">Формат: Онлайн через платформу Zoom</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Профессиональные коучи</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Trainer 1 -->
+                <div class="trainer-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 fade-in">
+                    <img src="https://coach.by/mixail.jpg" alt="Mikhail Dernakovsky" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mikhail Dernakovsky</h3>
+                        <p class="text-blue-600 mb-4">Business Trainer, CEO of Coaching Center ICU</p>
+                        <p class="text-gray-600 text-sm mb-4">Master Trainer and co-founder of International Coach&Trainer Association, Master Trainer of International Coaches Union (ICU).</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-gray-500 text-xs uppercase font-bold mb-2">Key Expertise</p>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Коучинг для топ-менеджеров</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Мастер-тренер НЛП</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Стратегическое развитие бизнеса</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trainer 2 -->
+                <div class="trainer-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 fade-in">
+                    <img src="https://coachunion.ru/images/trener/000/000027/603-aleksandrova-o.n.-2015.tn-200x1000.30970523b0.jpg" alt="Olga Alexandrova" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ольга Александрова</h3>
+                        <p class="text-blue-600 mb-4">Тренер ICU, Сертифицированный Профессиональный Мастер-коуч</p>
+                        <p class="text-gray-600 text-sm mb-4">Специализация: коучинг для топ-менеджеров и управленческих команд в стратегических проектах развития.</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-gray-500 text-xs uppercase font-bold mb-2">Ключевые компетенции</p>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Стратегический менеджмент</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Корпоративное управление</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Планирование преемственности</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trainer 3 -->
+                <div class="trainer-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 fade-in">
+                    <img src="https://coachunion.ru/images/2.jpg" alt="Ilya Shmelev" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ilya Shmelev</h3>
+                        <p class="text-blue-600 mb-4">ICU & ICTA Professional Master Coach</p>
+                        <p class="text-gray-600 text-sm mb-4">Professional psychologist-consultant, Certified Business Trainer with international experience since 2004.</p>
+                        <div class="border-t border-gray-200 pt-4">
+                            <p class="text-gray-500 text-xs uppercase font-bold mb-2">Key Expertise</p>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Командный коучинг</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Развитие лидерства</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mr-2 mt-1 text-xs"></i>
+                                    <span>Организационная психология</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification -->
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center fade-in">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Сертификация Executive & Business Coach</h2>
+                <img src="https://coachunion.ru/images/executive4.jpg" alt="Программа сертификации" class="rounded-lg shadow-lg mb-8 w-full">
+                <p class="text-xl mb-8">Пройдите все три модуля, чтобы получить сертификат Executive & Business Coach от Международного Союза Коучей.</p>
+                <a href="#enroll" class="bg-white text-blue-800 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg inline-block transition duration-300">
+                    Получить сертификацию
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">What Our Participants Say</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">Программа профессионального коучинга ICU</p>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"Программа Executive Coaching полностью изменила мой подход к развитию лидерства. Практические инструменты и методики можно сразу применять в работе с топ-менеджерами."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-800 w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4">AS</div>
+                        <div>
+                            <p class="font-bold">Anna S.</p>
+                            <p class="text-gray-500 text-sm">HR Director, Multinational Corporation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">Программа бизнес-коучинга ICU</p>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"Глубина знаний, которыми делятся тренеры, исключительна. Я посещал множество коучинговых программ, но эта выделяется своей практической направленностью на реальные бизнес-вызовы."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-800 w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4">MK</div>
+                        <div>
+                            <p class="font-bold">Michael K.</p>
+                            <p class="text-gray-500 text-sm">Business Consultant, Coaching Practice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in">
+                <a href="https://coachunion.lv/otzyvy" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                    Read more testimonials
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Section -->
+    <section id="enroll" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-blue-50 rounded-xl overflow-hidden shadow-lg fade-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-800 text-white p-8 md:p-12">
+                        <h2 class="text-2xl font-bold mb-6">Готовы преобразить свою коучинговую практику?</h2>
+                        <p class="mb-6">Присоединяйтесь к нашей программе "Экзекьютив и Бизнес Коучинг" и получите навыки для эффективной работы с топ-менеджерами и бизнес-лидерами.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>3 интенсивных модуля</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Тренеры мирового уровня</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Практический, бизнес-ориентированный подход</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Сертификат ICU по завершении</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="text-xl font-bold text-blue-800 mb-6">Записаться сейчас</h3>
+                        <div class="space-y-4">
+                            <a href="https://wa.me/375297501411?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9+%D0%B4%D0%B5%D0%BD%D1%8C%21+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82+%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3+%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BA%D0%BE%D1%83%D1%87%D0%B8%D0%BD%D0%B3" class="block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg text-center transition duration-300">
+                                <i class="fab fa-whatsapp mr-2"></i> Связаться через WhatsApp
+                            </a>
+                            <a href="https://t.me/wingsEv" class="block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg text-center transition duration-300">
+                                <i class="fab fa-telegram mr-2"></i> Связаться через Telegram
+                            </a>
+                            <div class="bg-gray-100 p-4 rounded-lg mt-6">
+                                <p class="font-bold text-gray-800 mb-1">Или позвоните нам:</p>
+                                <a href="tel:+37126037277" class="text-blue-600 hover:text-blue-800 font-medium">+371 26037277</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center fade-in">
+                <p class="text-gray-600 mb-4">Подпишитесь на нас в соцсетях для новостей и полезных материалов</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.facebook.com/coachingcentre" class="text-blue-600 hover:text-blue-800 text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-pink-500 hover:text-pink-700 text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ICU</h3>
+                    <p class="text-gray-400">International Coach Union provides world-class coaching certification programs for professionals worldwide.</p>
+                </div>
+                <div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-gray-400"></i>
+                            <a href="tel:+37126037277" class="text-gray-400 hover:text-white">+371 26037277</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-gray-400"></i>
+                            <a href="mailto:info@coachunion.lv" class="text-gray-400 hover:text-white">info@coachunion.lv</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">International Coach Union, Latvia</span>
+                        </li>
+                    </ul>
+                
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 International Coach Union. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple fade-in animation for elements when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                fadeInObserver.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+<script>
+  // Обработчик для кнопки "Закрыть"
+  document.querySelector('a[href="./index.html"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Сохраняем состояние для главной страницы
+    sessionStorage.setItem('returnedFromChild', 'true');
+    
+    // Перенаправляем на главную
+    window.location.href = './index.html';
+  });
+
+  // Автоматический возврат при закрытии вкладки/обновлении
+  window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('shouldReturnHome', 'true');
+  });
+
+  // Проверка при загрузке страницы
+  window.addEventListener('load', () => {
+    if (sessionStorage.getItem('shouldReturnHome') === 'true') {
+      sessionStorage.removeItem('shouldReturnHome');
+      sessionStorage.setItem('returnedFromChild', 'true');
+      window.location.href = './index.html';
+    }
+  });
+</script>
+
+
+</body>
+</html>
