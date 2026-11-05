@@ -417,3 +417,14 @@
   .icu-video-preview img {transition:none!important;}
   .icu-video-preview:hover img {transform:none;}
 }
+
+
+/* The hero retains the same photo, but requests a much smaller crop on phones.
+   This overrides the full-size image set in style.css. */
+@media (max-width: 767px) {
+  .hero-bg {
+    background-image: url("https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=720&q=58") !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
