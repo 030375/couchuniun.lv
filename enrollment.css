@@ -428,3 +428,33 @@
     background-position: center !important;
   }
 }
+
+
+/* Accessibility: meet text contrast on light cards and on gradient buttons.
+   Keep the same blue / orange palette, but use darker shades behind white text. */
+:root {
+  --apple-gradient: linear-gradient(135deg, #0756a6 0%, #0c658c 45%, #563184 100%);
+  --hot-gradient: linear-gradient(135deg, #b34a0a 0%, #a94113 50%, #a31b2b 100%);
+}
+.text-accent { color: #a94113 !important; }
+.bg-white .text-primary,
+.bg-light .text-primary,
+.bg-gray-50 .text-primary,
+header .text-primary,
+.icu-early-offer .text-primary { color: #0756a6 !important; }
+.bg-secondary.text-white,
+#countdown-timer .bg-secondary { background: #095b85 !important; }
+.bg-accent.text-white,
+#countdown-timer .bg-accent { background: #a94113 !important; }
+#consultation .bg-gradient-to-br.from-primary.to-secondary {
+  background: linear-gradient(135deg, #0756a6, #095b85) !important;
+}
+.icu-floating-whatsapp {
+  background: #177146 !important;
+  color: white !important;
+}
+button[data-full]:focus-visible {
+  opacity: 1 !important;
+  outline: 3px solid #0756a6 !important;
+  outline-offset: 2px;
+}
