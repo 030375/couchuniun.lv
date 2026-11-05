@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run build:images && npm run build:css && npm run build:publish",
+    "build": "node --check program-path.js && node --check scripts/publish.mjs && npm run build:images && npm run build:css && npm run build:publish",
     "build:css": "tailwindcss -i ./tailwind-input.css -o ./tailwind.min.css --minify",
     "build:images": "node scripts/optimize-images.mjs",
     "build:publish": "node scripts/publish.mjs"
