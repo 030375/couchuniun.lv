@@ -836,3 +836,9 @@ button[data-full]:focus-visible {
  .icu-course-document-grid{grid-template-columns:1fr;gap:.6rem}
 }
 @media(prefers-reduced-motion:reduce){.icu-course-map-step,.icu-step-chevron,.icu-course-document{transition:none}.icu-course-map-step:hover{transform:none}}
+
+/* Inner summaries override parent accordion selectors by specificity. */
+.icu-program-expand .icu-step-toggle{padding:.72rem .76rem;min-height:60px;color:#243d58}
+.icu-program-expand[open] .icu-step-detail:not([open]) .icu-step-chevron{transform:none}
+.icu-program-expand[open] .icu-step-detail[open] .icu-step-chevron{transform:rotate(180deg)}
+.icu-step-detail{scroll-margin-top:140px}
