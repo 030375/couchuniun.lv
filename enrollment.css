@@ -458,3 +458,28 @@ button[data-full]:focus-visible {
   outline: 3px solid #0756a6 !important;
   outline-offset: 2px;
 }
+
+
+/* Skip navigation is available for keyboard users without obscuring the hero. */
+.icu-skip-link {
+  position: fixed;
+  left: 14px;
+  top: -90px;
+  z-index: 2147483646;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  color: #fff !important;
+  background: #0756a6 !important;
+  font-size: .95rem;
+  font-weight: 700;
+}
+.icu-skip-link:focus-visible {
+  top: 12px;
+  outline: 3px solid #ffce70;
+  outline-offset: 2px;
+}
+.faq-item .accordion-btn:focus-visible {
+  outline: 3px solid #0756a6 !important;
+  outline-offset: -3px;
+  border-radius: .55rem;
+}
