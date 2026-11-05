@@ -1,0 +1,12 @@
+{
+  "name": "coachunion-static-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i ./tailwind-input.css -o ./tailwind.min.css --minify",
+    "build:css": "npm run build"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
