@@ -199,8 +199,8 @@
 
         <!-- Статистика курса -->
         <div class="flex flex-wrap gap-3 mt-4">
-          <div class="bg-white bg-opacity-20 rounded px-3 py-1 text-sm sm:text-base">
-            <span>ФОРМАТ:</span> <span class="font-bold">Практика и супервизия</span>
+          <div class="icu-limited-seats bg-white bg-opacity-20 rounded px-3 py-1 text-sm sm:text-base" aria-label="Осталось 9 мест на ближайшем потоке">
+            <span>ОСТАЛОСЬ:</span> <strong>9 мест</strong>
           </div>
           <div class="bg-white bg-opacity-20 rounded px-3 py-1 text-sm sm:text-base">
             <span>СТАРТ:</span> <span class="font-bold">14 ноября 2026</span>
@@ -226,6 +226,8 @@
           
         </div>
 
+        <p class="icu-hero-reassurance"><i class="fas fa-check-circle" aria-hidden="true"></i> Можно начать с нуля — практика и поддержка преподавателей предусмотрены программой.</p>
+
         <!-- Контакты -->
         <div class="mt-6">
           <p class="font-medium">Запишитесь на программы ICU:</p>
@@ -250,11 +252,17 @@
     </div>
 
     <!-- Блок с предложением и таймером -->
-    <div class="max-w-lg mx-auto bg-white rounded-xl p-8 shadow-2xl mt-12">
+    <div class="icu-early-offer max-w-lg mx-auto bg-white rounded-xl p-8 shadow-2xl mt-12">
+      <p class="icu-offer-eyebrow"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Выгоднее при оплате всей программы</p>
       <h3 class="text-2xl font-bold text-primary mb-3 text-center">
-        До начала ближайшего потока
+        Скидка 15% при оплате полного курса
       </h3>
-      <p class="text-gray-700 text-center mb-6">Начало 14 ноября 2026 года. Хотите уточнить условия, формат или наличие мест?</p>
+      <div class="icu-offer-prices" aria-label="Цена курса со скидкой">
+        <span class="icu-old-price">1 440 €</span>
+        <strong class="icu-new-price">1 224 €</strong>
+        <span class="icu-save-price">Экономия 216 €</span>
+      </div>
+      <p class="icu-countdown-caption text-gray-700 text-center mb-6">Старт ближайшего потока — 14 ноября 2026 года. До начала занятий:</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6" id="countdown-timer">
         <div class="countdown-box bg-primary text-white rounded-lg p-4 text-center">
           <div class="text-3xl font-bold" id="countdown-days">00</div>
@@ -274,8 +282,9 @@
         </div>
       </div>
       <a href="#consultation" class="w-full bg-accent hover:bg-orange-600 text-white py-3 rounded-lg font-bold transition duration-300 text-center block">
-        Задать вопрос о программе
+        Узнать условия скидки
       </a>
+      <p class="icu-offer-note">Размер скидки и возможность записи подтверждает координатор. Указанная скидка относится к полной предоплате курса.</p>
     </div>
   </div>
 </section>
