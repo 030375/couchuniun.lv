@@ -63,6 +63,7 @@ const neuroPrices=(neuroCourse?.hasCourseInstance?.offers||[]).map(x=>Number(x.p
 assert(JSON.stringify(neuroPrices)===JSON.stringify([170,185]),'neurocoach.html: prices do not match the published course');
 assert(!neuro.includes('декабря 2024')&&!neuro.includes('+375 29 750 14 11'),'neurocoach.html: stale contact or year');
 assert(neuro.includes('name="neurocoaching-enrollment"')&&neuro.includes('data-netlify="true"'),'neurocoach.html: missing working Netlify signup form');
+assert(existsSync(resolve(root,'img/neurocoaching/jose-enrique-jimenez-soler.jpg')),'neurocoach.html: trainer portrait not in repository');
 assert(read('llms.txt').includes(domain+'/neurocoach.html'),'llms.txt: neurocoaching course link missing');
 
 const reviews=read('otziw.html');
