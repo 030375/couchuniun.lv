@@ -14,44 +14,6 @@ function ensureLightbox(){var lb=qs('#site-lightbox');if(!lb){lb=document.create
 function openLightbox(src){var lb=ensureLightbox(),img=qs('img',lb);if(img)img.src=src;lb.classList.remove('hidden');document.documentElement.classList.add('site-lightbox-open');document.body.classList.add('site-lightbox-open')}
 function closeLightbox(){var lb=qs('#site-lightbox');if(lb){lb.classList.add('hidden');var img=qs('img',lb);if(img)img.removeAttribute('src')}document.documentElement.classList.remove('site-lightbox-open');document.body.classList.remove('site-lightbox-open')}
 function initLightbox(){ensureLightbox();document.addEventListener('click',function(e){var trg=e.target.closest('[data-full]');if(!trg)return;e.preventDefault();e.stopPropagation();openLightbox(trg.getAttribute('data-full'))},true);document.addEventListener('click',function(e){var lb=qs('#site-lightbox');if(!lb||lb.classList.contains('hidden'))return;if(e.target===lb||e.target.closest('.site-lightbox-close')){e.preventDefault();closeLightbox()}});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox()})}
-function initForm(){
-  var f=qs('#contact-form'); if(!f)return;
-  var status=qs('#contact-status',f);
-  var submit=qs('button[type="submit"]',f);
-  qsa('[data-interest]').forEach(function(link){
-    link.addEventListener('click',function(){
-      var value=link.getAttribute('data-interest');
-      var select=qs('#interest',f);
-      if(select)select.value=value;
-    });
-  });
-  f.addEventListener('submit',function(e){
-    if(!f.checkValidity()){ e.preventDefault(); f.reportValidity(); return; }
-    // Native HTML submission remains available if fetch() isn't supported.
-    if(typeof window.fetch!=='function')return;
-    e.preventDefault();
-    var data=new FormData(f);
-    data.set('form-name','coach-consultation');
-    if(submit){ submit.disabled=true;submit.setAttribute('aria-busy','true'); }
-    if(status){ status.textContent='Отправляем заявку…';status.removeAttribute('data-state'); }
-    fetch('/',{
-      method:'POST',
-      headers:{'Content-Type':'application/x-www-form-urlencoded'},
-      body:new URLSearchParams(data).toString()
-    }).then(function(response){
-      if(!response.ok)throw new Error('HTTP '+response.status);
-      if(status){ status.textContent='Спасибо! Заявка отправлена. Координатор свяжется с вами по указанным контактам.';status.setAttribute('data-state','success');}
-      f.reset();
-    }).catch(function(){
-      if(status){
-        status.textContent='Не удалось отправить форму. Попробуйте ещё раз или напишите нам в WhatsApp: +371 260 37277.';
-        status.setAttribute('data-state','error');
-      }
-    }).finally(function(){
-      if(submit){submit.disabled=false;submit.removeAttribute('aria-busy');}
-    });
-  });
-}
 function initLiteVideos(){
   document.addEventListener('click',function(e){
     var trigger=e.target.closest('.icu-video-preview');
@@ -71,5 +33,5 @@ function initLiteVideos(){
 }
 function initReveal(){/* Keep content visible by default, including on small screens and when scrolling slowly. */qsa('.icu-reveal').forEach(function(el){el.classList.add('is-visible')})}
 function initGlass(){if(!qs('.iphone-aurora')){var a=document.createElement('div');a.className='iphone-aurora';a.setAttribute('aria-hidden','true');a.innerHTML='<span></span><span></span><span></span>';document.body.prepend(a)}var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches,fine=window.matchMedia&&window.matchMedia('(pointer:fine)').matches,cards=qsa('section .bg-white.rounded-xl, section .bg-light.rounded-xl, .teacher-card, .testimonial-card, .faq-item');cards.forEach(function(c){c.classList.add('icu-tilt')});if(reduce||!fine)return;cards.forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateX('+(-y*3.5).toFixed(2)+'deg) rotateY('+(x*4.5).toFixed(2)+'deg) translateY(-7px) scale(1.01)'});c.addEventListener('mouseleave',function(){c.style.transform=''})})}
-ready(function(){updateHeaderHeight();initProgress();initMenu();initCountdown();initFaq();initCompetencies();initLightbox();initForm();initLiteVideos();initReveal();initGlass();window.addEventListener('resize',updateHeaderHeight);window.addEventListener('load',updateHeaderHeight);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(updateHeaderHeight)}})
+ready(function(){updateHeaderHeight();initProgress();initMenu();initCountdown();initFaq();initCompetencies();initLightbox();initLiteVideos();initReveal();initGlass();window.addEventListener('resize',updateHeaderHeight);window.addEventListener('load',updateHeaderHeight);if(document.fonts&&document.fonts.ready){document.fonts.ready.then(updateHeaderHeight)}})
 })();
