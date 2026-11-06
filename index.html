@@ -2196,9 +2196,7 @@
                   <p class="text-base md:text-lg">Вы сможете задать все интересующие вопросы по программе</p>
                 </div>
                 <div class="md:w-1/2 p-6 md:p-12">
-                  <form id="contact-form" class="space-y-6" name="coach-consultation" method="POST" action="/thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="coach-consultation">
-                    <p class="hidden" aria-hidden="true"><label>Не заполняйте это поле <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+                  <form id="contact-form" class="space-y-6" data-whatsapp-form="professional" onsubmit="return false">
                     <div>
                       <label for="interest" class="block text-gray-700 font-medium mb-2">Что вас интересует?</label>
                       <select id="interest" name="interest" class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
@@ -2213,20 +2211,25 @@
                       <input id="name" name="name" type="text" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Ваше имя">
                     </div>
                     <div>
-                      <label for="email" class="block text-gray-700 font-medium mb-2">Почта <span class="text-red-500">*</span></label>
-                      <input id="email" name="email" type="email" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Ваш email">
+                      <label for="email" class="block text-gray-700 font-medium mb-2">Почта (необязательно)</label>
+                      <input id="email" name="email" type="email" autocomplete="email" class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Ваш email">
                     </div>
                     <div>
-                      <label for="phone" class="block text-gray-700 font-medium mb-2">Телефон <span class="text-red-500">*</span></label>
-                      <input id="phone" name="phone" type="tel" required class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Ваш телефон">
+                      <label for="phone" class="block text-gray-700 font-medium mb-2">Телефон (необязательно)</label>
+                      <input id="phone" name="phone" type="tel" autocomplete="tel" class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Ваш телефон">
+                    </div>
+                    <div>
+                      <label for="main-question" class="block text-gray-700 font-medium mb-2">Ваш вопрос (необязательно)</label>
+                      <textarea id="main-question" name="question" rows="3" maxlength="1200" class="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition" placeholder="Например: когда следующий набор?"></textarea>
                     </div>
                     <div class="flex items-start">
                       <input id="consent" name="consent" type="checkbox" required class="mt-1 mr-3 w-5 h-5 text-primary focus:ring-2 focus:ring-primary transition">
-                      <label for="consent" class="text-gray-700 text-sm">Согласен(на) на обработку моих контактных данных для ответа на заявку. <a href="privacy.html" class="text-primary underline">Как обрабатываются данные</a> <span class="text-red-500">*</span></label>
+                      <label for="consent" class="text-gray-700 text-sm">Согласен(на) передать указанные данные координатору через WhatsApp для ответа на запрос. <a href="privacy.html" class="text-primary underline">Как обрабатываются данные</a> <span class="text-red-500">*</span></label>
                     </div>
                     <div>
-                      <button type="submit" class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-3 rounded-lg text-lg transition-transform transform hover:scale-105">Получить консультацию</button>
-                      <p id="contact-status" class="icu-form-status" role="status" aria-live="polite"></p>
+                      <button type="submit" class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-3 rounded-lg text-lg transition-transform transform hover:scale-105"><i class="fab fa-whatsapp mr-2" aria-hidden="true"></i>Открыть WhatsApp</button>
+                      <p id="contact-status" data-whatsapp-status class="icu-form-status" role="status" aria-live="polite">Откроется WhatsApp с готовым текстом. Для отправки нажмите «Отправить» в WhatsApp.</p>
+                      <p class="text-gray-500 text-xs mt-2"><a href="https://wa.me/37126037277?text=Здравствуйте%21%20Хочу%20узнать%20об%20обучении%20Professional%20Coach%20ICU" class="text-primary underline" target="_blank" rel="noopener noreferrer">Написать без заполнения формы</a></p>
                     </div>
                   </form>
                 </div>
@@ -2301,6 +2304,7 @@
 <div class="icu-mobile-cta" aria-label="Быстрая запись">
   <a href="https://wa.me/37126037277?text=Хочу записаться на курс коучинга ICU"><i class="fab fa-whatsapp" aria-hidden="true"></i>Записаться</a>
 </div>
+    <script src="whatsapp-forms.js?v=20261106-1" defer></script>
     <script src="app.js" defer></script>
     <script src="program-path.js?v=20261105-learning-path-1" defer></script>
 </body>
