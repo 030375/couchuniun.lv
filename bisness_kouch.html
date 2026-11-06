@@ -277,7 +277,7 @@
                             <i class="fas fa-chevron-down ml-2"></i>
                         </button>
                         <div class="accordion-content mt-4">
-                            <p class="text-gray-600 mb-4">Viber/Whatsapp/telegram: <a href="https://wa.me/375297501411" class="text-blue-600 hover:underline">+375297501411</a> (нажмите на название мессенджера, ссылки кликабельны)</p>
+                            <p class="text-gray-600 mb-4">Viber/Whatsapp/telegram: <a href="https://wa.me/37126037277?text=Здравствуйте%21%20Интересуют%20бизнес-тренинги%20ICU" class="text-blue-600 hover:underline">+371 26037277</a> (нажмите на название мессенджера, ссылки кликабельны)</p>
                             
                             <h4 class="font-bold text-gray-800 mt-4">Ведущие:</h4>
                             <p class="text-gray-600 mb-2">Профессор Хосе Энрике Хименес Солер. Член Правления IСU Association. Президент ICU Испании и Латинской Америки, действительный член Академии нейронауки и образования. Коуч с 30-летним стажем. Исполнительный директор Международного Университета коучинга (ICU).</p>
@@ -355,30 +355,19 @@
                     </div>
                     <div class="md:w-1/2 p-8">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">Напишите нам</h3>
-                        <form>
-                            <div class="mb-4">
-                                <input type="text" placeholder="Ваше имя" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            </div>
-                            <div class="mb-4">
-                                <input type="email" placeholder="Ваш email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            </div>
-                            <div class="mb-4">
-                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                    <option>Выберите программу</option>
-                                    <option>Технологии делового общения</option>
-                                    <option>Технологии манипуляций</option>
-                                    <option>Планирование и тайм-менеджмент</option>
-                                    <option>Креативность и маркетинг</option>
-                                    <option>Командообразование и лидерство</option>
-                                    <option>Технологии саморегуляции</option>
-                                    <option>Нейрокоучинг</option>
-                                </select>
-                            </div>
-                            <div class="mb-4">
-                                <textarea placeholder="Ваше сообщение" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Отправить</button>
-                        </form>
+                        <form data-whatsapp-form="business" onsubmit="return false" class="space-y-4">
+  <div><label for="business-name" class="block text-sm font-semibold mb-1">Ваше имя *</label><input id="business-name" name="name" type="text" autocomplete="name" required maxlength="120" placeholder="Ваше имя" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></div>
+  <div><label for="business-email" class="block text-sm font-semibold mb-1">Email (необязательно)</label><input id="business-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="Ваша почта" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></div>
+  <div><label for="business-training" class="block text-sm font-semibold mb-1">Интересующая программа *</label><select id="business-training" name="training" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+    <option value="" selected disabled>Выберите программу</option>
+    <option>Технологии делового общения</option><option>Технологии манипуляций</option><option>Планирование и тайм-менеджмент</option><option>Креативность и маркетинг</option><option>Командообразование и лидерство</option><option>Технологии саморегуляции</option><option>Нейрокоучинг</option>
+  </select></div>
+  <div><label for="business-question" class="block text-sm font-semibold mb-1">Ваш вопрос (необязательно)</label><textarea id="business-question" name="question" maxlength="1200" placeholder="Например: когда ближайший тренинг?" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea></div>
+  <label class="flex gap-2 text-xs text-gray-600 leading-relaxed"><input type="checkbox" name="consent" required class="mt-1 flex-shrink-0"><span>Согласен(на) передать указанные данные координатору через WhatsApp для ответа на запрос. <a class="text-blue-700 underline" href="/privacy.html">Обработка данных</a>.</span></label>
+  <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-700 transition duration-300"><i class="fab fa-whatsapp mr-2" aria-hidden="true"></i>Открыть WhatsApp</button>
+  <p data-whatsapp-status role="status" aria-live="polite" class="text-xs text-gray-600">Готовое сообщение откроется в WhatsApp. Для отправки нажмите «Отправить».</p>
+  <p class="text-xs"><a class="text-blue-700 underline" href="https://wa.me/37126037277?text=Здравствуйте%21%20Интересуют%20бизнес-тренинги%20ICU" target="_blank" rel="noopener noreferrer">Написать без заполнения формы</a></p>
+</form>
                     </div>
                 </div>
             </div>
@@ -479,5 +468,6 @@
             });
         });
     </script>
+<script src="/whatsapp-forms.js?v=20261106-1" defer></script>
 </body>
 </html>
