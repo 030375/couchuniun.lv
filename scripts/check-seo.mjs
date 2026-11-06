@@ -62,7 +62,29 @@ assert(neuroCourse?.hasCourseInstance?.instructor?.length===2,'neurocoach.html: 
 const neuroPrices=(neuroCourse?.hasCourseInstance?.offers||[]).map(x=>Number(x.price)).sort((a,b)=>a-b);
 assert(JSON.stringify(neuroPrices)===JSON.stringify([170,185]),'neurocoach.html: prices do not match the published course');
 assert(!neuro.includes('декабря 2024')&&!neuro.includes('+375 29 750 14 11'),'neurocoach.html: stale contact or year');
-assert(neuro.includes('name="neurocoaching-enrollment"')&&neuro.includes('data-netlify="true"'),'neurocoach.html: missing working Netlify signup form');
+// Every published enrollment form must open a WhatsApp draft, never POST to Netlify.
+const whatsAppForms=[
+  {file:'index.html',course:'professional'},
+  {file:'neurocoach.html',course:'neuro'},
+  {file:'bisness_kouch.html',course:'business'}
+];
+const waScript=read('whatsapp-forms.js');
+for(const entry of whatsAppForms){
+  const page=read(entry.file);
+  assert(page.includes('data-whatsapp-form="'+entry.course+'"'),entry.file+': missing WhatsApp form');
+  assert(page.includes('whatsapp-forms.js'),entry.file+': shared WhatsApp handler not linked');
+  assert(page.includes('data-whatsapp-status'),entry.file+': no confirmation message near WhatsApp form');
+  assert(!page.includes('data-netlify="true"'),entry.file+': old Netlify submission still active');
+  assert(!/<form[^>]*method="POST"/i.test(page),entry.file+': must not submit POST');
+  assert(page.includes('onsubmit="return false"'),entry.file+': unsafe form fallback without JS');
+}
+assert(waScript.includes("WHATSAPP_NUMBER='37126037277'"),'WhatsApp script: Riga number mismatch');
+assert(waScript.includes('encodeURIComponent(lines.join'), 'WhatsApp script: missing message URL encoding');
+assert(waScript.includes("window.location.assign(prepare(form))"),'WhatsApp script: form no longer opens chat');
+assert(!read('app.js').includes("fetch('/',{"),'Main page still posts contacts to server');
+assert(!read('business-coach.html').includes('wa.me/375'),'Business coaching signup points to obsolete WhatsApp number');
+assert(!read('bisness_kouch.html').includes('wa.me/375'),'Business trainings link points to obsolete WhatsApp number');
+assert(read('privacy.html').includes('не отправляется автоматически'),'Privacy page omits manual-send requirement');
 assert(existsSync(resolve(root,'img/neurocoaching/jose-enrique-jimenez-soler.jpg')),'neurocoach.html: trainer portrait not in repository');
 assert(read('llms.txt').includes(domain+'/neurocoach.html'),'llms.txt: neurocoaching course link missing');
 
