@@ -9,7 +9,8 @@ const pages=[
   'otziw.html',
   'business-coach.html',
   'bisness_kouch.html',
-  'library.html'
+  'library.html',
+  'neurocoach.html'
 ];
 const errors=[];
 const read=(path)=>readFileSync(resolve(root,path),'utf8');
@@ -51,6 +52,19 @@ const prices=(course?.hasCourseInstance?.offers||[]).map(x=>Number(x.price)).sor
 assert(JSON.stringify(prices)===JSON.stringify([1224,1440]),'index.html: published full-course price mismatch');
 assert(!home.includes('Более 200 отзывов от наших студентов'),'index.html: unverified 200+ claim returned');
 
+const neuro=read('neurocoach.html');
+const neuroJson=JSON.parse(get(neuro,/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/));
+const neuroCourse=neuroJson['@graph'].find(x=>x['@type']==='Course');
+assert(!!neuroCourse,'neurocoach.html: Course schema not found');
+assert(neuroCourse?.hasCourseInstance?.startDate==='2026-12-12','neurocoach.html: course start date mismatch');
+assert(neuroCourse?.hasCourseInstance?.endDate==='2026-12-13','neurocoach.html: course end date mismatch');
+assert(neuroCourse?.hasCourseInstance?.instructor?.length===2,'neurocoach.html: two instructors expected');
+const neuroPrices=(neuroCourse?.hasCourseInstance?.offers||[]).map(x=>Number(x.price)).sort((a,b)=>a-b);
+assert(JSON.stringify(neuroPrices)===JSON.stringify([170,185]),'neurocoach.html: prices do not match the published course');
+assert(!neuro.includes('декабря 2024')&&!neuro.includes('+375 29 750 14 11'),'neurocoach.html: stale contact or year');
+assert(neuro.includes('name="neurocoaching-enrollment"')&&neuro.includes('data-netlify="true"'),'neurocoach.html: missing working Netlify signup form');
+assert(read('llms.txt').includes(domain+'/neurocoach.html'),'llms.txt: neurocoaching course link missing');
+
 const reviews=read('otziw.html');
 const imgUrls=[...reviews.matchAll(/(?:image|fullImage):\s*"(\/img\/reviews\/[^"]+)"/g)].map(x=>x[1]);
 assert(imgUrls.length===50,'otziw.html: expected 50 archived local image references');
@@ -59,7 +73,7 @@ assert((reviews.match(/"@type": "ListItem"/g)||[]).length>=25,'otziw.html: no 25
 
 const sitemap=read('sitemap.xml');
 for(const path of ['/',...pages.filter(f=>f!=='index.html').map(f=>'/'+f),
-                    '/neurocoach.html','/coachprogram.pdf','/coachprogram-detailed-icu.pdf']){
+                    '/coachprogram.pdf','/coachprogram-detailed-icu.pdf']){
   assert(sitemap.includes('<loc>'+domain+path+'</loc>'),'sitemap.xml: missing '+path);
 }
 assert(!sitemap.includes('/thank-you.html'),'sitemap.xml: noindex thank-you page must be excluded');
