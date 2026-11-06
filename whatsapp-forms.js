@@ -37,7 +37,7 @@
         var status=form.querySelector('[data-whatsapp-status]');
         if(status){
           status.textContent='Открываем WhatsApp с готовым сообщением. Проверьте текст и нажмите «Отправить».';
-          status.setAttribute('data-state','success');
+          // This is an invitation to confirm sending, not a sent-message success state.
         }
         // The message is NOT sent automatically: the visitor confirms it in WhatsApp.
         window.location.assign(prepare(form));
