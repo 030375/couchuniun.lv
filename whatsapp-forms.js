@@ -49,6 +49,12 @@
       track('whatsapp_link_click',{course:course,method:'link'});
     });
     document.querySelectorAll('form[data-whatsapp-form]').forEach(function(form){
+      var started=false;
+      form.addEventListener('focusin',function(){
+        if(started)return;
+        started=true;
+        track('enrollment_form_start',{course:form.getAttribute('data-whatsapp-form')||'unknown'});
+      });
       form.addEventListener('submit',function(event){
         event.preventDefault();
         if(!form.reportValidity())return;
