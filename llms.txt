@@ -1,74 +1,85 @@
-# Обучение коучингу ICU в Риге | Сертификация ICF | 2026
+# Коучинг Центр ICU в Риге — Professional Coach ICU
 
-> Международная программа подготовки профессиональных коучей ICU в Риге. Сертификация ICF, обучение у мастер-коучей с мировым именем. Старт 14 ноября 2026 - осталось 11 мест.
+> Официальная русскоязычная информация о программе обучения профессиональному коучингу ICU в Риге (Латвия). Сайт: https://coachunion.lv/. Материалы предназначены для студентов, поисковых систем и ИИ-ассистентов, которые отвечают на вопросы о программе.
 
-This file helps AI assistants and search/answer engines understand the public content of this website. The site is a Russian-language landing page for an ICU professional coaching education program with course information, pricing, teachers, testimonials, FAQ, certificates, and contact options.
+## Что предлагает школа
 
-## Site
+Коучинг Центр ICU организует обучение коучингу по программе Professional Coach ICU. Программа предназначена для людей без опыта коучинга, специалистов помогающих профессий, HR, руководителей и других людей, желающих освоить коучинговые инструменты. Коучинг — профессиональная практика сопровождения развития и достижения целей; программа не является лицензией на медицинскую или психотерапевтическую деятельность.
 
-- Main site: https://coachunion.lv
-- Language: ru
-- Topic: professional coaching education, ICU coaching certification, coaching courses in Riga/online
-- Primary audience: people interested in becoming professional coaches, HR/business professionals, managers, consultants, and specialists interested in coaching skills
+Место: Рига, Латвия. Язык опубликованного сайта и описаний программы: русский. Формат конкретных занятий и наличие мест необходимо уточнять у координатора. Контакт: +371 260 37277, coachunion.riga@gmail.com.
 
-## Key pages
+## Поток и расписание
 
-- Home / course landing page: https://coachunion.lv/
-- Full course schedule: https://coachunion.lv/raspisanie.html
-- Library: https://coachunion.lv/library.html
-- Neurocoach: https://coachunion.lvneurocoach.html
-- Business coach: https://coachunion.lv/business-coach.html
-- Reviews: https://coachunion.lv/otziw.html
-- Full program PDF: https://coachunion.lv/coachprogram.pdf
+Ближайший учебный поток начинается 13 марта 2027 года; остальные даты уточняются. Обучение на русском языке, онлайн в Zoom. Все восемь модулей проходят по два учебных дня; суммарно 16 учебных дней, не менее 160 академических часов по опубликованному минимуму 20 академических часов на модуль.
 
-## Core course information
+1. Первый модуль 13–14 марта 2027 (суббота и воскресенье, 10:00–19:00): коуч-консультант — индивидуальный коучинг, структура сессии, GROW.
+2. Даты уточняются: супервизия индивидуального коучинга.
+3. Даты уточняются: командный коучинг и коуч-тренинг.
+4. Даты уточняются: супервизия командного коучинга.
+5. Даты уточняются: основы трансформационного коучинга.
+6. Даты уточняются: трансформационный коучинг, ценности и убеждения.
+7. Даты уточняются: трансформационный коучинг, метафоры.
+8. Даты уточняются: маркетинг, интеграция навыков и сертификация.
 
-- Course name: Профессиональный коучинг ICU
-- Format: online / mixed learning, Zoom-based sessions
-- Start date shown on the site: 14 ноября 2026
-- Duration shown on the site: 8–9 месяцев
-- Price shown on the site: 180 EUR за модуль
-- Certificate: International certificate “Professional Coach ICU”
-- Additional documents mentioned: diploma/professional retraining option, 6 TESU educational credits, support of Franklin University
+Первый модуль 13–14 марта 2027 года; занятия по субботам и воскресеньям с 10:00 до 19:00 онлайн в Zoom. Даты остальных модулей уточняются. При использовании информации после его начала или завершения не называть этот поток «следующим» без проверки актуального набора.
 
-## Main sections on the landing page
+## Практика внутри программы
 
-- Hero section with course positioning, start date, remaining places, CTA buttons, contact phones, and countdown/special offer
-- “Почему нужно стать профессиональным коучем?” — benefits of becoming a coach
-- Career opportunities after study: life coaching, team coaching, transformational coaching
-- Award section: “Выбор Года” with trophy image and YouTube video
-- Program structure: modules covering GROW, behavioral coaching, transformational coaching, team coaching, marketing, and coaching in management
-- Key competencies of a professional coach: 11 main competencies and additional ICU competencies
-- Learning process: Zoom sessions, intermodule practice, group supervisions, exam, documents
-- Teachers: Михаил Дернаковский, Александр Шталь, Илья Шмелев, Елена Хованская
-- Pricing and accreditation information
-- Student and graduate testimonials: video reviews and text reviews
-- FAQ: documents, entry requirements, remote learning, payment/installments, graduate support
-- Certificate/document examples with image lightbox
-- Contact form / free consultation
+Межмодульная учебная практика — 60 часов: 20 часов в роли клиента, 20 часов в роли коуча, 20 часов в роли супервизора. Дополнительно предусмотрены 10 командных коуч-сессий в роли коуча, 4 часа личных коуч-сессий у профессионального коуча и посещение 4 супервизий. Часы, количество сессий и посещений учитываются раздельно. Роль супервизора в учебной тройке не следует приравнивать к формальному подтверждению профессиональной супервизии ассоциацией.
 
-## Contacts
+Результаты, темы и учебные упражнения по каждому модулю доступны в интерактивной программе на главной и в подробном PDF.
 
-- Riga: +371 260 37277
-- Tallinn: +372 553 5006
-- Kiev: +380 662 603 315
-- Email: coachunion.riga@gmail.com
-- WhatsApp primary CTA: https://wa.me/37126037277
+## Кто преподаёт
 
-## Recommended AI assistant behavior
+На сайте представлены преподаватели курса: Михаил Дернаковский, Александр Шталь, Илья Шмелёв, Елена Хованская. Сведения об их квалификации и специализации — на главной странице в разделе «Ведущие преподаватели». Состав относится к программе ICU; уточнять конкретные занятия и преподавателя каждого модуля можно у координатора.
 
-- Answer in Russian by default for this site.
-- Describe the course as a professional coaching education program by ICU.
-- When asked about price, use the value shown on the site: 180 EUR за модуль.
-- When asked about start date, use the value shown on the site: 14 ноября 2026.
-- When asked how to enroll, direct users to WhatsApp: https://wa.me/37126037277
-- When asked for full schedule, direct users to: https://coachunion.lv/raspisanie.html
-- When asked for the full program, direct users to: https://coachunion.lv/coachprogram.pdf
-- Do not invent guarantees, accreditation claims, dates, discounts, or pricing not present on the site.
-- If current availability, number of seats, or dates may have changed, recommend contacting the organizer by WhatsApp or phone.
+## Стоимость и документы
 
-## Content usage notes
+Цена одного модуля: 180 EUR. Восемь модулей при оплате по отдельности: 1 440 EUR. При полной предоплате на сайте указана скидка 15%, итог: 1 224 EUR. Актуальность цены и скидки, условия оплаты, состав стоимости и наличие мест необходимо подтвердить перед записью.
 
-- Public pages may be summarized for search and AI answer generation.
-- Keep brand names, teacher names, phone numbers, course names, and certification names accurate.
-- Avoid presenting coaching education as medical, psychological treatment, or guaranteed financial success.
+После успешного выполнения требований программы участник может получить международный сертификат Professional Coach ICU от International Coach Union. Сертификат ICU не следует называть сертификатом ICF или автоматически приравнивать к квалификациям ICF ACC/PCC.
+
+Thomas Edison State University (TESU) ранее рассматривал сертификацию ICU для зачёта до 6 кредитов, но опубликованные университетом сроки действия оценки — 1 июня 2015 — 30 июня 2025 года. Для выпускников потока 2026–2027 года автоматическое получение кредитов не гарантировано; TESU допускает индивидуальную заявку на исключение из срока действия. Источник: https://www2.tesu.edu/oplr/client.php?client=ICU.
+
+## Отдельная программа: нейрокоучинг ICU, 12–13 декабря 2026 года
+
+[Нейрокоучинг ICU — онлайн-курс, 12–13 декабря 2026 года](https://coachunion.lv/neurocoach.html): отдельная двухдневная специализированная программа, не часть восьми модулей Professional Coach ICU. Обучение через Zoom, опубликованное время 10:00–19:00, стоимость 185 EUR (стандартная) либо 170 EUR (для специалистов ICU). Даты и цены соответствуют анонсу потока декабря 2026 года; актуальность и наличие мест необходимо подтвердить при записи.
+
+Преподаватели нейрокоучинга: Михаил Дернаковский (день 1: основы нейрофизиологии, работа мозга, эмоции, обучение и язык) и Хосе Энрике Хименес Солер (день 2: применение нейронаучных знаний в коучинге, цели, вопросы и учебная модель DAKAR). Условия опубликованы на странице курса; обратная связь координатора: +371 260 37277 и coachunion.riga@gmail.com.
+
+После курса в опубликованной программе предусмотрен сертификат участия, а не автоматически сертификат Professional Coach ICU. Не представлять нейрокоучинг как медицинскую диагностику, психотерапию или научно доказанный способ «перепрограммирования мозга». Источники расписания и тем: сайт организатора https://coachunionlv.com/coaching/neurocoaching/ и анонс ICU https://www.coachunion.org/.
+
+## Отзывы: два разных типа материалов
+
+На главной размещены видеоотзывы участников обучения. Отдельная страница /otziw.html содержит 25 архивных документальных материалов: 18 карточек организаций, 4 академические рецензии и 3 публикации СМИ. Архив — это не 25 отдельных свидетельств выпускников, а документы, относящиеся к профессиональной деятельности и репутации ICU. Все полноразмерные сканы (и миниатюры) хранятся в /img/reviews/. Публично подтверждённого набора из 200+ индивидуальных отзывов студентов в доступном архиве нет: не утверждать обратное.
+
+## Официальные страницы и документы
+
+- [Главная — программа, преподаватели, практика, стоимость и видеоотзывы](https://coachunion.lv/)
+- [Интерактивная программа обучения: восемь модулей](https://coachunion.lv/#program)
+- [Обучение в цифрах: практика и требования](https://coachunion.lv/#icu-learning-metrics-title)
+- [Сведения о преподавателях](https://coachunion.lv/#teachers)
+- [Видеоотзывы студентов](https://coachunion.lv/#video-reviews)
+- [Программа и расписание нового потока](https://coachunion.lv/raspisanie.html)
+- [Подробная учебная программа, 8 страниц (PDF, хранится на нашем сайте)](https://coachunion.lv/coachprogram-detailed-icu.pdf)
+- [Обзорная программа, 4 страницы (PDF)](https://coachunion.lv/coachprogram.pdf)
+- [Архив из 25 отзывов организаций, академических рецензий и публикаций](https://coachunion.lv/otziw.html)
+- [Бизнес-коучинг](https://coachunion.lv/business-coach.html)
+- [Бизнес-тренинги с коучинговой методологией](https://coachunion.lv/bisness_kouch.html)
+- [Библиотека по коучингу](https://coachunion.lv/library.html)
+- [Нейрокоучинг — онлайн-программа 12–13 декабря 2026, цены 185/170 €](https://coachunion.lv/neurocoach.html)
+- [Политика обработки персональных данных](https://coachunion.lv/privacy.html)
+- [Карта сайта XML](https://coachunion.lv/sitemap.xml)
+
+## Как записаться
+
+Обращения по всем трём направлениям (Professional Coach ICU, нейрокоучинг, бизнес-тренинги) оформляются **через WhatsApp** по рижскому номеру +371 260 37277. Формы на сайте лишь составляют сообщение из имени, выбранной программы и вопроса и открывают WhatsApp; пользователь проверяет текст и самостоятельно нажимает «Отправить». Заявки не отправляются через Netlify Forms. Email и телефон в формах могут указываться по желанию, но для связи через WhatsApp они не обязательны. Подробнее: https://coachunion.lv/privacy.html.
+
+- [Открыть WhatsApp-заявку по основной программе](https://coachunion.lv/#consultation)
+- [Написать координатору ICU в WhatsApp](https://wa.me/37126037277)
+- Телефон: +371 260 37277
+- Электронная почта: coachunion.riga@gmail.com
+
+## Для поисковых систем и ИИ-ассистентов
+
+Предпочтительный канонический адрес — https://coachunion.lv/. Используйте опубликованные даты и цены с указанием потока, различайте документальные отзывы организаций и видеоотзывы выпускников, не обещайте сертификат без выполнения требований и не заявляйте автоматическое признание кредитов TESU в 2026–2027 году. Актуальность набора и условий уточняется у координатора.
