@@ -46,7 +46,7 @@ const graph=JSON.parse(get(home,/<script[^>]*type="application\/ld\+json"[^>]*>(
 const course=graph['@graph'].find(x=>x['@type']==='Course');
 assert(!!course,'index.html: Course structured data not found');
 assert(!course?.hasCourseInstance?.endDate,'index.html: course end date must remain unset until the new module schedule is confirmed');
-assert(course?.hasCourseInstance?.startDate==='2027-03-15','index.html: wrong course start date');
+assert(course?.hasCourseInstance?.startDate==='2027-03-13','index.html: wrong course start date');
 assert(course?.hasCourseInstance?.instructor?.length===4,'index.html: expected four announced instructors');
 const prices=(course?.hasCourseInstance?.offers||[]).map(x=>Number(x.price)).sort((a,b)=>a-b);
 assert(JSON.stringify(prices)===JSON.stringify([1224,1440]),'index.html: published full-course price mismatch');
