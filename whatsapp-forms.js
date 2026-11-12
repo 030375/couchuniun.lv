@@ -8,6 +8,14 @@
     business:'Бизнес-тренинги с коучинговой методологией ICU'
   };
 
+  // Anonymous conversion events. No names, phone numbers or message text are sent.
+  // Events enter dataLayer for a consent-configured analytics integration.
+  function track(eventName,details){
+    window.dataLayer=window.dataLayer||[];
+    var payload={event:eventName};
+    Object.keys(details||{}).forEach(function(key){payload[key]=details[key];});
+    window.dataLayer.push(payload);
+  }
   function val(data,key){
     return String(data.get(key)||'').trim();
   }
@@ -30,6 +38,16 @@
   }
 
   function init(){
+    document.addEventListener('click',function(event){
+      var link=event.target.closest('a[href*="wa.me/"],a[href*="api.whatsapp.com/"]');
+      if(!link)return;
+      var href=link.getAttribute('href')||'';
+      var course='general';
+      if(href.indexOf('Нейро')!==-1)course='neuro';
+      else if(document.querySelector('form[data-whatsapp-form="professional"]'))course='professional';
+      else if(document.querySelector('form[data-whatsapp-form="business"]'))course='business';
+      track('whatsapp_link_click',{course:course,method:'link'});
+    });
     document.querySelectorAll('form[data-whatsapp-form]').forEach(function(form){
       form.addEventListener('submit',function(event){
         event.preventDefault();
@@ -40,6 +58,7 @@
           // This is an invitation to confirm sending, not a sent-message success state.
         }
         // The message is NOT sent automatically: the visitor confirms it in WhatsApp.
+        track('whatsapp_form_open',{course:form.getAttribute('data-whatsapp-form')||'unknown',method:'form'});
         window.location.assign(prepare(form));
       });
     });
