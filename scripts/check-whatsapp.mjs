@@ -27,6 +27,7 @@ const samples=[
 const links=[{getAttribute(name){return name==='data-interest'?'Руководство и HR':null},addEventListener(kind,fn){this.click=fn}}];
 const document={
  readyState:'complete',
+ addEventListener(kind,fn){this['on'+kind]=fn},
  querySelectorAll(selector){return selector==='form[data-whatsapp-form]'?samples:selector==='[data-interest]'?links:[]},
  getElementById(id){return id==='contact-form'?samples[0]:null}
 };
