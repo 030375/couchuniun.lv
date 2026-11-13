@@ -10,6 +10,8 @@ await mkdir(out, { recursive: true });
 
 const files = [
   "index.html",
+  "coaches.html",
+  "privacy.html",
   "otziw.html",
   "style.css",
   "enrollment.css",
