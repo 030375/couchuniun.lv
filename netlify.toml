@@ -1,32 +1,15 @@
+# Isolated Netlify preview only for branch couchunion-2.0.
+# Production coachunion.lv uses its own branch and configuration.
 [build]
-  command = "npm run build"
+  command = "node scripts/build-couchunion-preview.mjs"
   publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "22"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
 
-# Static resources: allow repeat visitors to reuse assets.
 [[headers]]
   for = "/img/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
-
-[[headers]]
-  for = "/fonts/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-
-[[headers]]
-  for = "/tailwind.min.css"
-  [headers.values]
-    Cache-Control = "public, max-age=300"
-
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=300"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=300"
