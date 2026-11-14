@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="trophyTitle">
+  <title id="trophyTitle">Золотой кубок победителя</title>
+  <defs>
+    <linearGradient id="cupGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b4a09"/>
+      <stop offset=".08" stop-color="#d79c28"/>
+      <stop offset=".22" stop-color="#fff3b1"/>
+      <stop offset=".36" stop-color="#eeb844"/>
+      <stop offset=".51" stop-color="#ad620f"/>
+      <stop offset=".68" stop-color="#f9d76a"/>
+      <stop offset=".83" stop-color="#ffe38c"/>
+      <stop offset="1" stop-color="#9e550c"/>
+    </linearGradient>
+    <linearGradient id="cupStem" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#95500c"/>
+      <stop offset=".27" stop-color="#f4c85a"/>
+      <stop offset=".51" stop-color="#fff0a0"/>
+      <stop offset=".74" stop-color="#c88318"/>
+      <stop offset="1" stop-color="#8d490b"/>
+    </linearGradient>
+    <linearGradient id="baseWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#674024"/>
+      <stop offset=".35" stop-color="#3f261c"/>
+      <stop offset=".7" stop-color="#261b17"/>
+      <stop offset="1" stop-color="#160f0d"/>
+    </linearGradient>
+    <linearGradient id="plaque" x1="0" y1="0" x2="1" y2=".15">
+      <stop offset="0" stop-color="#b47b23"/>
+      <stop offset=".25" stop-color="#f8e39a"/>
+      <stop offset=".55" stop-color="#f0c857"/>
+      <stop offset="1" stop-color="#b47a1d"/>
+    </linearGradient>
+    <radialGradient id="rim" cx=".46" cy=".18" r=".82">
+      <stop offset="0" stop-color="#fff7ba"/>
+      <stop offset=".55" stop-color="#eec665"/>
+      <stop offset="1" stop-color="#9b5511"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#09152e" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M166 83C118 55 94 86 105 141c9 50 34 91 88 93l8-29c-36 1-52-23-60-70-5-24 4-30 28-23z" fill="url(#cupStem)" stroke="#8f4a0a" stroke-width="2.5"/>
+    <path d="M314 83c48-28 72 3 61 58-9 50-34 91-88 93l-8-29c36 1 52-23 60-70 5-24-4-30-28-23z" fill="url(#cupStem)" stroke="#8f4a0a" stroke-width="2.5"/>
+    <path d="M116 108c-6 29 8 80 36 97" fill="none" stroke="#fff1a7" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+    <path d="M364 108c6 29-8 80-36 97" fill="none" stroke="#fff1a7" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+    <path d="M145 77c2 109 31 180 77 206 11 6 25 6 36 0 46-26 75-97 77-206z" fill="url(#cupGold)" stroke="#ab6817" stroke-width="3"/>
+    <path d="M169 96c8 101 29 147 53 169" fill="none" stroke="#fff7ba" stroke-width="13" stroke-linecap="round" opacity=".45"/>
+    <path d="M319 96c-6 98-23 141-43 166" fill="none" stroke="#fff1aa" stroke-width="7" stroke-linecap="round" opacity=".4"/>
+    <ellipse cx="240" cy="77" rx="96" ry="20" fill="url(#rim)" stroke="#a96318" stroke-width="3"/>
+    <ellipse cx="240" cy="74" rx="79" ry="11" fill="#9c5b17" opacity=".65"/>
+    <path d="M160 78c34 16 124 17 159 0" fill="none" stroke="#fff1ab" stroke-width="3.5" opacity=".6"/>
+    <ellipse cx="240" cy="283" rx="25" ry="9" fill="#cf8f2b"/>
+    <path d="M220 285h40l-8 57h-24z" fill="url(#cupStem)" stroke="#ad651a" stroke-width="2"/>
+    <path d="M214 340q26 16 52 0l12 25h-76z" fill="url(#cupStem)" stroke="#98520e" stroke-width="2"/>
+    <ellipse cx="240" cy="365" rx="41" ry="9" fill="url(#rim)" stroke="#9b5b16" stroke-width="2"/>
+    <rect x="201" y="367" width="78" height="13" rx="4" fill="url(#cupStem)"/>
+    <path d="M180 376h120l18 22H162z" fill="url(#baseWood)" stroke="#85552f" stroke-width="2"/>
+    <path d="M161 396h158v31H161z" fill="url(#baseWood)" stroke="#4d2a19" stroke-width="2"/>
+    <path d="M150 425h180l10 14H140z" fill="#241715" stroke="#79513a" stroke-width="2"/>
+    <path d="M181 396h118v27H181z" fill="url(#plaque)" stroke="#e8c15e" stroke-width="1.5"/>
+    <circle cx="190" cy="410" r="2" fill="#9e661d"/>
+    <circle cx="290" cy="410" r="2" fill="#9e661d"/>
+    <path d="M214 408h52" fill="none" stroke="#93611c" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+    <path d="M224 414h32" fill="none" stroke="#93611c" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+  </g>
+</svg>

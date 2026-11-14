@@ -1,0 +1,844 @@
+/* Conversion-focused additions for coachunion.lv. Existing visual language preserved. */
+.icu-eyebrow { display:inline-block; font-size:.84rem; font-weight:750; letter-spacing:.075em; text-transform:uppercase; color:#fff4db; }
+.icu-section-kicker { text-align:center; color:#0056b3; text-transform:uppercase; font-weight:750; font-size:.8rem; letter-spacing:.11em; margin-bottom:.8rem; }
+.icu-audience-section { scroll-margin-top: 120px; }
+.icu-path-card { padding:2rem; background:#fff; border:1px solid #e1e8f0; border-radius:1.2rem; box-shadow:0 12px 35px rgba(21,56,101,.08); display:flex; flex-direction:column; }
+.icu-path-card:hover { border-color:#b7d9f3; box-shadow:0 18px 35px rgba(21,56,101,.12); }
+.icu-path-icon { display:inline-flex; width:3.4rem; height:3.4rem; align-items:center; justify-content:center; color:#0056b3; background:#eaf5ff; border-radius:1rem; font-size:1.5rem; margin-bottom:1.4rem; }
+.icu-path-link { margin-top:auto; font-weight:700; color:#0056b3; display:inline-flex; justify-content:space-between; gap:1rem; align-items:center; text-decoration:underline; text-underline-offset:.3rem; }
+.icu-path-link:focus-visible, .icu-path-link:hover { color:#d45b11; }
+.icu-audience-note { color:#5b6472; font-size:.9rem; text-align:center; max-width:55rem; margin:1.5rem auto 0; }
+.icu-total-price { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:1.2rem; max-width:65rem; margin:0 auto 2.5rem; }
+.icu-total-price > div { background:white; border-radius:1.1rem; border:1px solid #dce6f0; padding:1.5rem; display:flex; flex-direction:column; gap:.35rem; text-align:center; box-shadow:0 6px 26px rgba(0,34,73,.04); }
+.icu-total-price strong { color:#0056b3; font-size:clamp(2rem, 4vw, 3rem); line-height:1.15; }
+.icu-total-price .icu-price-label { font-weight:700; }
+.icu-total-price small { color:#525d6b; }
+.icu-price-legal { grid-column:1/-1; text-align:center; font-size:.85rem; color:#646f7c; margin:0; }
+.icu-form-status { min-height:1.7rem; font-size:.95rem; line-height:1.45; }
+.icu-form-status[data-state="success"] { color:#176c44; font-weight:700; }
+.icu-form-status[data-state="error"] { color:#a32020; font-weight:600; }
+#consultation { scroll-margin-top: 120px; }
+#consultation input:focus-visible, #consultation select:focus-visible { outline:2px solid #0056b3; outline-offset:1px; }
+@media(max-width:650px){ .icu-total-price {grid-template-columns:1fr;} .icu-path-card {padding:1.5rem;} .icu-eyebrow {font-size:.72rem;} }
+@media(prefers-reduced-motion:reduce) { .icu-path-card {transition:none;} }
+
+
+/* 2026-11-05: Restore the balanced first-screen composition.
+   The original site CSS used very large heading sizes for a 3-word headline. */
+.hero-bg .icu-hero-title {
+  font-size: clamp(2.35rem, 4.2vw, 4.1rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.045em !important;
+  overflow-wrap: normal;
+  hyphens: auto;
+  max-width: 16ch;
+}
+.hero-bg .container > .flex { gap: clamp(1.25rem, 3vw, 3rem); }
+.hero-bg .container > .flex > div { min-width: 0; }
+.hero-bg .icu-hero-logo {
+  width: 100%;
+  max-width: 470px;
+  height: auto;
+  object-fit: contain;
+}
+.hero-bg .icu-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.hero-bg .icu-hero-actions > a {
+  flex: 1 1 200px;
+  min-width: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.35;
+  padding: .85rem 1rem;
+  font-size: clamp(.92rem, 1.13vw, 1.04rem) !important;
+}
+.hero-bg .max-w-lg.bg-white {
+  width: min(100%, 520px);
+  padding: clamp(1.15rem, 2.6vw, 2rem);
+  margin-top: clamp(2.25rem, 4vw, 3rem) !important;
+}
+.hero-bg .max-w-lg.bg-white h3 { line-height:1.23; }
+.hero-bg .max-w-lg.bg-white p { text-shadow:none; }
+.icu-audience-section .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.icu-path-card { min-width: 0; }
+.icu-path-card h3 { line-height: 1.3; }
+.icu-path-card p { overflow-wrap: anywhere; }
+
+/* Preserve a useful, orderly hero even before the Tailwind CDN loads. */
+@media (min-width: 1024px) {
+  .hero-bg .container > .flex { display:flex; flex-direction:row; align-items:center; }
+  .hero-bg .container > .flex > div { width:calc(50% - .75rem); }
+}
+@media (max-width: 1023px) {
+  .hero-bg .container > .flex { display:flex; flex-direction:column-reverse; align-items:center; }
+  .hero-bg .container > .flex > div { width:100%; }
+  .hero-bg .icu-hero-title { max-width: 23ch; }
+  .icu-audience-section .grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 767px) {
+  .hero-bg .icu-hero-title {
+    font-size: clamp(2rem, 7.3vw, 2.5rem) !important;
+    max-width: 100%;
+    line-height: 1.12 !important;
+    letter-spacing: -.035em !important;
+  }
+  .hero-bg .container > .flex { gap: 1.15rem; }
+  .hero-bg .icu-hero-logo { max-width: 210px; }
+  .icu-audience-section .grid { grid-template-columns: minmax(0,1fr); }
+}
+@media (max-width: 639px) {
+  .hero-bg .icu-hero-actions { flex-direction: column; }
+  .hero-bg .icu-hero-actions > a { width:100%; flex: 0 0 auto; }
+}
+
+
+/* Mobile layout corrections after review — keep the original visual design. */
+/* Never hide content until a scroll observer fires: tall grids must stay visible. */
+.icu-reveal,
+.icu-reveal:not(.is-visible) {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* At 768–1023 px the main menu and CTA need less horizontal space. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header.site-header > .container > nav {
+    display: flex !important;
+    align-items: center;
+    gap: .15rem !important;
+    min-width: 0;
+  }
+  header.site-header > .container > nav > a {
+    font-size: .83rem !important;
+    padding: .3rem .42rem !important;
+    margin-left: 0 !important;
+  }
+  header.site-header > .container > a[href*="wa.me"] {
+    white-space: nowrap;
+    padding: .54rem .8rem !important;
+    font-size: .87rem !important;
+  }
+}
+
+/* The header already has a reserved body offset. Do not add another
+   135–150 px of top padding inside the hero on mobile/tablet. */
+@media (max-width: 1023px) {
+  .hero-bg {
+    display: block !important;
+    min-height: 0 !important;
+    padding-top: 24px !important;
+    padding-bottom: 58px !important;
+  }
+  .hero-bg .container > .flex {
+    gap: 1.15rem !important;
+  }
+  .hero-bg .container > .flex > div:last-child {
+    margin-bottom: 0 !important;
+  }
+  .hero-bg .icu-hero-logo.hero-icu-emblem {
+    transform: none !important;
+    animation: none !important;
+    filter: drop-shadow(0 16px 25px rgba(0,0,0,.18));
+  }
+}
+
+/* Three secondary links must fit without horizontal scrolling.
+   Allow wrapping within a cell at unusually narrow viewport widths. */
+@media (max-width: 767px) {
+  header.site-header > .container > nav {
+    display: none !important;
+  }
+  #mobile-menu-button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+  }
+  #mobile-menu.hidden { display: none !important; }
+  #mobile-menu:not(.hidden) {
+    display: block !important;
+    max-height: calc(100dvh - var(--site-header-height));
+    overflow-y: auto;
+  }
+  header.site-header > .bg-gray-100 > .container > nav {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: .15rem !important;
+    overflow: visible !important;
+    padding: .35rem 0 !important;
+    width: 100%;
+    align-items: stretch;
+  }
+  header.site-header > .bg-gray-100 > .container > nav > a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 !important;
+    padding: .35rem .06rem !important;
+    font-size: clamp(.67rem, 2.9vw, .77rem) !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    min-width: 0;
+    border-radius: 10px;
+  }
+  .hero-bg {
+    padding-top: 12px !important;
+    padding-bottom: 42px !important;
+  }
+  .hero-bg .container > .flex {
+    gap: .75rem !important;
+  }
+  .hero-bg .icu-hero-logo {
+    width: min(48vw, 182px) !important;
+    max-width: 182px !important;
+    height: auto !important;
+    max-height: 170px !important;
+    object-fit: contain !important;
+  }
+  .hero-bg .icu-hero-title {
+    font-size: clamp(2rem, 7.2vw, 2.45rem) !important;
+    line-height: 1.13 !important;
+  }
+
+  /* One persistent call to action on phones, not two overlapping widgets. */
+  .icu-floating-whatsapp {
+    display: none !important;
+  }
+  .icu-mobile-cta {
+    display: block !important;
+    left: 10px !important;
+    right: 10px !important;
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    padding: 7px !important;
+    border-radius: 18px !important;
+  }
+  .icu-mobile-cta a {
+    min-height: 44px;
+    padding: .72rem 1rem !important;
+    border-radius: 13px !important;
+    line-height: 1.25;
+  }
+  body {
+    padding-bottom: calc(86px + env(safe-area-inset-bottom)) !important;
+  }
+}
+
+@media (max-width: 359px) {
+  header.site-header > .bg-gray-100 > .container > nav > a {
+    font-size: .66rem !important;
+    padding-inline: 0 !important;
+  }
+  .hero-bg .icu-hero-logo {
+    width: min(46vw, 155px) !important;
+  }
+}
+
+
+/* Offer and capacity — restores the original enrolment information.
+   No artificial countdown for the discount or fabricated seat changes. */
+.icu-limited-seats {
+  display: inline-flex;
+  gap: .42rem;
+  align-items: center;
+  background: rgba(255, 195, 90, .25) !important;
+  border: 1px solid rgba(255, 216, 155, .84) !important;
+  color: #fff;
+  font-weight: 600;
+}
+.icu-limited-seats strong { font-weight: 800; white-space: nowrap; }
+.icu-hero-reassurance {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  margin-top: 1rem;
+  font-size: .94rem;
+  line-height: 1.45;
+  color: #fff;
+  opacity: .95;
+}
+.icu-hero-reassurance i { margin-top: .25rem; color: #a4efcc; flex-shrink: 0; }
+.icu-early-offer { max-width: 520px; }
+.icu-offer-eyebrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  color: #245c8e !important;
+  font-size: .86rem;
+  text-align: center;
+  text-shadow: none !important;
+}
+.icu-offer-prices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem 1rem;
+  margin: .6rem 0 1.2rem;
+}
+.icu-old-price {
+  text-decoration: line-through;
+  color: #747f8c;
+  font-size: 1.18rem;
+  font-weight: 600;
+}
+.icu-new-price {
+  color: #0756b0;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  line-height: 1.15;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.icu-save-price {
+  display: inline-block;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  background: rgba(25, 133, 83, .1);
+  color: #166b47;
+  font-size: .78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.icu-countdown-caption { line-height: 1.45; }
+.icu-offer-note {
+  color: #526477 !important;
+  font-size: .79rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: .85rem 0 0;
+  text-shadow: none !important;
+}
+@media(max-width:639px) {
+  .icu-limited-seats { padding:.32rem .7rem !important; }
+  .icu-hero-reassurance { font-size: .88rem; }
+  .icu-offer-prices { gap: .35rem .7rem; }
+  .icu-new-price { font-size: 2.2rem; }
+  .icu-save-price { width: auto; }
+}
+
+
+/* A quiet, useful path from the discount offer to existing video testimonials. */
+.icu-review-shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .48rem;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1rem auto 0;
+  padding: .45rem .4rem;
+  color: #0756b0 !important;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: .22rem;
+  text-shadow: none !important;
+}
+.icu-review-shortcut:hover,
+.icu-review-shortcut:focus-visible { color: #a44613 !important; }
+.icu-review-shortcut:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: .3rem; }
+#video-reviews { scroll-margin-top: calc(var(--site-header-height, 104px) + 20px); }
+@media (max-width: 480px) {
+  .icu-review-shortcut { font-size: .82rem; gap: .3rem; }
+}
+
+
+/* Videos load a real player only after a deliberate click. This removes
+   five heavyweight YouTube iframes from the initial page load. */
+.icu-video-preview, .icu-video-frame {
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  border:0;
+  border-radius:inherit;
+}
+.icu-video-preview {
+  cursor:pointer;
+  color:#fff;
+  overflow:hidden;
+  background:linear-gradient(135deg,#0f2442,#20517e);
+  padding:0 !important;
+}
+.icu-video-preview img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  opacity:.86;
+  transition:transform .25s ease,opacity .25s ease;
+}
+.icu-video-preview:hover img { transform:scale(1.04);opacity:1; }
+.icu-video-preview:focus-visible { outline:3px solid #ffd166;outline-offset:-3px; }
+.icu-video-play {
+  position:absolute;
+  z-index:1;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  width:64px;height:46px;
+  border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;
+  background:#dc2626;
+  color:#fff;
+  box-shadow:0 8px 22px rgba(0,0,0,.32);
+}
+.icu-video-preview:hover .icu-video-play { background:#b91c1c; }
+.icu-video-label {
+  position:absolute;
+  z-index:1;
+  bottom:8px;left:8px;right:8px;
+  text-align:center;
+  color:white;
+  font-size:.78rem;
+  text-shadow:0 2px 6px #000;
+}
+.icu-video-frame {background:#000;}
+@media(prefers-reduced-motion:reduce) {
+  .icu-video-preview img {transition:none!important;}
+  .icu-video-preview:hover img {transform:none;}
+}
+
+
+/* The hero retains the same photo, but requests a much smaller crop on phones.
+   This overrides the full-size image set in style.css. */
+@media (max-width: 767px) {
+  .hero-bg {
+    background-image: url("https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=720&q=58") !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+
+/* Accessibility: meet text contrast on light cards and on gradient buttons.
+   Keep the same blue / orange palette, but use darker shades behind white text. */
+:root {
+  --apple-gradient: linear-gradient(135deg, #0756a6 0%, #0c658c 45%, #563184 100%);
+  --hot-gradient: linear-gradient(135deg, #b34a0a 0%, #a94113 50%, #a31b2b 100%);
+}
+.text-accent { color: #a94113 !important; }
+.bg-white .text-primary,
+.bg-light .text-primary,
+.bg-gray-50 .text-primary,
+header .text-primary,
+.icu-early-offer .text-primary { color: #0756a6 !important; }
+.bg-secondary.text-white,
+#countdown-timer .bg-secondary { background: #095b85 !important; }
+.bg-accent.text-white,
+#countdown-timer .bg-accent { background: #a94113 !important; }
+#consultation .bg-gradient-to-br.from-primary.to-secondary {
+  background: linear-gradient(135deg, #0756a6, #095b85) !important;
+}
+.icu-floating-whatsapp {
+  background: #177146 !important;
+  color: white !important;
+}
+button[data-full]:focus-visible {
+  opacity: 1 !important;
+  outline: 3px solid #0756a6 !important;
+  outline-offset: 2px;
+}
+
+
+/* Skip navigation is available for keyboard users without obscuring the hero. */
+.icu-skip-link {
+  position: fixed;
+  left: 14px;
+  top: -90px;
+  z-index: 2147483646;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  color: #fff !important;
+  background: #0756a6 !important;
+  font-size: .95rem;
+  font-weight: 700;
+}
+.icu-skip-link:focus-visible {
+  top: 12px;
+  outline: 3px solid #ffce70;
+  outline-offset: 2px;
+}
+.faq-item .accordion-btn:focus-visible {
+  outline: 3px solid #0756a6 !important;
+  outline-offset: -3px;
+  border-radius: .55rem;
+}
+
+
+/* Compact four-card learning path: eight modules in four elegant thematic cards.
+   Native <details> reveals dates and topics without extra JavaScript. */
+.icu-program-section .icu-program-lead {
+  max-width: 740px;
+  margin: 0 auto 2rem;
+  color: #485b75;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.icu-program-cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+.icu-program-card {
+  --pc-from: #102b66;
+  --pc-to: #087bb5;
+  --pc-accent: #0a5c9c;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 25px;
+  background: #fff;
+  border: 1px solid #e0e9f4;
+  box-shadow: 0 16px 40px rgba(10, 48, 92, .10), 0 2px 6px rgba(10, 48, 92, .03);
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+.icu-program-card--two { --pc-from: #074e63; --pc-to: #067b78; --pc-accent: #087c75; }
+.icu-program-card--three { --pc-from: #382164; --pc-to: #7550af; --pc-accent: #6845a7; }
+.icu-program-card--four { --pc-from: #863b20; --pc-to: #c16d23; --pc-accent: #a74c20; }
+@media(hover:hover) and (pointer:fine) {
+  .icu-program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px rgba(10, 48, 92, .15);
+  }
+}
+.icu-program-card-head {
+  min-height: 196px;
+  position: relative;
+  padding: 1.4rem 1.55rem 1.2rem;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(125deg, var(--pc-from), var(--pc-to));
+  isolation: isolate;
+}
+.icu-program-card-head::before {
+  content: "";
+  position: absolute;
+  right: -46px;
+  top: -72px;
+  width: 230px;
+  height: 230px;
+  border: 1px solid rgba(255, 255, 255, .17);
+  border-radius: 50%;
+  box-shadow: 0 0 0 28px rgba(255, 255, 255, .04), 0 0 0 57px rgba(255, 255, 255, .035);
+  pointer-events: none;
+  z-index: -1;
+}
+.icu-program-head-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .62rem;
+}
+.icu-program-phase {
+  display: inline-flex;
+  align-items: center;
+  gap: .48rem;
+  padding: .38rem .7rem;
+  border: 1px solid rgba(255,255,255,.32);
+  border-radius: 999px;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  backdrop-filter: blur(7px);
+}
+.icu-program-phase-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.16);
+}
+.icu-program-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  font-size: 1.2rem;
+  border-radius: 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, .17);
+  border: 1px solid rgba(255, 255, 255, .24);
+}
+.icu-program-card-head h3 {
+  margin: 0 0 .38rem;
+  color: #fff !important;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -.028em;
+  line-height: 1.2;
+  text-shadow: none;
+}
+.icu-program-card-head .icu-program-card-desc {
+  margin: 0;
+  color: rgba(255,255,255,.95) !important;
+  font-size: .86rem;
+  line-height: 1.55;
+  max-width: 33rem;
+  text-shadow: none;
+}
+.icu-program-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin-top: .92rem;
+  color: rgba(255,255,255,.9);
+  font-size: .75rem;
+  font-weight: 650;
+}
+.icu-program-mini-track {
+  display: inline-flex;
+  gap: 4px;
+}
+.icu-program-mini-track span {
+  width: 10px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.3);
+}
+.icu-program-mini-track span:first-child,
+.icu-program-card--two .icu-program-mini-track span:nth-child(-n+2),
+.icu-program-card--three .icu-program-mini-track span:nth-child(-n+3),
+.icu-program-card--four .icu-program-mini-track span {
+  background: rgba(255,255,255,.95);
+}
+.icu-program-card-body {
+  padding: 1.05rem 1.55rem 1.1rem;
+}
+.icu-program-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .44rem;
+  margin-bottom: .9rem;
+}
+.icu-program-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 29px;
+  padding: .34rem .66rem;
+  color: #334963;
+  background: #f0f5fa;
+  border: 1px solid #e4ecf5;
+  border-radius: 999px;
+  font-size: .74rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+.icu-program-expand {
+  border-top: 1px solid #e5edf4;
+}
+.icu-program-expand summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--pc-accent);
+  min-height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .65rem;
+  font-size: .88rem;
+  font-weight: 800;
+  padding: .62rem 0 0;
+}
+.icu-program-expand summary::-webkit-details-marker { display: none; }
+.icu-program-expand summary i { transition: transform .2s ease; }
+.icu-program-expand[open] summary i { transform: rotate(180deg); }
+.icu-program-expand summary:focus-visible {
+  outline: 3px solid var(--pc-accent);
+  outline-offset: 2px;
+  border-radius: 7px;
+}
+.icu-program-modules {
+  list-style: none;
+  padding: .45rem 0 .3rem;
+  margin: 0;
+  display: grid;
+  gap: .75rem;
+}
+.icu-program-modules li {
+  display: flex;
+  gap: .76rem;
+  align-items: flex-start;
+}
+.icu-program-module-num {
+  background: #eaf1f8;
+  color: var(--pc-accent);
+  border-radius: .68rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 38px;
+  height: 38px;
+  font-size: .82rem;
+  font-weight: 850;
+}
+.icu-program-module-info {
+  padding: .1rem 0 .65rem;
+  flex: 1;
+  min-width: 0;
+  border-bottom: 1px solid #edf1f6;
+}
+.icu-program-modules li:last-child .icu-program-module-info { border-bottom: 0; }
+.icu-program-module-info strong {
+  display: block;
+  color: #20364f;
+  font-weight: 800;
+  line-height: 1.35;
+  font-size: .86rem;
+}
+.icu-program-module-info time {
+  display: block;
+  color: #577087;
+  font-size: .76rem;
+  font-weight: 650;
+  margin-top: .24rem;
+}
+.icu-program-module-info p {
+  color: #506177;
+  font-size: .82rem;
+  line-height: 1.5;
+  margin: .38rem 0 0;
+}
+.icu-program-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.8rem auto 0;
+}
+.icu-program-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  font-size: .9rem;
+  font-weight: 800;
+  min-height: 46px;
+  padding: .85rem 1.4rem;
+  border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s ease;
+}
+.icu-program-primary-link {
+  background: linear-gradient(135deg,#0756a6,#076b8b);
+  color: #fff !important;
+  box-shadow: 0 9px 20px rgba(7,85,164,.2);
+}
+.icu-program-secondary-link {
+  color: #0756a6 !important;
+  border: 1px solid #b9cfe8;
+  background: rgba(255,255,255,.86);
+}
+.icu-program-links a:hover { transform: translateY(-2px); }
+.icu-program-links a:focus-visible {
+  outline: 3px solid #dc8a27;
+  outline-offset: 3px;
+}
+@media (max-width: 767px) {
+  .icu-program-section .icu-program-lead { font-size: .88rem; margin-bottom: 1.4rem; }
+  .icu-program-cards { grid-template-columns: 1fr; gap: .95rem; }
+  .icu-program-card-head { min-height: 0; padding: 1.12rem 1.15rem 1.1rem; }
+  .icu-program-card-head h3 { font-size: 1.3rem; }
+  .icu-program-card-body { padding: .9rem 1.15rem 1rem; }
+  .icu-program-links { flex-direction: column; }
+  .icu-program-links a { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .icu-program-card, .icu-program-expand summary i, .icu-program-links a { transition: none; }
+  .icu-program-card:hover, .icu-program-links a:hover { transform: none; }
+}
+
+
+/* Interactive course pathway – keep the four gradient cards compact until opened. */
+.icu-course-map{max-width:880px;margin:0 auto 1.4rem;padding:1rem 1.1rem;background:rgba(255,255,255,.88);border:1px solid #dfe9f5;border-radius:19px;box-shadow:0 10px 28px rgba(21,65,107,.06)}
+.icu-course-map-head{display:flex;justify-content:space-between;align-items:center;gap:.85rem;flex-wrap:wrap}
+.icu-course-map-title{font-size:.89rem;font-weight:800;color:#163e63;display:inline-flex;align-items:center;gap:.48rem}
+.icu-course-map-title i{color:#0a68ac}
+.icu-course-map-status{font-size:.77rem;color:#546b82;line-height:1.35}
+.icu-course-map-steps{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:.5rem;margin-top:.85rem}
+.icu-course-map-step{min-width:0;min-height:36px;padding:.4rem 0;border:1px solid #d1deed;border-radius:10px;background:#eef4fa;color:#355572;font-size:.83rem;font-weight:800;transition:background .18s,color .18s,transform .18s;cursor:pointer}
+.icu-course-map-step.is-before{background:#c7dff3;border-color:#b2d3ee;color:#15538a}
+.icu-course-map-step.is-active{background:#086cad;border-color:#086cad;color:#fff;box-shadow:0 4px 12px rgba(10,88,157,.2)}
+.icu-course-map-step:hover{transform:translateY(-1px);border-color:#438fbf}
+.icu-course-map-step:focus-visible{outline:3px solid #edaa44;outline-offset:3px}
+.icu-course-map-note{margin:.55rem 0 0;color:#627b90;font-size:.7rem;line-height:1.4}
+.icu-program-modules>li.icu-step-item{display:block;padding:0;min-width:0}
+.icu-program-modules{gap:.45rem;padding:.5rem 0 .1rem}
+.icu-step-detail{min-width:0;border:1px solid #e4ebf5;background:#fbfdff;border-radius:14px;overflow:hidden}
+.icu-step-detail[open]{background:#fff;border-color:#c4d8ea;box-shadow:0 8px 22px rgba(28,68,113,.06)}
+.icu-step-toggle{display:flex;align-items:center;gap:.7rem;cursor:pointer;min-height:60px;padding:.72rem .76rem;list-style:none}
+.icu-step-toggle::-webkit-details-marker{display:none}
+.icu-step-toggle .icu-program-module-num{flex:0 0 36px;height:36px}
+.icu-step-toggle .icu-program-module-info{flex:1;min-width:0;border:0;padding:0}
+.icu-step-toggle .icu-program-module-info strong{font-size:.84rem;line-height:1.33}
+.icu-step-toggle .icu-program-module-info time{font-size:.73rem}
+.icu-step-chevron{flex:0 0 auto;color:var(--pc-accent);font-size:.78rem;transition:transform .2s}
+.icu-step-detail[open] .icu-step-chevron{transform:rotate(180deg)}
+.icu-step-toggle:focus-visible{outline:3px solid var(--pc-accent);outline-offset:-3px;border-radius:13px}
+.icu-step-panel{display:grid;gap:.55rem;padding:0 .72rem .78rem}
+.icu-step-detail-row{display:flex;align-items:flex-start;gap:.64rem;padding:.65rem .72rem;background:#f1f6fc;border-radius:11px}
+.icu-step-detail-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;height:28px;border-radius:8px;background:#e0eefa;color:var(--pc-accent);font-size:.77rem}
+.icu-step-detail-row>div{flex:1;min-width:0}
+.icu-step-detail-row h4{margin:0 0 .25rem;color:#223e57;font-size:.78rem;font-weight:850;line-height:1.2}
+.icu-step-detail-row p{margin:0;color:#455b71;font-size:.78rem;line-height:1.5}
+.icu-step-result{background:#e9f4ef}
+.icu-step-result .icu-step-detail-icon{background:#d5eee1;color:#177449}
+.icu-course-documents{max-width:1100px;margin:1.6rem auto 0;padding:1.35rem;border-radius:23px;border:1px solid #dbe8f2;background:rgba(255,255,255,.9)}
+.icu-course-documents h3{font-size:1.28rem;line-height:1.3;font-weight:850;color:#17344c;margin:0 0 .4rem}
+.icu-course-documents-intro{font-size:.85rem;color:#52667c;line-height:1.6;margin:0 0 1rem}
+.icu-course-document-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem}
+.icu-course-document{min-width:0;display:flex;gap:.65rem;align-items:flex-start;padding:1rem;border:1px solid #dfe9f4;border-radius:16px;background:#f6faff;transition:border-color .16s,box-shadow .16s;text-decoration:none!important}
+.icu-course-document:hover{border-color:#80b4de;box-shadow:0 8px 23px rgba(10,70,133,.1)}
+.icu-course-document:focus-visible{outline:3px solid #e2a34c;outline-offset:3px}
+.icu-course-document-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 39px;height:39px;border-radius:12px;background:#e3effb;color:#0869ac;font-size:1.02rem}
+.icu-course-document span:last-child{min-width:0}
+.icu-course-document strong{display:block;color:#173e68;font-size:.85rem;line-height:1.4;font-weight:800}
+.icu-course-document small{display:block;color:#566a7f;font-size:.74rem;line-height:1.45;margin-top:.32rem}
+.icu-course-document-note{margin:.75rem 0 0;font-size:.72rem;line-height:1.5;color:#607488}
+@media(max-width:767px){
+ .icu-course-map{padding:.85rem;border-radius:15px}
+ .icu-course-map-steps{gap:.26rem}
+ .icu-course-map-step{min-height:36px;border-radius:8px}
+ .icu-step-toggle{padding:.6rem}
+ .icu-step-panel{padding:0 .55rem .65rem}
+ .icu-step-detail-row{padding:.55rem}
+ .icu-course-documents{padding:1rem;border-radius:18px}
+ .icu-course-document-grid{grid-template-columns:1fr;gap:.6rem}
+}
+@media(prefers-reduced-motion:reduce){.icu-course-map-step,.icu-step-chevron,.icu-course-document{transition:none}.icu-course-map-step:hover{transform:none}}
+
+/* Inner summaries override parent accordion selectors by specificity. */
+.icu-program-expand .icu-step-toggle{padding:.72rem .76rem;min-height:60px;color:#243d58}
+.icu-program-expand[open] .icu-step-detail:not([open]) .icu-step-chevron{transform:none}
+.icu-program-expand[open] .icu-step-detail[open] .icu-step-chevron{transform:rotate(180deg)}
+.icu-step-detail{scroll-margin-top:140px}
