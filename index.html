@@ -358,14 +358,15 @@
             <div class="cu-cohort-start">
               <div>
                 <p>Начало обучения</p>
-                <time datetime="2027-03-06">6 марта 2027</time>
+                <time id="cohort-start-date" datetime="2027-03-06">6 марта 2027</time>
               </div>
               <img src="/img/web_img/icu-logo-transparent-small.webp" alt="" width="76" height="76" decoding="async">
             </div>
+            <p class="cu-cohort-countdown" id="cohort-countdown" hidden>До старта <strong></strong></p>
             <dl>
               <div><dt>Формат</dt><dd>Онлайн в Zoom</dd></div>
               <div><dt>Язык</dt><dd>Русский</dd></div>
-              <div><dt>По модулям</dt><dd>180 € за модуль</dd></div>
+              <div class="cu-module-payment"><dt>Оплата по модулям</dt><dd>180 € за модуль</dd></div>
               <div><dt>Полная предоплата</dt><dd>1 224 € со скидкой 15%</dd></div>
             </dl>
             <a href="/raspisanie.html">Расписание и условия обучения</a>
@@ -1657,7 +1658,7 @@
       Стоимость обучения
     </h2>
     <div class="icu-total-price" aria-label="Стоимость всей программы">
-      <div><span class="icu-price-label">8 модулей по 180 €</span><strong>1 440 €</strong><small>При оплате по модулям</small></div>
+      <div><span class="icu-price-label">Оплата по модулям</span><strong>180 € за модуль</strong><small>Можно платить за каждый модуль отдельно. Всего 1 440 € за 8 модулей.</small></div>
       <div><span class="icu-price-label">При полной предоплате со скидкой 15%</span><strong>1 224 €</strong><small>Экономия 216 €</small></div>
       <p class="icu-price-legal">Расчёт на основе опубликованных условий. Состав стоимости, порядок оплаты и условия выдачи документов уточняйте у координатора перед оформлением.</p>
     </div>
@@ -1847,7 +1848,7 @@
                             <i class="fas fa-chevron-down transition-transform duration-300" aria-hidden="true"></i>
                         </button></h3>
                         <div id="faq-answer-4" class="accordion-content px-6" aria-hidden="true" inert>
-                            <p class="pb-6 text-gray-600">Один модуль стоит 180 €, восемь модулей — 1 440 €. При полной предоплате скидка 15%, итоговая стоимость — 1 224 €. <a class="cu-inline-link" href="#consultation">Порядок оплаты можно обсудить с координатором</a>.</p>
+                            <p class="pb-6 text-gray-600">Можно оплачивать каждый модуль отдельно по 180 €. Полная стоимость восьми модулей — 1 440 €. При полной предоплате скидка 15%, итоговая стоимость — 1 224 €. <a class="cu-inline-link" href="#consultation">Порядок оплаты можно обсудить с координатором</a>.</p>
                         </div>
                     </div>
                     <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
@@ -2065,7 +2066,7 @@
     <!-- Consolidated Scripts -->
 
     <script src="whatsapp-forms.js?v=20261112-analytics-1" defer></script>
-    <script src="app.js" defer></script>
+    <script src="app.js?v=20261114-countdown" defer></script>
     <script src="program-path.js?v=20261105-learning-path-1" defer></script>
 <script src="/analytics-consent.js?v=20261112-1" defer></script>
 </body>

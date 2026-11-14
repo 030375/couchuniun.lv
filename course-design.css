@@ -163,6 +163,19 @@ body[data-coachunion-design] .site-header > .container > a[href*="wa.me"] {
   line-height: 1.18;
 }
 .cu-cohort-start img { flex: 0 0 auto; object-fit: contain; width: clamp(46px, 6vw, 76px); height: auto; }
+.cu-cohort-countdown {
+  width: fit-content;
+  margin-top: .65rem;
+  padding: .3rem .65rem;
+  border-radius: .45rem;
+  background: #eef4f8;
+  color: var(--cu-blue);
+  font-size: .86rem;
+}
+.cu-cohort-countdown strong {
+  margin-inline-start: .25rem;
+  font-variant-numeric: tabular-nums;
+}
 .cu-cohort dl { margin: 1rem 0; }
 .cu-cohort dl > div {
   display: flex;
@@ -175,6 +188,8 @@ body[data-coachunion-design] .site-header > .container > a[href*="wa.me"] {
 }
 .cu-cohort dt { color: var(--cu-muted); }
 .cu-cohort dd { font-weight: 700; text-align: right; }
+.cu-cohort .cu-module-payment dt { color: var(--cu-ink); font-weight: 650; }
+.cu-cohort .cu-module-payment dd { color: var(--cu-action); font-weight: 800; }
 .cu-cohort a, .cu-inline-link { color: var(--cu-action); font-weight: 650; }
 
 .cu-price-card h3 { font-size: 1.45rem; font-weight: 750; }
