@@ -1,0 +1,301 @@
+:root {
+  --cu-ink: #142638;
+  --cu-muted: #465a6c;
+  --cu-blue: #173a60;
+  --cu-action: #1e517d;
+  --cu-line: #dce5eb;
+  --cu-paper: #f3f6f8;
+}
+
+body[data-coachunion-design],
+.cu-schedule,
+.cu-schedule-header {
+  color: var(--cu-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body[data-coachunion-design] { background: #fff; }
+body[data-coachunion-design]::before,
+body[data-coachunion-design]::after { display: none; }
+body[data-coachunion-design] .icu-progress { background: #4f8bab; }
+
+body[data-coachunion-design] header.site-header {
+  background: #fff !important;
+  backdrop-filter: none !important;
+  box-shadow: 0 1px 8px #14263812 !important;
+}
+
+.cu-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  color: var(--cu-ink);
+  font-weight: 750;
+  letter-spacing: -.035em;
+  white-space: nowrap;
+}
+
+.cu-brand span {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: .55rem;
+  background: var(--cu-blue);
+  color: #fff;
+  font-size: .72rem;
+  letter-spacing: .045em;
+}
+
+body[data-coachunion-design] .site-header > .container > a[href*="wa.me"] {
+  background: var(--cu-action) !important;
+  border-radius: .6rem !important;
+  box-shadow: none !important;
+}
+
+.cu-hero {
+  background: linear-gradient(122deg, #11283e, #204e72);
+  color: #fff;
+}
+
+.cu-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(19rem, 1fr);
+  align-items: center;
+  grid-template-areas: "copy cohort" "navigation cohort";
+  gap: 1.75rem clamp(2rem, 5vw, 5rem);
+  max-width: 1200px;
+  padding: clamp(2.65rem, 6vw, 6rem) clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.cu-hero-copy { grid-area: copy; }
+.cu-cohort { grid-area: cohort; }
+.cu-hero-navigation { grid-area: navigation; }
+
+.cu-hero-copy > * + * { margin-top: 1.05rem; }
+.cu-course-name {
+  color: #395c78;
+  font-size: .84rem;
+  font-weight: 750;
+  letter-spacing: .085em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.cu-hero .cu-course-name { color: #d9e9f6; }
+
+.cu-hero h1,
+.cu-schedule-intro h1 {
+  font-size: clamp(2.35rem, 4.4vw, 4.25rem);
+  font-weight: 760;
+  letter-spacing: -.052em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.cu-hero-copy > p:not(.cu-course-name) {
+  max-width: 53ch;
+  color: #e1ebf3;
+  line-height: 1.55;
+}
+.cu-hero-lead { font-size: clamp(1.05rem, 1.5vw, 1.3rem); }
+
+.cu-actions,
+.cu-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem 1rem;
+}
+.cu-hero-links { margin-top: 1.35rem; font-size: .92rem; }
+
+.cu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .67rem 1.05rem;
+  border: 1px solid transparent;
+  border-radius: .6rem;
+  font-size: .94rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+.cu-button-primary { background: var(--cu-action); color: #fff; }
+.cu-button-primary:hover { background: #173b5c; }
+.cu-button-outline { border-color: #bfced9; }
+.cu-button-outline:hover { background: #647f9614; }
+.cu-hero .cu-button-primary,
+.cu-button-on-dark { background: #fff; color: var(--cu-blue); }
+.cu-hero .cu-button-primary:hover,
+.cu-button-on-dark:hover { background: #e4f0f8; }
+.cu-hero .cu-button-outline:hover { background: #ffffff18; }
+
+.cu-hero-links a,
+.cu-cohort a,
+.cu-inline-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+.cu-hero-links a { color: #dce9f4; }
+
+.cu-cohort,
+.cu-price-card {
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid var(--cu-line);
+  border-radius: 1rem;
+  background: #fff;
+  color: var(--cu-ink);
+}
+.cu-cohort-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.cu-cohort-start p { color: var(--cu-muted); font-size: .9rem; font-weight: 650; }
+.cu-cohort-start time {
+  color: var(--cu-blue);
+  font-size: clamp(1.55rem, 3.2vw, 2.55rem);
+  font-weight: 750;
+  letter-spacing: -.05em;
+  line-height: 1.18;
+}
+.cu-cohort-start img { flex: 0 0 auto; object-fit: contain; width: clamp(46px, 6vw, 76px); height: auto; }
+.cu-cohort-countdown {
+  width: fit-content;
+  margin-top: .65rem;
+  padding: .3rem .65rem;
+  border-radius: .45rem;
+  background: #eef4f8;
+  color: var(--cu-blue);
+  font-size: .86rem;
+}
+.cu-cohort-countdown strong {
+  margin-inline-start: .25rem;
+  font-variant-numeric: tabular-nums;
+}
+.cu-cohort dl { margin: 1rem 0; }
+.cu-cohort dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .64rem 0;
+  border-bottom: 1px solid var(--cu-line);
+  font-size: .92rem;
+  line-height: 1.45;
+}
+.cu-cohort dt { color: var(--cu-muted); }
+.cu-cohort dd { font-weight: 700; text-align: right; }
+.cu-cohort .cu-module-payment dt { color: var(--cu-ink); font-weight: 650; }
+.cu-cohort .cu-module-payment dd { color: var(--cu-action); font-weight: 800; }
+.cu-cohort a, .cu-inline-link { color: var(--cu-action); font-weight: 650; }
+
+.cu-price-card h3 { font-size: 1.45rem; font-weight: 750; }
+.cu-price-card ol {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1.6rem;
+  padding-inline-start: 1.35rem;
+  list-style: decimal;
+  color: var(--cu-muted);
+}
+.cu-price-card li::marker { color: var(--cu-action); font-weight: 750; }
+
+[data-coachunion-design] main section > .container > h2,
+[data-coachunion-design] .icu-program-section h2 { letter-spacing: -.035em; }
+
+[data-coachunion-design] .icu-program-card { box-shadow: none; border-color: var(--cu-line); border-radius: 1rem; }
+[data-coachunion-design] .icu-program-card-head { min-height: 0; }
+[data-coachunion-design] .icu-program-card-head::before { display: none; }
+[data-coachunion-design] .icu-program-card--one { --pc-from: #193d5e; --pc-to: #305e80; }
+[data-coachunion-design] .icu-program-card--two { --pc-from: #195050; --pc-to: #286967; }
+[data-coachunion-design] .icu-program-card--three { --pc-from: #43375d; --pc-to: #5d4d79; }
+[data-coachunion-design] .icu-program-card--four { --pc-from: #68452e; --pc-to: #805b40; }
+[data-coachunion-design] .icu-program-modules { margin-top: .6rem; }
+[data-coachunion-design] .teacher-card { border: 1px solid var(--cu-line); border-radius: 1rem; }
+
+[data-coachunion-design] #consultation,
+[data-coachunion-design] #consultation .bg-gradient-to-br { background: var(--cu-blue); }
+#consultation .cu-button-on-dark { margin-top: 1.2rem; }
+[data-coachunion-design] #pricing .icu-total-price { background: #fff; border-color: var(--cu-line); }
+
+.cu-schedule-header { background: #fff; border-bottom: 1px solid var(--cu-line); }
+.cu-schedule-header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  min-height: 4.1rem;
+}
+.cu-schedule { background: var(--cu-paper); }
+.cu-schedule-intro { max-width: 53rem; margin: 0 auto 1.75rem; text-align: center; }
+.cu-schedule-intro h1 { margin: .6rem 0 .85rem; font-size: clamp(2.1rem, 5vw, 3.75rem); }
+.cu-schedule-intro > p:last-child { color: var(--cu-muted); text-wrap: pretty; }
+.cu-schedule #schedule-modules > div { background: #fff; border: 1px solid var(--cu-line); box-shadow: none; }
+
+.cu-button:focus-visible,
+.cu-brand:focus-visible,
+.cu-hero a:focus-visible,
+.cu-schedule a:focus-visible { outline: 3px solid #c4833b; outline-offset: 3px; }
+
+@media (max-width: 767px) {
+  .cu-hero-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "copy" "cohort" "navigation";
+    gap: 1.25rem;
+    padding-block: 1.75rem 2rem;
+  }
+  .cu-hero h1 {
+    font-size: clamp(1.92rem, 8vw, 2.35rem);
+    overflow-wrap: anywhere;
+    text-wrap: initial;
+  }
+  .cu-hero-copy > * + * { margin-top: .65rem; }
+  .cu-cohort dl { margin: .6rem 0; }
+  .cu-cohort dl > div { padding-block: .42rem; }
+}
+
+@media (max-width: 390px) {
+  .cu-actions .cu-button { width: 100%; }
+  .cu-schedule-header .cu-button { font-size: .82rem; padding-inline: .6rem; }
+  body[data-coachunion-design] header.site-header > .container { gap: .45rem; }
+  body[data-coachunion-design] .site-header > .container > a[href*="wa.me"] {
+    font-size: .83rem;
+    padding-inline: .7rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body[data-coachunion-design] { padding-bottom: 0; }
+  body[data-coachunion-design] .site-header > .container > a[href*="wa.me"] { display: inline-flex; }
+  body[data-coachunion-design] #mobile-menu-button { min-width: 40px; min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has([data-coachunion-design]) { scroll-behavior: auto; }
+}
+
+.cu-skip-link {
+  position: fixed;
+  z-index: 10;
+  top: .5rem;
+  left: .5rem;
+  transform: translateY(-200%);
+  padding: .65rem 1rem;
+  border-radius: .4rem;
+  background: #fff;
+  color: var(--cu-blue);
+}
+.cu-skip-link:focus { transform: none; }
+
+[data-coachunion-design] #coach-competencies .competency-header > .flex-1 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+[data-coachunion-design] .accordion-btn:focus-visible {
+  outline: 3px solid var(--cu-action);
+  outline-offset: -4px;
+}
+[data-coachunion-design] footer { overflow-wrap: anywhere; }
