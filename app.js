@@ -8,34 +8,38 @@ function initProgress(){var p=qs('.icu-progress');if(!p){p=document.createElemen
 function initMenu(){var b=qs('#mobile-menu-button'),m=qs('#mobile-menu');if(!b||!m)return;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){m.classList.toggle('hidden');b.setAttribute('aria-expanded',String(!m.classList.contains('hidden')))});qsa('a',m).forEach(function(a){a.addEventListener('click',function(){m.classList.add('hidden');b.setAttribute('aria-expanded','false')})})}
 function initCohortCountdown() {
   const start = qs('#cohort-start-date');
-  const countdown = qs('#cohort-countdown');
+  const countdown = qs('#countdown-timer');
   if (!start || !countdown) return;
 
-  const target = Date.parse(start.dateTime);
+  // The date is confirmed. Count down to midnight in Riga on that date.
+  const target = Date.parse(start.dateTime + 'T00:00:00+02:00');
   if (!Number.isFinite(target)) return;
 
-  const rigaDate = new Intl.DateTimeFormat('en', {
-    timeZone: 'Europe/Riga', year: 'numeric', month: 'numeric', day: 'numeric'
-  });
-  const dayLabel = new Intl.NumberFormat('ru', {
-    style: 'unit', unit: 'day', unitDisplay: 'long'
-  });
-  const output = qs('strong', countdown);
+  const units = [
+    [qs('#countdown-days'), 86400],
+    [qs('#countdown-hours'), 3600],
+    [qs('#countdown-minutes'), 60],
+    [qs('#countdown-seconds'), 1]
+  ];
 
   function update() {
-    const calendar = Object.fromEntries(rigaDate.formatToParts(new Date())
-      .map(({type, value}) => [type, Number(value)]));
-    const today = Date.UTC(calendar.year, calendar.month - 1, calendar.day);
-    const days = (target - today) / 86400000;
-    countdown.hidden = days <= 0;
-    if (days > 0) output.textContent = dayLabel.format(days);
-    return days > 0;
+    let remaining = Math.ceil((target - Date.now()) / 1000);
+    if (remaining <= 0) {
+      countdown.hidden = true;
+      return false;
+    }
+    for (const [element, seconds] of units) {
+      element.textContent = String(Math.floor(remaining / seconds)).padStart(2, '0');
+      remaining %= seconds;
+    }
+    countdown.hidden = false;
+    return true;
   }
 
   if (update()) {
     const interval = setInterval(() => {
       if (!update()) clearInterval(interval);
-    }, 30000);
+    }, 1000);
   }
 }
 function initFaq(){qsa('.faq-item').forEach(function(item){var b=qs('.accordion-btn',item),c=qs('.accordion-content',item),i=qs('.fa-chevron-down',item);if(!b||!c)return;b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var open=item.classList.contains('active');item.classList.toggle('active',!open);c.classList.toggle('active',!open);c.setAttribute('aria-hidden',String(open));c.toggleAttribute('inert',open);if(i)i.classList.toggle('rotate-180',!open);b.setAttribute('aria-expanded',String(!open))})})}

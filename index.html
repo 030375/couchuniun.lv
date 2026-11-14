@@ -159,7 +159,7 @@
 @media(max-width:767px){.icu-course-document-grid{grid-template-columns:1fr}.icu-course-map-steps{gap:.25rem}}
 </style>
 <link rel="stylesheet" href="/enrollment.css?v=20261105-learning-path-1">
-<link rel="stylesheet" href="/course-design.css">
+<link rel="stylesheet" href="/course-design.css?v=icu-hero">
     <!-- Custom Styles -->
 
 <style id="hero-icu-emblem-scale-fix">
@@ -346,44 +346,123 @@
     </header>
 
     <main id="main-content">
-      <section class="cu-hero" aria-labelledby="course-title">
-        <div class="container mx-auto px-4 cu-hero-layout">
-          <div class="cu-hero-copy">
-            <p class="cu-course-name">Professional Coach ICU · Coach Union, Рига</p>
-            <h1 id="course-title">Профессиональное обучение коучингу</h1>
-            <p class="cu-hero-lead">Научитесь проводить индивидуальные и командные коуч-сессии. В программе восемь модулей, практика в малых группах и разбор сессий на супервизиях.</p>
-            <p class="cu-hero-audience">Для начинающих, руководителей, HR и специалистов, которые работают с людьми.</p>
+<section class="hero-bg relative pt-32 pb-16 text-white bg-cover bg-center">
+  <!-- Полупрозрачный оверлей -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="flex flex-col-reverse lg:flex-row items-center gap-8">
+      <!-- Левый блок с текстом -->
+      <div class="w-full lg:w-1/2 space-y-4">
+        <p class="icu-eyebrow">Международная программа Professional Coach ICU</p>
+        <h1 class="icu-hero-title text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          Станьте профессиональным коучем
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl">
+          Освойте навыки ведения коучинговых сессий, работу с командами и подготовьтесь к профессиональной сертификации ICU.
+        </p>
+        <p class="text-base sm:text-lg font-medium">
+          Для начинающих, руководителей и специалистов, которые работают с людьми.
+        </p>
+
+        <!-- Статистика курса -->
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="icu-limited-seats bg-white bg-opacity-20 rounded px-3 py-1 text-sm sm:text-base" aria-label="Онлайн-обучение на русском языке">
+            <span>ФОРМАТ:</span> <strong>Zoom · русский язык</strong>
           </div>
-          <aside class="cu-cohort" aria-label="Условия ближайшего потока">
-            <div class="cu-cohort-start">
-              <div>
-                <p>Начало обучения</p>
-                <time id="cohort-start-date" datetime="2027-03-06">6 марта 2027</time>
-              </div>
-              <img src="/img/web_img/icu-logo-transparent-small.webp" alt="" width="76" height="76" decoding="async">
-            </div>
-            <p class="cu-cohort-countdown" id="cohort-countdown" hidden>До старта <strong></strong></p>
-            <dl>
-              <div><dt>Формат</dt><dd>Онлайн в Zoom</dd></div>
-              <div><dt>Язык</dt><dd>Русский</dd></div>
-              <div class="cu-module-payment"><dt>Оплата по модулям</dt><dd>180 € за модуль</dd></div>
-              <div><dt>Полная предоплата</dt><dd>1 224 € со скидкой 15%</dd></div>
-            </dl>
-            <a href="/raspisanie.html">Расписание и условия обучения</a>
-          </aside>
-          <div class="cu-hero-navigation">
-            <div class="cu-actions">
-              <a class="cu-button cu-button-primary" href="#consultation">Обсудить поступление</a>
-              <a class="cu-button cu-button-outline" href="#program">Смотреть программу</a>
-            </div>
-            <nav class="cu-hero-links" aria-label="Подробнее о курсе">
-              <a href="#teachers">Преподаватели</a>
-              <a href="#course-credentials">Документы</a>
-              <a href="#video-reviews">Отзывы выпускников</a>
-            </nav>
+          <div class="bg-white bg-opacity-20 rounded px-3 py-1 text-sm sm:text-base">
+            <span>СТАРТ:</span> <time class="font-bold" id="cohort-start-date" datetime="2027-03-06">6 марта 2027</time>
+          </div>
+          <div class="bg-white bg-opacity-20 rounded px-3 py-1 text-sm sm:text-base">
+            <span>ПРОГРАММА:</span> <span class="font-bold">8 модулей</span>
           </div>
         </div>
-      </section>
+
+        <!-- Кнопки действия -->
+        <div class="icu-hero-actions flex flex-col sm:flex-row sm:items-center gap-3 mt-6">
+          <a href="#consultation" class="w-full sm:w-auto bg-orange-500 hover:bg-amber-800 text-white px-6 py-3 rounded-full font-bold text-base sm:text-lg transition duration-300 text-center shadow-md hover:shadow-lg transform hover:-translate-y-1">
+            Бесплатная консультация
+          </a>
+          <a
+          href="raspisanie.html"
+         class="block w-full sm:inline-block bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white px-6 py-3 rounded-full font-bold text-base sm:text-lg transition duration-300 text-center"
+         aria-label="Подробное расписание курса"
+>
+        Программа и расписание
+         </a>
+
+
+        </div>
+
+        <p class="text-sm sm:text-base text-white font-medium">Занятия преимущественно по выходным. <strong>Можно оплачивать по модулям — 180 € за каждый.</strong></p>
+        <p class="icu-hero-reassurance"><i class="fas fa-check-circle" aria-hidden="true"></i> Можно начать с нуля — практика и поддержка преподавателей предусмотрены программой.</p>
+
+        <!-- Контакты -->
+        <div class="mt-6">
+          <p class="font-medium">Запишитесь на программы ICU:</p>
+          <div class="flex flex-wrap gap-4 mt-2 text-sm sm:text-base">
+            <a href="tel:+37126037277" class="flex items-center hover:underline">
+              <i class="fas fa-phone-alt mr-2 text-primary"></i>Riga: +371 260 37277
+            </a>
+            <a href="tel:+3725535006" class="flex items-center hover:underline">
+              <i class="fas fa-phone-alt mr-2 text-secondary"></i>Tallinn: +372 553 5006
+            </a>
+            <a href="tel:+380662603315" class="flex items-center hover:underline">
+              <i class="fas fa-phone-alt mr-2 text-accent"></i>Kiev: +380 662 603 315
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правый блок: адаптивное изображение -->
+      <div class="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+        <img src="/img/web_img/icu-logo-transparent.webp" srcset="/img/web_img/icu-logo-transparent-small.webp 240w, /img/web_img/icu-logo-transparent.webp 490w" sizes="(max-width: 767px) 182px, (max-width: 1023px) 210px, 470px" width="490" height="490" fetchpriority="high" decoding="async" alt="Обучение профессиональному коучингу ICU в Риге" class="icu-hero-logo rounded-lg shadow-lg object-contain w-32 sm:w-40 md:w-56 lg:w-full transition-transform duration-300 hover:scale-90 hero-icu-emblem">
+      </div>
+    </div>
+
+    <!-- Блок с предложением и таймером -->
+    <div class="icu-early-offer max-w-lg mx-auto bg-white rounded-xl p-8 shadow-2xl mt-12">
+      <p class="icu-offer-eyebrow"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Выгоднее при оплате всей программы</p>
+      <h2 class="text-2xl font-bold text-primary mb-3 text-center">
+        Скидка 15% при оплате полного курса
+      </h2>
+      <div class="icu-offer-prices" aria-label="Цена курса со скидкой">
+        <span class="icu-old-price">1 440 €</span>
+        <strong class="icu-new-price">1 224 €</strong>
+        <span class="icu-save-price">Экономия 216 €</span>
+      </div>
+      <p class="icu-countdown-caption text-gray-700 text-center mb-6">Старт ближайшего потока — 6 марта 2027 года.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6" id="countdown-timer" role="timer" aria-label="До начала обучения" hidden>
+        <div class="countdown-box bg-primary text-white rounded-lg p-4 text-center">
+          <div class="text-3xl font-bold" id="countdown-days">00</div>
+          <div class="text-sm">дней</div>
+        </div>
+        <div class="countdown-box bg-secondary text-white rounded-lg p-4 text-center">
+          <div class="text-3xl font-bold" id="countdown-hours">00</div>
+          <div class="text-sm">часов</div>
+        </div>
+        <div class="countdown-box bg-accent text-white rounded-lg p-4 text-center">
+          <div class="text-3xl font-bold" id="countdown-minutes">00</div>
+          <div class="text-sm">минут</div>
+        </div>
+        <div class="countdown-box bg-dark text-white rounded-lg p-4 text-center">
+          <div class="text-3xl font-bold" id="countdown-seconds">00</div>
+          <div class="text-sm">секунд</div>
+        </div>
+      </div>
+      <p class="text-gray-700 text-center mb-4">При оплате по модулям — <strong>180 € за модуль</strong>.</p>
+      <a href="#consultation" class="w-full bg-accent hover:bg-orange-600 text-white py-3 rounded-lg font-bold transition duration-300 text-center block">
+        Узнать условия скидки
+      </a>
+      <a class="icu-review-shortcut" href="#video-reviews">
+        <i class="fas fa-play-circle" aria-hidden="true"></i>
+        Сначала посмотреть видеоотзывы выпускников
+        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+      </a>
+      <p class="icu-offer-note">Размер скидки и возможность записи подтверждает координатор. Указанная скидка относится к полной предоплате курса.</p>
+    </div>
+  </div>
+</section>
 
 <!-- Enrollment paths: simple entry points before the long curriculum -->
 <section id="for-whom" class="icu-audience-section py-16 bg-white" aria-labelledby="icu-audience-title">
@@ -2066,7 +2145,7 @@
     <!-- Consolidated Scripts -->
 
     <script src="whatsapp-forms.js?v=20261112-analytics-1" defer></script>
-    <script src="app.js?v=20261114-countdown" defer></script>
+    <script src="app.js?v=icu-hero" defer></script>
     <script src="program-path.js?v=20261105-learning-path-1" defer></script>
 <script src="/analytics-consent.js?v=20261112-1" defer></script>
 </body>
