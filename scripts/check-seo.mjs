@@ -10,7 +10,14 @@ const pages=[
   'business-coach.html',
   'bisness_kouch.html',
   'library.html',
-  'neurocoach.html'
+  'neurocoach.html',
+  'o-shkole.html',
+  'stoimost.html',
+  'icu-i-icf.html',
+  'mikhail-dernakovskiy.html',
+  'alexander-shtal.html',
+  'ilya-shmelev.html',
+  'elena-khovanskaya.html'
 ];
 const errors=[];
 const read=(path)=>readFileSync(resolve(root,path),'utf8');
@@ -42,6 +49,15 @@ for(const file of pages){
 }
 
 const home=read('index.html');
+const description=get(home,/<meta\s+name="description"\s+content="([^"]+)"/i);
+assert(description?.includes('60 часов межмодульной практики')&&description.includes('отдельно 4 супервизии'),
+  'index.html: practice and supervision must be distinguished in the description');
+assert(!home.includes('i.imgur.com'),'index.html: images must be served locally');
+const credentialImages=[...home.matchAll(/(?:src|data-full)="(\/img\/(?:credentials\/[^"]+|web_img\/elena-khovanskaya\.webp))"/g)];
+assert(new Set(credentialImages.map((match)=>match[1])).size===7,'index.html: missing local credential or portrait reference');
+for(const [,image] of credentialImages){
+  assert(existsSync(resolve(root,image.slice(1))),'index.html: missing image '+image);
+}
 const graph=JSON.parse(get(home,/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/));
 const course=graph['@graph'].find(x=>x['@type']==='Course');
 assert(!!course,'index.html: Course structured data not found');
