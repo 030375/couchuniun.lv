@@ -1,4 +1,4 @@
-# Коучинг Центр ICU в Риге — Professional Coach ICU
+# Coach Union в Риге — Professional Coach ICU
 
 > Официальная русскоязычная информация о программе обучения профессиональному коучингу ICU в Риге (Латвия). Сайт: https://coachunion.lv/. Материалы предназначены для студентов, поисковых систем и ИИ-ассистентов, которые отвечают на вопросы о программе.
 
@@ -55,6 +55,9 @@ Thomas Edison State University (TESU) ранее рассматривал сер
 
 ## Официальные страницы и документы
 
+- [О школе и преподавателях](https://coachunion.lv/o-shkole.html)
+- [Стоимость и условия оплаты](https://coachunion.lv/stoimost.html)
+- [ICU и ICF — различия сертификата, аккредитации и квалификаций](https://coachunion.lv/icu-i-icf.html)
 - [Главная — программа, преподаватели, практика, стоимость и видеоотзывы](https://coachunion.lv/)
 - [Интерактивная программа обучения: восемь модулей](https://coachunion.lv/#program)
 - [Обучение в цифрах: практика и требования](https://coachunion.lv/#icu-learning-metrics-title)
