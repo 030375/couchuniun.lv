@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="/tailwind.min.css">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v=icu-award-section">
 <!-- Core program-card styles are inline to prevent an HTML/CSS cache version mismatch. -->
 <style id="icu-program-critical">
 .icu-program-section .icu-program-lead{max-width:740px;margin:0 auto 2rem;text-align:center;color:#485b75;font-size:1rem;line-height:1.55;font-weight:600}
@@ -159,7 +159,7 @@
 @media(max-width:767px){.icu-course-document-grid{grid-template-columns:1fr}.icu-course-map-steps{gap:.25rem}}
 </style>
 <link rel="stylesheet" href="/enrollment.css?v=20261105-learning-path-1">
-<link rel="stylesheet" href="/course-design.css?v=icu-compact-hero">
+<link rel="stylesheet" href="/course-design.css?v=icu-award-section">
     <!-- Custom Styles -->
 
 
@@ -509,113 +509,40 @@
   </div>
 </section>
 
-<section
-  id="award"
-  class="relative py-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden"
->
-  <!-- Декоративные элементы -->
-  <div class="absolute inset-0 opacity-10 pointer-events-none">
-    <span class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-yellow-400"></span>
-    <span class="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-yellow-300"></span>
-    <span class="absolute top-1/3 right-1/4 w-24 h-24 rotate-45 bg-white"></span>
-  </div>
-
-  <div class="container mx-auto px-4 relative z-10">
-    <div class="flex flex-col lg:flex-row items-center gap-10">
-      
-      <!-- Фото кубка -->
-      <div class="w-full lg:w-1/2 flex justify-center">
-        <div class="relative max-w-xs">
-          <img
-            src="/img/web_img/icu-trophy-gold-transparent.svg" width="480" height="480" loading="lazy" decoding="async"
-            alt="Кубок победителя конкурса 'Выбор Года'"
-            class="w-full object-contain transition-transform duration-500 hover:scale-105 drop-shadow-lg"
-          />
-          <!-- Лейбл -->
-          <div
-            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-md rotate-3"
-          >
-            победитель
-          </div>
-          <!-- Анимация звёзд -->
-          <div class="absolute -top-6 inset-x-0 flex justify-around space-x-2">
-            <span class="w-6 h-6 bg-yellow-300 clip-star animate-pulse"></span>
-            <span class="w-6 h-6 bg-yellow-300 clip-star animate-pulse delay-200"></span>
-            <span class="w-8 h-8 bg-yellow-200 clip-star animate-pulse delay-400"></span>
+<section id="award" class="cu-award-section" aria-labelledby="cu-award-title">
+  <div class="container mx-auto px-4">
+    <div class="cu-award-card">
+      <div class="cu-award-content">
+        <div class="cu-award-heading">
+          <img src="/img/web_img/icu-trophy-gold-transparent.svg" width="480" height="480" loading="lazy" decoding="async"
+               alt="Кубок победителя конкурса «Выбор Года»">
+          <div>
+            <p class="cu-course-name">Международный конкурс</p>
+            <h2 id="cu-award-title">«Выбор Года»</h2>
           </div>
         </div>
-      </div>
-
-      <!-- Текст и видео -->
-      <div class="w-full lg:w-1/2 space-y-8">
-        <!-- Заголовок -->
-        <div>
-          <span class="block text-yellow-300 italic font-medium mb-1 text-center lg:text-left">
-            Международный конкурс
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-bold leading-tight text-center lg:text-left bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-white">
-            «Выбор Года»
-          </h2>
-        </div>
-
-        <!-- Описание -->
-        <div class="relative max-w-xl mx-auto lg:mx-0">
-          <p class="text-lg sm:text-xl">
-            Программа Подготовки Профессиональных коучей ICU удостоена высшей награды 
-            в профессиональном сообществе
-          </p>
-          <div class="absolute bottom-0 left-0 w-full h-1 bg-yellow-400/50 rounded-full transform scale-x-105"></div>
-        </div>
-
-        <!-- Преимущества -->
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-yellow-400 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9
-                      10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"/>
-            </svg>
-            <span>Экспертная оценка международного жюри</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-yellow-400 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9
-                      10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"/>
-            </svg>
-            <span>Признание качества образовательных программ</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-yellow-400 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9
-                      10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"/>
-            </svg>
-            <span>Соответствие мировым стандартам коучинга</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-5 h-5 text-yellow-400 mt-1 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9
-                      10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"/>
-            </svg>
-            <span>Инновационные методики обучения</span>
-          </li>
+        <p class="cu-award-lead">
+          Программа Подготовки Профессиональных коучей ICU удостоена высшей награды
+          в профессиональном сообществе
+        </p>
+        <ul class="cu-award-points" role="list">
+          <li><i class="fas fa-check-circle" aria-hidden="true"></i>Экспертная оценка международного жюри</li>
+          <li><i class="fas fa-check-circle" aria-hidden="true"></i>Признание качества образовательных программ</li>
+          <li><i class="fas fa-check-circle" aria-hidden="true"></i>Соответствие мировым стандартам коучинга</li>
+          <li><i class="fas fa-check-circle" aria-hidden="true"></i>Инновационные методики обучения</li>
         </ul>
-
-        <!-- Видео -->
-        <div class="relative pb-[56.25%] overflow-hidden rounded-xl shadow-2xl group">
-          <button type="button" class="icu-video-preview" data-video-id="K5JTkpRrdzk" data-video-title="Коучинг Центр. Выбор Года. Церемония награждения." aria-label="Воспроизвести видео: Коучинг Центр. Выбор Года. Церемония награждения."><img src="https://i.ytimg.com/vi/K5JTkpRrdzk/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span><span class="icu-video-label" aria-hidden="true">Смотреть видео</span></button>
-          <!-- Подпись к видео -->
-          <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white text-sm py-2 px-4 text-center">
-            Церемония награждения, Берлин 2024
-          </div>
-        </div>
       </div>
+      <figure class="cu-award-video">
+        <div class="cu-award-video-player">
+          <button type="button" class="icu-video-preview" data-video-id="K5JTkpRrdzk"
+                  data-video-title="Коучинг Центр. Выбор Года. Церемония награждения."
+                  aria-label="Воспроизвести видео: Коучинг Центр. Выбор Года. Церемония награждения.">
+            <img src="https://i.ytimg.com/vi/K5JTkpRrdzk/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+            <span class="icu-video-play" aria-hidden="true"><i class="fas fa-play"></i></span>
+          </button>
+        </div>
+        <figcaption>Церемония награждения, Берлин 2024</figcaption>
+      </figure>
     </div>
   </div>
 </section>
