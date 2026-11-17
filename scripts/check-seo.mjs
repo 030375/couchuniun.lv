@@ -10,7 +10,8 @@ const pages=[
   'business-coach.html',
   'bisness_kouch.html',
   'library.html',
-  'neurocoach.html'
+  'neurocoach.html',
+  'certified-coaches.html'
 ];
 const errors=[];
 const read=(path)=>readFileSync(resolve(root,path),'utf8');

@@ -416,3 +416,18 @@ body[data-coachunion-design] .site-header > .container > a[href*="wa.me"] {
 @media (min-width: 900px) {
   .cu-award-card { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
 }
+
+@media (max-width: 639px) {
+  .site-header .cu-resource-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .2rem .4rem;
+  }
+
+  .site-header .cu-resource-nav a {
+    padding: .2rem .25rem;
+    white-space: normal;
+    font-size: .83rem;
+    line-height: 1.3;
+  }
+}
