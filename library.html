@@ -83,9 +83,10 @@
                 <div class="mb-4 md:mb-0">
                     <h1 class="text-2xl md:text-3xl font-bold">Библиотека коучинга ICU</h1>
                     <p class="text-blue-100 mt-1">Книги и материалы International Coach Union</p>
+                    <p class="text-sm text-blue-100 mt-2">Файлы открываются на coach.by. <a class="underline" href="https://coachunionlv.com/coaching/library/">Исходный каталог ICU</a></p>
                 </div>
                 <div class="relative w-full md:w-64">
-                    <input type="text" placeholder="Поиск книг..." 
+                    <input type="search" aria-label="Поиск книг" placeholder="Поиск книг..."
                            class="search-input w-full px-4 py-2 rounded-full text-gray-800 focus:ring-2 focus:ring-blue-300">
                     <i class="fas fa-search absolute right-3 top-2.5 text-gray-400"></i>
                 </div>
@@ -96,23 +97,14 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-800">ICU</a>
-            <div class="hidden md:flex space-x-8">
-                <!-- Navigation links can go here if needed -->
-            </div>
-            <button class="md:hidden text-gray-600 focus:outline-none">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
+            <a href="/" class="text-2xl font-bold text-blue-800">ICU · Coach Union</a>
+            <a href="/" class="text-gray-600 hover:text-blue-800 font-medium">На главную</a>
         </div>
 
 
 
     </nav>
-    <!-- Floating Close Button -->
-    <a href="index.html" class="fixed z-50 bottom-6 left-6 md:bottom-8 md:left-8 bg-red-500 hover:bg-red-600 text-white rounded-full p-3 shadow-lg transition-colors duration-300">
-        <i class="fas fa-times text-xl"></i>
-        <span class="sr-only">Закрыть</span>
-    </a>
+
     <main class="container mx-auto px-4 py-8">
         <div class="flex flex-col md:flex-row gap-8">
             <!-- Sidebar -->
@@ -212,26 +204,26 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const booksData = [
-                { author: "Уитмор Дж.", title: "Коучинг высокой эффективности", url: "http://coach.by/library/whit.pdf", category: "coaching" },
-                { author: "Канетти Э.", title: "Масса и власть", url: "http://coach.by/library/massaivlast.rar", category: "psychology" },
-                { author: "Дилтс Р.", title: "Коучинг с помощью НЛП", url: "http://coach.by/library/from_coach_to_awakener.rar", category: "coaching" },
-                { author: "", title: "Коучинг", url: "http://coach.by/library/%D0%A1oaching.doc", category: "coaching" },
-                { author: "Васильченко и др.", title: "Тайм менеджмент", url: "http://coach.by/library/time_management.rar", category: "management" },
-                { author: "М. Дауни", title: "Коучинг (интервью)", url: "http://coach.by/library/coach.rar", category: "coaching" },
-                { author: "Дилтс Р.", title: "Коучинг (статья)", url: "http://coach.by/library/Dilts_coach.rar", category: "coaching" },
-                { author: "", title: "Притчи для коучей и бизнес-тренеров", url: "http://coach.by/library/Pritchi.rar", category: "coaching" },
-                { author: "Ивант Унт", title: "Ведение переговоров", url: "http://coach.by/library/peregovori.rar", category: "management" },
-                { author: "Алан Лакейн", title: "Искусство успевать", url: "http://coach.by/library/iskusp.rar", category: "management" },
-                { author: "", title: "Эффективность руководителя. Гарвардский проект.", url: "http://coach.by/library/manag.rar", category: "management" },
-                { author: "Майло О Франк", title: "Как убедить за 30 секунд.", url: "http://coach.by/library/ubejd.rar", category: "psychology" },
-                { author: "Котлер Ф.", title: "Маркетинг", url: "http://coach.by/library/kotler.rar", category: "marketing" },
-                { author: "М. Р. Джей", title: "Коучинг", url: "http://coach.by/library/coach2.doc", category: "coaching" },
-                { author: "Кролль Л.", title: "Коучинг", url: "http://coach.by/library/Krol.rar", category: "coaching" },
-                { author: "Аткинсон М.", title: "Коучинг (статья)", url: "http://coach.by/library/Atk.doc", category: "coaching" },
-                { author: "Райс Э., Траут Д.", title: "Маркетинговые войны", url: "http://coach.by/library/m_war.rar", category: "marketing" },
-                { author: "Дж. О'Коннор, Ян Макдермот", title: "Системное мышление", url: "http://coach.by/library/system.rar", category: "psychology" },
-                { author: "", title: "Управление персоналом", url: "http://coach.by/library/upr.rar", category: "management" },
-                { author: "Мозер К.", title: "Психология рекламы", url: "http://coach.by/library/psyreklama.rar", category: "psychology" }
+                { author: "Уитмор Дж.", title: "Коучинг высокой эффективности", url: "https://coach.by/library/whit.pdf", category: "coaching" },
+                { author: "Канетти Э.", title: "Масса и власть", url: "https://coach.by/library/massaivlast.rar", category: "psychology" },
+                { author: "Дилтс Р.", title: "Коучинг с помощью НЛП", url: "https://coach.by/library/from_coach_to_awakener.rar", category: "coaching" },
+                { author: "", title: "Коучинг", url: "https://coach.by/library/Coaching.doc", category: "coaching" },
+                { author: "Васильченко и др.", title: "Тайм менеджмент", url: "https://coach.by/library/time_management.rar", category: "management" },
+                { author: "М. Дауни", title: "Коучинг (интервью)", url: "https://coach.by/library/coach.rar", category: "coaching" },
+                { author: "Дилтс Р.", title: "Коучинг (статья)", url: "https://coach.by/library/Dilts_coach.rar", category: "coaching" },
+                { author: "", title: "Притчи для коучей и бизнес-тренеров", url: "https://coach.by/library/Pritchi.rar", category: "coaching" },
+                { author: "Ивант Унт", title: "Ведение переговоров", url: "https://coach.by/library/peregovori.rar", category: "management" },
+                { author: "Алан Лакейн", title: "Искусство успевать", url: "https://coach.by/library/iskusp.rar", category: "management" },
+                { author: "", title: "Эффективность руководителя. Гарвардский проект.", url: "https://coach.by/library/manag.rar", category: "management" },
+                { author: "Майло О Франк", title: "Как убедить за 30 секунд.", url: "https://coach.by/library/ubejd.rar", category: "psychology" },
+                { author: "Котлер Ф.", title: "Маркетинг", url: "https://coach.by/library/kotler.rar", category: "marketing" },
+                { author: "М. Р. Джей", title: "Коучинг", url: "https://coach.by/library/coach2.doc", category: "coaching" },
+                { author: "Кролль Л.", title: "Коучинг", url: "https://coach.by/library/Krol.rar", category: "coaching" },
+                { author: "Аткинсон М.", title: "Коучинг (статья)", url: "https://coach.by/library/Atk.doc", category: "coaching" },
+                { author: "Райс Э., Траут Д.", title: "Маркетинговые войны", url: "https://coach.by/library/m_war.rar", category: "marketing" },
+                { author: "Дж. О'Коннор, Ян Макдермот", title: "Системное мышление", url: "https://coach.by/library/system.rar", category: "psychology" },
+                { author: "", title: "Управление персоналом", url: "https://coach.by/library/upr.rar", category: "management" },
+                { author: "Мозер К.", title: "Психология рекламы", url: "https://coach.by/library/psyreklama.rar", category: "psychology" }
             ];
 
             const booksContainer = document.getElementById('books-container');
@@ -339,32 +331,7 @@
             renderBooks();
         });
     </script>
-<script>
-  // Обработчик для кнопки "Закрыть"
-  document.querySelector('a[href="./index.html"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // Сохраняем состояние для главной страницы
-    sessionStorage.setItem('returnedFromChild', 'true');
-    
-    // Перенаправляем на главную
-    window.location.href = './index.html';
-  });
 
-  // Автоматический возврат при закрытии вкладки/обновлении
-  window.addEventListener('beforeunload', () => {
-    sessionStorage.setItem('shouldReturnHome', 'true');
-  });
-
-  // Проверка при загрузке страницы
-  window.addEventListener('load', () => {
-    if (sessionStorage.getItem('shouldReturnHome') === 'true') {
-      sessionStorage.removeItem('shouldReturnHome');
-      sessionStorage.setItem('returnedFromChild', 'true');
-      window.location.href = './index.html';
-    }
-  });
-</script>
 
 </body>
 </html>
